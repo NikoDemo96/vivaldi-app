@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
