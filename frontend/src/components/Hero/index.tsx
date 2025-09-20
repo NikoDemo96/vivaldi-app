@@ -1,66 +1,16 @@
 import React from "react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import NavBar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import ContactForm from "../ContactForm/ContactForm";
 
 const Hero = () => {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="bg-[#6C3FC5] px-0 py-0 w-full">
-        <div className="w-full flex items-center justify-between h-[64px] max-w-none">
-          {/* Logo and Brand */}
-          <div className="mt-10 flex items-center pl-8 min-w-[260px]">
-            <Image
-              src="/images/vivaldi-logo.svg"
-              alt="Vivaldi Logo"
-              width={180}
-              height={180}
-              className="mr-2"
-            />
-          </div>
+      <NavBar />
 
-          {/* Navigation */}
-          <nav className="flex-1 flex items-center justify-center space-x-8">
-            <a
-              href="#"
-              className="text-white font-medium hover:text-white/80 transition-colors text-base"
-            >
-              About
-            </a>
-            <div className="relative group">
-              <button className="text-white font-medium hover:text-white/80 transition-colors flex items-center gap-1 text-base">
-                Services
-                <ChevronDown className="w-4 h-4" />
-              </button>
-            </div>
-            <a
-              href="#"
-              className="text-white font-medium hover:text-white/80 transition-colors text-base"
-            >
-              Sectors
-            </a>
-            <a
-              href="#"
-              className="text-white font-medium hover:text-white/80 transition-colors text-base"
-            >
-              Resources
-            </a>
-            <a
-              href="#"
-              className="text-white font-medium hover:text-white/80 transition-colors text-base"
-            >
-              Our Work
-            </a>
-          </nav>
-
-          {/* Contact Button */}
-          <div className="flex items-center pr-0">
-            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-base font-semibold transition-colors rounded-none h-[64px] min-w-[160px]">
-              Contact Us
-            </button>
-          </div>
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="relative h-[895px] flex items-center justify-center">
@@ -562,123 +512,9 @@ const Hero = () => {
         </div>
       </section>
       {/* Contact Form Section */}
-      <section className="w-full py-24 bg-[#faf9fb] flex justify-center items-center">
-        <div className="bg-white shadow-md border border-gray-200 rounded-sm max-w-md w-full px-8 py-10 mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#331E5B] text-center mb-4">
-            Prefer to write? Use this form
-          </h2>
-          <p className="text-gray-700 text-center mb-6 text-sm">
-            We’d love to hear about your project or idea.
-            <br />
-            Fill out the form and we’ll get back to you soon.
-          </p>
-          <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
-              required
-            />
-            <div className="flex items-center">
-              <input
-                type="text"
-                placeholder="Company Name"
-                className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
-              />
-              <span className="text-xs text-gray-400 ml-2">Optional</span>
-            </div>
-            <div>
-              <label
-                htmlFor="project"
-                className="block text-xs text-gray-600 mb-1"
-              >
-                Tell us about your project!
-              </label>
-              <textarea
-                id="project"
-                rows={5}
-                className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-[#6C3FC5] hover:bg-[#4b278a] text-white font-semibold py-2 rounded-sm mt-2 transition-colors"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
-      </section>
+      <ContactForm />
       {/* Footer Section */}
-      <footer className="bg-[#6947D2] pt-12 pb-4 px-4 w-full">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between md:items-start gap-8">
-          {/* Left: Logo and site */}
-          <div className="flex flex-col items-start mb-8 md:mb-0">
-              <Image
-              src="/images/vivaldi-logo.svg"
-              alt="Vivaldi Logo"
-              width={180}
-              height={180}
-            />
-            <span className="text-white text-sm">www.vivaldimkt.com</span>
-          </div>
-          {/* Center: Navigation */}
-          <div className="flex-1 flex flex-col items-center">
-            <div className="flex flex-row gap-10 mb-2">
-              <a
-                href="#"
-                className="text-white font-semibold text-sm hover:underline"
-              >
-                About
-              </a>
-              <div className="flex flex-col items-center">
-                <a
-                  href="#"
-                  className="text-white font-semibold text-sm hover:underline"
-                >
-                  Services
-                </a>
-                <div className="flex flex-col items-center mt-1">
-                  <a href="#" className="text-white text-xs hover:underline">
-                    Messaging &amp; Positioning
-                  </a>
-                  <a href="#" className="text-white text-xs hover:underline">
-                    Ghostwriting
-                  </a>
-                  <a href="#" className="text-white text-xs hover:underline">
-                    Google Ads
-                  </a>
-                  <a href="#" className="text-white text-xs hover:underline">
-                    SEO
-                  </a>
-                </div>
-              </div>
-              <a
-                href="#"
-                className="text-white font-semibold text-sm hover:underline"
-              >
-                Resources
-              </a>
-              <a
-                href="#"
-                className="text-white font-semibold text-sm hover:underline"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </div>
-        <hr className="border-t border-white/30 my-6" />
-        <div className="text-center text-white text-xs">
-          Copyright © 2025 www.vivaldimkt.com All Rights Reserved
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
