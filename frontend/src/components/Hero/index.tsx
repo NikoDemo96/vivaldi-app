@@ -467,8 +467,8 @@ const Hero = () => {
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Time to get down to work. We write your content, run your ads,
-                or build your SEO presence. For ongoing work, we'll have a
-                monthly consultation call to review what's working and what
+                or build your SEO presence. For ongoing work, we&apos;ll have a
+                monthly consultation call to review what&apos;s working and what
                 needs adjusting.
               </p>
             </div>
@@ -519,14 +519,14 @@ const Hero = () => {
         <div className="bg-[#10002B] py-16 px-4">
           <div className="max-w-3xl mx-auto">
             <p className="text-white text-lg md:text-xl mb-8">
-              "We have 50,000 photos from our two hostels but no time to manage
+              &quot;We have 50,000 photos from our two hostels but no time to manage
               social media properly. Viviana and Jorge understood exactly what
               we needed—a simple, effective strategy without the fluff. They
               create engaging content from our existing assets, handle
               everything professionally, and keep communication streamlined.
-              After years of random posting, it's refreshing to have a
+              After years of random posting, it&apos;s refreshing to have a
               structured approach that showcases what makes our hostels special
-              to international travelers."
+              to international travelers.&quot;
             </p>
             <div className="mb-4">
               <span className="font-bold text-white">
@@ -553,7 +553,7 @@ const Hero = () => {
             Ready to Build Predictable Growth?
           </h2>
           <p className="text-white/90 text-lg max-w-2xl mx-auto mb-8">
-            Work with marketers who've been where you are and know exactly how
+            Work with marketers who&apos;ve been where you are and know exactly how
             to help you stand out.
           </p>
           <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
