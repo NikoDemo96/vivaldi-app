@@ -146,7 +146,7 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
+      {/* Testimonial Section Diana*/}
       <section className="bg-[#10002B] py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="text-left mb-8">
@@ -305,6 +305,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
+       {/* Testimonial Section Justin*/}
       <section className="bg-[#10002B] py-16">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-left mb-8">

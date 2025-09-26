@@ -4,7 +4,7 @@ import React from 'react';
 
 const ContactForm = () => { 
     return (
-        <section className="w-full py-24 bg-[#faf9fb] flex justify-center items-center">
+        <section className="w-full py-24 flex justify-center items-center">
         <div className="bg-white shadow-md border border-gray-200 rounded-sm max-w-md w-full px-8 py-10 mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[#331E5B] text-center mb-4">
             Prefer to write? Use this form
