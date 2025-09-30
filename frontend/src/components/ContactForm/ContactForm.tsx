@@ -33,24 +33,24 @@ const ContactForm = () => {
                 placeholder="Company Name"
                 className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
               />
-              <span className="text-xs text-gray-400 ml-2">Optional</span>
+              <span className="text-xs text-[#E2725B] ml-2">Optional</span>
             </div>
             <div>
               <label
                 htmlFor="project"
                 className="block text-xs text-gray-600 mb-1"
               >
-                Tell us about your project!
               </label>
               <textarea
                 id="project"
                 rows={5}
                 className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
+                placeholder="Tell us about your project!"
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-[#6C3FC5] hover:bg-[#4b278a] text-white font-semibold py-2 rounded-sm mt-2 transition-colors"
+              className="w-full bg-[#10002B] hover:bg-[#27075e] text-white font-semibold py-2 rounded-sm mt-2 transition-colors"
             >
               Submit
             </button>

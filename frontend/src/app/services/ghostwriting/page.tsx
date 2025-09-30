@@ -8,12 +8,12 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 
 const GhostwritingPage = () => {
   return (
-    <div className="min-h-screen bg-[#faf9fb] pb-16">
+    <div className="min-h-screen bg-[#faf9fb]">
       <Navbar />
       {/* Main Description */}
-      <section className="w-full pt-16 pb-20 px-4 bg-[#faf9fb]">
-        <div className="max-w-5xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight text-left">
+      <section className="w-full pt-16 pb-16 px-16 bg-[#faf9fb]">
+        <div className="max-w-5xl mx-8">
+          <h1 className="text-5xl md:text-6xl font-bold text-[#6947D2] mb-2 leading-tight text-left">
             Establish Thought Leadership
           </h1>
           <h2 className="text-5xl md:text-6xl font-bold text-[#FF8A71] mb-8 leading-tight text-left">
@@ -60,14 +60,14 @@ const GhostwritingPage = () => {
         </div>
       </section>
       {/* Our LinkedIn Philosophy */}
-      <section className="w-full bg-transparent pt-12 pb-4">
-        <div className="max-w-7xl grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 px-4 md:px-8 items-start">
+      <section className="w-full bg-transparent pt-16 pb-16 px-16">
+        <div className="w-full grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 px-4 md:px-8 items-start">
           <div className="flex flex-col items-start justify-start">
             <h2
               className="text-[2.7rem] md:text-[3.2rem] font-extrabold leading-tight mb-8"
               style={{ lineHeight: 1.05 }}
             >
-              <span className="text-[#5B4EFF]">Our LinkedIn</span>{" "}
+              <span className="text-[#6947D2]">Our LinkedIn</span>{" "}
               <span className="text-[#F07C5A]">Philosophy</span>
             </h2>
             <div className="text-[#18102B] text-base md:text-lg mb-10 space-y-5 max-w-xl">
@@ -88,6 +88,7 @@ const GhostwritingPage = () => {
                 the obvious choice when your ideal clients are ready to hire.
               </p>
             </div>
+
             <button
               className="mt-2 px-8 py-3 bg-[#18102B] text-white font-semibold rounded-lg shadow-md hover:bg-[#2a1e4d] transition-colors text-base md:text-lg"
               style={{ minWidth: "200px" }}
@@ -95,19 +96,21 @@ const GhostwritingPage = () => {
               Book a discovery call
             </button>
           </div>
-          <div className="flex items-start justify-center md:justify-end mt-8 md:mt-0">
+          <div className="flex items-center justify-center w-full h-full">
             <Image
-              src="/images/linkedin-philosophy-scribble.svg"
+              src="/images/linkedin-philosophy-scribble2.svg"
               alt="LinkedIn Philosophy Scribble"
-              width={1840}
-              height={1000}
+              width={1800}
+              height={900}
+              className="w-full h-auto max-w-none"
+              priority
             />
           </div>
         </div>
       </section>
 
       {/* --- How We Work Section --- */}
-      <section className="w-full bg-[#6947D2] py-16 px-2 md:px-0">
+      <section className="w-full bg-[#5233B0] py-16 px-2 md:px-0">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-12">
             How We Work

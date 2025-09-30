@@ -7,10 +7,10 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 
 const SeoPage = () => {
   return (
-    <div className="min-h-screen bg-[#faf9fb] pb-16">
+    <div className="min-h-screen bg-[#faf9fb]">
       <NavBar />
       {/* Get Found by Clients section */}
-      <section className="w-full pt-16 pb-20 px-4 bg-[#faf9fb]">
+      <section className="w-full pt-16 pb-16 px-16 bg-[#faf9fb]">
         <div className="max-w-5xl mx-8">
           <h1 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight text-left">
             Get Found by Clients
@@ -63,7 +63,7 @@ const SeoPage = () => {
       </section>
       {/* Our Approach to SEO Section */}
       <section className="w-full bg-[#faf9fb] py-20 px-2 md:px-0">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-[#6C3FC5] text-4xl md:text-5xl font-bold mb-10">
             Our Approach to SEO
           </h2>
@@ -92,7 +92,7 @@ const SeoPage = () => {
         </div>
       </section>
       {/* Our Process Section */}
-      <section className="w-full bg-[#5B4EFF] py-16 px-2 md:px-0">
+      <section className="w-full bg-[#5233B0] py-16 px-2 md:px-0">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-12">
             Our Process
@@ -107,10 +107,10 @@ const SeoPage = () => {
                 1
               </span>
               <Image
-                src="/images/process-discovery.svg"
+                src="/images/light-bulb.svg"
                 alt="Discovery Icon"
-                width={56}
-                height={56}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">Discovery</h3>
@@ -130,10 +130,10 @@ const SeoPage = () => {
                 2
               </span>
               <Image
-                src="/images/process-research.svg"
+                src="/images/loupe-icon.svg"
                 alt="Keyword Research Icon"
-                width={56}
-                height={56}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">
@@ -156,8 +156,8 @@ const SeoPage = () => {
               <Image
                 src="/images/process-technical.svg"
                 alt="Technical Foundation Icon"
-                width={56}
-                height={56}
+                width={140}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">
@@ -170,7 +170,7 @@ const SeoPage = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-10">
             {/* Step 4 */}
             <div className="relative bg-white rounded-xl shadow-lg p-8 md:p-10 flex flex-col items-center text-center min-h-[280px]">
               <span
@@ -182,8 +182,8 @@ const SeoPage = () => {
               <Image
                 src="/images/process-content.svg"
                 alt="Content Creation Icon"
-                width={56}
-                height={56}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">
@@ -205,10 +205,10 @@ const SeoPage = () => {
                 5
               </span>
               <Image
-                src="/images/process-authority.svg"
+                src="/images/revisions-copy.svg"
                 alt="Authority Building Icon"
-                width={56}
-                height={56}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">
@@ -326,8 +326,8 @@ const SeoPage = () => {
         </div>
       </section>
       {/* Why Choose Vivaldi for SEO Section */}
-      <section className="w-full bg-[#6C3FC5] py-20 px-2 md:px-0">
-        <div className="max-w-6xl mx-auto">
+      <section className="w-full bg-[#5233B0] py-20 px-2 md:px-0">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16">
             Why Choose Vivaldi for SEO
           </h2>
@@ -347,11 +347,11 @@ const SeoPage = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <Image
-                src="/images/seo-language.jpg"
+                src="/images/seo-language.svg"
                 alt="SEO Language"
-                width={320}
-                height={200}
-                className="rounded-lg object-cover w-full max-w-xs"
+                width={541}
+                height={429}
+                
               />
             </div>
           </div>
@@ -359,11 +359,11 @@ const SeoPage = () => {
           <div className="flex flex-col md:flex-row items-center mb-12 gap-8">
             <div className="flex-1 flex justify-center order-2 md:order-1">
               <Image
-                src="/images/seo-report.jpg"
+                src="/images/seo-report.svg"
                 alt="SEO Report"
-                width={320}
-                height={200}
-                className="rounded-lg object-cover w-full max-w-xs"
+                width={595}
+                height={375}
+                
               />
             </div>
             <div className="flex-1 order-1 md:order-2">
@@ -392,11 +392,11 @@ const SeoPage = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <Image
-                src="/images/seo-partnership.jpg"
+                src="/images/seo-partnership.svg"
                 alt="SEO Partnership"
-                width={320}
-                height={200}
-                className="rounded-lg object-cover w-full max-w-xs"
+                width={481}
+                height={302}
+                
               />
             </div>
           </div>

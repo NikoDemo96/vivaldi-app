@@ -7,10 +7,10 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 
 const GoogleAndMetaAdsPage = () => {
   return (
-    <div className="min-h-screen bg-[#faf9fb] pb-16">
+    <div className="min-h-screen bg-[#faf9fb]">
       <NavBar />
       {/* Description Section */}
-      <section className="w-full pt-16 pb-20 px-4 bg-[#faf9fb]">
+      <section className="w-full pt-16 pb-20 px-16 bg-[#faf9fb]">
         <div className="max-w-5xl mx-8">
           <h1 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight text-left">
             Consistent Growth
@@ -34,7 +34,7 @@ const GoogleAndMetaAdsPage = () => {
           </div>
         </div>
       </section>
-      <section className="relative w-full h-[340px] md:h-[400px] flex items-center justify-center">
+      <section className="relative w-full h-[340px] md:h-[700px] flex items-center justify-center">
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/images/google_ads_laptop.png"
@@ -46,7 +46,7 @@ const GoogleAndMetaAdsPage = () => {
           <div className="absolute inset-0 bg-black/10" />
         </div>
         <div className="relative z-10 w-full flex items-center justify-center">
-          <p className="text-white text-xl md:text-2xl font-semibold text-center max-w-3xl px-4">
+          <p className="text-white text-xl md:text-2xl font-semibold text-center max-w-7xl px-4">
             Google Ads ensures your business appears right at the top when
             potential clients are actively searching for your services or
             products. It's a direct way to capture immediate interest and gain
@@ -65,7 +65,7 @@ const GoogleAndMetaAdsPage = () => {
       </section>
       {/* Testimonial Section Justin*/}
       <section className="bg-[#10002B] py-16">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-left mb-8">
             <p className="text-white text-lg leading-relaxed">
               &quot;I had the pleasure of working with Viviana as a Strategic
@@ -95,7 +95,7 @@ const GoogleAndMetaAdsPage = () => {
       </section>
       {/* Why Choose Vivaldi Section */}
       <section className="w-full bg-[#6C3FC5] py-20 px-2 md:px-0">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16">
             Why Choose Vivaldi
           </h2>
@@ -115,11 +115,10 @@ const GoogleAndMetaAdsPage = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <Image
-                src="/images/ads-insider.jpg"
+                src="/images/ads-insider.svg"
                 alt="Industry Insider Knowledge"
-                width={320}
-                height={160}
-                className="rounded-lg object-cover w-full max-w-xs"
+                width={498}
+                height={278}
               />
             </div>
           </div>
@@ -127,11 +126,10 @@ const GoogleAndMetaAdsPage = () => {
           <div className="flex flex-col md:flex-row items-center mb-12 gap-8">
             <div className="flex-1 flex justify-center order-2 md:order-1">
               <Image
-                src="/images/ads-leads.jpg"
+                src="/images/ads-leads.svg"
                 alt="Lead Quality Obsession"
-                width={320}
-                height={160}
-                className="rounded-lg object-cover w-full max-w-xs"
+                width={545}
+                height={290}
               />
             </div>
             <div className="flex-1 order-1 md:order-2">
@@ -162,11 +160,10 @@ const GoogleAndMetaAdsPage = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <Image
-                src="/images/ads-transparent.jpg"
+                src="/images/ads-transparent.svg"
                 alt="Transparent Approach"
-                width={320}
-                height={160}
-                className="rounded-lg object-cover w-full max-w-xs"
+                width={523}
+                height={278}
               />
             </div>
           </div>
@@ -174,11 +171,10 @@ const GoogleAndMetaAdsPage = () => {
           <div className="flex flex-col md:flex-row items-center mb-16 gap-8">
             <div className="flex-1 flex justify-center order-2 md:order-1">
               <Image
-                src="/images/ads-b2b.jpg"
+                src="/images/ads-b2b.svg"
                 alt="Built for B2B Complexity"
-                width={320}
-                height={160}
-                className="rounded-lg object-cover w-full max-w-xs"
+                width={469}
+                height={301}
               />
             </div>
             <div className="flex-1 order-1 md:order-2">
@@ -207,7 +203,7 @@ const GoogleAndMetaAdsPage = () => {
       </section>
       {/* Our Strategic Approach Section */}
       <section className="w-full bg-[#10002B] py-20 px-2 md:px-0">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-12">
             Our Strategic Approach
           </h2>
@@ -215,10 +211,10 @@ const GoogleAndMetaAdsPage = () => {
             {/* Card 1 */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center min-h-[320px]">
               <Image
-                src="/images/approach-discovery.svg"
+                src="/images/megafono.svg"
                 alt="Deep Discovery"
-                width={56}
-                height={56}
+                width={120}
+                height={89}
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
@@ -234,10 +230,10 @@ const GoogleAndMetaAdsPage = () => {
             {/* Card 2 */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center min-h-[320px]">
               <Image
-                src="/images/approach-architecture.svg"
+                src="/images/process-content.svg"
                 alt="Campaign Architecture"
-                width={56}
-                height={56}
+                width={70}
+                height={85}
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
@@ -253,10 +249,10 @@ const GoogleAndMetaAdsPage = () => {
             {/* Card 3 */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center min-h-[320px]">
               <Image
-                src="/images/approach-launch.svg"
+                src="/images/seo-icon.svg"
                 alt="Launch & Optimize"
-                width={56}
-                height={56}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
@@ -272,10 +268,10 @@ const GoogleAndMetaAdsPage = () => {
             {/* Card 4 */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center min-h-[320px]">
               <Image
-                src="/images/approach-scale.svg"
+                src="/images/google-ads-icon.svg"
                 alt="Scale & Refine"
-                width={56}
-                height={56}
+                width={102}
+                height={95}
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">

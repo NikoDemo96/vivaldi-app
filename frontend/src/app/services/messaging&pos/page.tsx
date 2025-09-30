@@ -7,10 +7,10 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 
 const MessagingAndPositioningPage = () => {
   return (
-    <div className="min-h-screen bg-[#faf9fb] pb-16">
+    <div className="min-h-screen bg-[#faf9fb]">
       <NavBar />
       {/* Articulate your value section */}
-      <section className="w-full pt-16 pb-20 px-4 bg-[#faf9fb]">
+      <section className="w-full pt-16 pb-16 px-16 bg-[#faf9fb]">
         <div className="max-w-5xl mx-8">
           <h1 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight text-left">
             Articulate Your Value
@@ -40,12 +40,12 @@ const MessagingAndPositioningPage = () => {
       </section>
 
       {/* Exceptional work section */}
-      <section className="w-full bg-[#faf9fb] pt-4 pb-20 px-4">
-        <div className="max-w-6xl mx-8 flex flex-col gap-16">
+      <section className="w-full bg-[#faf9fb] pt-4 pb-20 px-16">
+        <div className="max-w-8xl mx-8 flex flex-col gap-16">
           {/* Row 1 */}
           <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
             <div className="flex-1 order-1 md:order-1">
-              <p className="text-[#5B4EFF] text-lg md:text-xl mb-0 font-medium leading-relaxed">
+              <p className="text-[#331E5B] text-lg md:text-xl mb-0 font-medium leading-relaxed">
                 You know your work is exceptional. Your translations capture
                 nuances that AI misses, or your manufacturing processes deliver
                 precision that sets you apart. But when prospects compare you to
@@ -84,7 +84,7 @@ const MessagingAndPositioningPage = () => {
                 <br />
                 it’s the right foundation.
               </h3>
-              <p className="text-[#5B4EFF] text-lg md:text-xl font-medium leading-relaxed mb-2">
+              <p className="text-[#331E5B] text-lg md:text-xl font-medium leading-relaxed mb-2">
                 Before you invest in websites, social media, or advertising, you
                 need to nail down exactly what to say and how to say it. That's
                 what we call messaging strategy.
@@ -102,10 +102,10 @@ const MessagingAndPositioningPage = () => {
       </section>
       {/* Testimonial Section Diana*/}
       <section className="bg-[#10002B] py-16">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="text-left mb-8">
             <p className="text-white text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
               lorem metus. Phasellus consequat, massa vel sagittis dignissim,
               urna lectus pretium libero, finibus hendrerit tellus orci id sem.
               Nullam id volutpat justo, ut rutrum tortor. Phasellus egestas
@@ -114,7 +114,7 @@ const MessagingAndPositioningPage = () => {
               felis suscipit augue, nec pretium elit nisl non dui. Ut imperdiet
               erat eget magna hendrerit rhoncus. Fusce aliquet leo eros, sit
               amet euismod ligula tempor eget. Nunc tincidunt ex nec diam
-              aliquet viverra.
+              aliquet viverra."
             </p>
           </div>
 
@@ -136,8 +136,8 @@ const MessagingAndPositioningPage = () => {
         </div>
       </section>
       {/* Our Process Section */}
-      <section className="w-full bg-[#5B4EFF] py-16 px-2 md:px-0">
-        <div className="max-w-6xl mx-auto">
+      <section className="w-full bg-[#5233B0] py-16 px-2 md:px-0">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-12">
             Our Process
           </h2>
@@ -151,14 +151,14 @@ const MessagingAndPositioningPage = () => {
                 1
               </span>
               <Image
-                src="/images/process-discovery.svg"
+                src="/images/light-bulb.svg"
                 alt="Discovery Icon"
-                width={56}
-                height={56}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">
-                Discovery & Strategic Interviews
+                What You'll Receive Discovery & Strategic Interviews
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
                 We conduct two in-depth workshops with you. The first focuses on
@@ -177,10 +177,10 @@ const MessagingAndPositioningPage = () => {
                 2
               </span>
               <Image
-                src="/images/process-research.svg"
+                src="/images/loupe-icon.svg"
                 alt="Research Icon"
-                width={56}
-                height={56}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">
@@ -203,10 +203,10 @@ const MessagingAndPositioningPage = () => {
                 3
               </span>
               <Image
-                src="/images/process-docs.svg"
+                src="/images/paper-board.svg"
                 alt="Document Icon"
-                width={56}
-                height={56}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">
@@ -229,10 +229,10 @@ const MessagingAndPositioningPage = () => {
                 4
               </span>
               <Image
-                src="/images/process-copy.svg"
+                src="/images/revisions-copy.svg"
                 alt="Copy Icon"
-                width={56}
-                height={56}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">
@@ -251,7 +251,7 @@ const MessagingAndPositioningPage = () => {
       </section>
       {/* Testimonial Section Justin*/}
       <section className="bg-[#10002B] py-16">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-left mb-8">
             <p className="text-white text-lg leading-relaxed">
               &quot;I had the pleasure of working with Viviana as a Strategic
@@ -280,16 +280,16 @@ const MessagingAndPositioningPage = () => {
         </div>
       </section>
       {/* What You'll Receive Section */}
-      <section className="w-full bg-[#5B4EFF] py-16 px-2 md:px-0">
+      <section className="w-full bg-[#5233B0] py-16 px-2 md:px-0">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-6">
             What You&apos;ll Receive
           </h2>
-          <div className="text-white text-lg md:text-xl text-center mb-2 font-normal">
+          <div className="text-white text-lg md:text-xl text-left mb-2 font-normal">
             Messaging strategy is the foundation that answers three critical
             questions:
           </div>
-          <div className="text-white text-base md:text-lg text-center mb-6 font-semibold">
+          <div className="text-white text-base md:text-lg text-left mb-6 font-semibold">
             <ul className="list-none p-0 m-0">
               <li>
                 • <span className="font-bold">Who are your ideal clients?</span>
@@ -309,17 +309,17 @@ const MessagingAndPositioningPage = () => {
               </li>
             </ul>
           </div>
-          <div className="text-white text-base md:text-lg text-center mb-10 font-normal">
+          <div className="text-white text-base md:text-lg text-left mb-10 font-normal">
             We answer those questions through four key deliverables:
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center min-h-[320px]">
               <Image
-                src="/images/process-discovery.svg"
+                src="/images/light-bulb.svg"
                 alt="Blueprint Icon"
-                width={48}
-                height={48}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
@@ -334,10 +334,10 @@ const MessagingAndPositioningPage = () => {
             {/* Card 2 */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center min-h-[320px]">
               <Image
-                src="/images/process-docs.svg"
+                src="/images/paper-board.svg"
                 alt="Service Overview Icon"
-                width={48}
-                height={48}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
@@ -353,10 +353,10 @@ const MessagingAndPositioningPage = () => {
             {/* Card 3 */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center min-h-[320px]">
               <Image
-                src="/images/process-research.svg"
+                src="/images/loupe-icon.svg"
                 alt="Competitor Research Icon"
-                width={48}
-                height={48}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
@@ -370,10 +370,10 @@ const MessagingAndPositioningPage = () => {
             {/* Card 4 */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center min-h-[320px]">
               <Image
-                src="/images/process-copy.svg"
+                src="/images/revisions-copy.svg"
                 alt="Website Copy Icon"
-                width={48}
-                height={48}
+                width={90}
+                height={90}
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">

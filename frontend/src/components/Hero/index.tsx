@@ -11,7 +11,6 @@ const Hero = () => {
       {/* Header */}
       <NavBar />
 
-
       {/* Hero Section */}
       <section className="relative h-[895px] flex items-center justify-center">
         {/* Background Image */}
@@ -148,10 +147,10 @@ const Hero = () => {
 
       {/* Testimonial Section Diana*/}
       <section className="bg-[#10002B] py-16">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="text-left mb-8">
             <p className="text-white text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
               lorem metus. Phasellus consequat, massa vel sagittis dignissim,
               urna lectus pretium libero, finibus hendrerit tellus orci id sem.
               Nullam id volutpat justo, ut rutrum tortor. Phasellus egestas
@@ -160,7 +159,7 @@ const Hero = () => {
               felis suscipit augue, nec pretium elit nisl non dui. Ut imperdiet
               erat eget magna hendrerit rhoncus. Fusce aliquet leo eros, sit
               amet euismod ligula tempor eget. Nunc tincidunt ex nec diam
-              aliquet viverra.
+              aliquet viverra."
             </p>
           </div>
 
@@ -183,7 +182,7 @@ const Hero = () => {
       </section>
 
       {/* Services Section */}
-      <section className="bg-[#6947D2] py-16">
+      <section className="bg-[#5233B0] py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -220,7 +219,7 @@ const Hero = () => {
                 else you do—from your website to your sales calls—more
                 effective.
               </p>
-              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
+              <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
                 LEARN MORE
               </button>
             </div>
@@ -246,7 +245,7 @@ const Hero = () => {
                 showcase your knowledge, feel authentic, and attract your target
                 clients.
               </p>
-              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
+              <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
                 LEARN MORE
               </button>
             </div>
@@ -272,7 +271,7 @@ const Hero = () => {
                 Google, bringing qualified prospects to you instead of you
                 chasing after them.
               </p>
-              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
+              <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
                 LEARN MORE
               </button>
             </div>
@@ -298,16 +297,16 @@ const Hero = () => {
                 the right time, generating leads from prospects who are ready to
                 work with specialists.
               </p>
-              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
+              <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
                 LEARN MORE
               </button>
             </div>
           </div>
         </div>
       </section>
-       {/* Testimonial Section Justin*/}
+      {/* Testimonial Section Justin*/}
       <section className="bg-[#10002B] py-16">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-left mb-8">
             <p className="text-white text-lg leading-relaxed">
               &quot;I had the pleasure of working with Viviana as a Strategic
@@ -337,10 +336,10 @@ const Hero = () => {
       </section>
 
       {/* How We Work Section */}
-      <section className="bg-[#6947D2] py-16">
+      <section className="bg-[#faf9fb] py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#6947D2] mb-6">
               How We Work
             </h2>
           </div>
@@ -434,32 +433,50 @@ const Hero = () => {
       </section>
 
       {/* Who We Are Section */}
-      <section className="relative py-24 bg-[#faf9fb]">
+      <section className="relative py-24 bg-[#5233B0]">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#6947D2] text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
             Who We Are
           </h2>
-          <div className="flex flex-col gap-16">
+          <div className="flex flex-row justify-between gap-16">
             {/* Top row: Viviana */}
-            <div className="flex flex-col md:flex-row items-center md:items-start md:justify-start gap-8">
-              <div className="w-[280px] h-[160px] bg-white shadow-md rounded-sm" />
-              <p className="text-[#6947D2] text-lg text-left md:pl-4 md:pt-8">
-                Viviana spent six years as a freelance translator before
+            <div className="flex flex-col md:flex-col items-center md:justify-start gap-8">
+              <Image
+                src="/images/viviana-photo2.svg"
+                alt="Viviana"
+                width={455}
+                height={381}
+                className="rounded-md"
+              />
+              <p className="text-white text-lg text-center md:pt-8">
+                Viviana spent six years as a
+                <br />
+                freelance translator before
+                <br />
                 switching to marketing.
               </p>
             </div>
             {/* Bottom row: Valdi */}
-            <div className="flex flex-col md:flex-row-reverse items-center md:items-start md:justify-end gap-8 mt-4">
-              <div className="w-[280px] h-[160px] bg-white shadow-md rounded-sm" />
-              <p className="text-[#6947D2] text-lg text-right md:pr-4 md:pt-8">
-                Valdi is a materials engineer who discovered his passion for
+            <div className="flex flex-col md:flex-col items-center md:justify-end gap-8">
+              <Image
+                src="/images/jorge-photo2.svg"
+                alt="Valdi"
+                width={455}
+                height={381}
+                className="rounded-md"
+              />
+              <p className="text-white text-lg text-center md:pt-8">
+                Valdi is a materials engineer
+                <br />
+                who discovered his passion for
+                <br />
                 marketing.
               </p>
             </div>
           </div>
           <div className="flex justify-center mt-16">
             <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
-              LEARN MORE ABOUT US
+              Discover more about us
             </button>
           </div>
         </div>
@@ -468,12 +485,12 @@ const Hero = () => {
       <section className="w-full">
         {/* Testimony */}
         <div className="bg-[#10002B] py-16 px-4">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <p className="text-white text-lg md:text-xl mb-8">
-              &quot;We have 50,000 photos from our two hostels but no time to manage
-              social media properly. Viviana and Jorge understood exactly what
-              we needed—a simple, effective strategy without the fluff. They
-              create engaging content from our existing assets, handle
+              &quot;We have 50,000 photos from our two hostels but no time to
+              manage social media properly. Viviana and Jorge understood exactly
+              what we needed—a simple, effective strategy without the fluff.
+              They create engaging content from our existing assets, handle
               everything professionally, and keep communication streamlined.
               After years of random posting, it&apos;s refreshing to have a
               structured approach that showcases what makes our hostels special
@@ -504,8 +521,8 @@ const Hero = () => {
             Ready to Build Predictable Growth?
           </h2>
           <p className="text-white/90 text-lg max-w-2xl mx-auto mb-8">
-            Work with marketers who&apos;ve been where you are and know exactly how
-            to help you stand out.
+            Work with marketers who&apos;ve been where you are and know exactly
+            how to help you stand out.
           </p>
           <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
             BOOK A DISCOVERY CALL
