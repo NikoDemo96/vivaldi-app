@@ -516,7 +516,7 @@ const Hero = () => {
           </div>
         </div>
         {/* Predictable Growth CTA */}
-        <div className="bg-[#6947D2] py-20 px-4 text-center">
+        <div className="bg-[#5233B0] py-20 px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Ready to Build Predictable Growth?
           </h2>
