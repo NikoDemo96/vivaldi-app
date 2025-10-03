@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import Link from "next/link";
 
 const AboutPage = () => {
   return (
@@ -11,14 +12,14 @@ const AboutPage = () => {
       <NavBar />
       {/* Description Section */}
       <section className="w-full pt-16 pb-16 px-16">
-        <div className="max-w-8xl mx-8">
+        <div className="max-w-7xl mx-8">
           <h1 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight">
             A Translator And an Engineer
           </h1>
           <h2 className="text-5xl md:text-6xl font-bold text-[#E2725B] mb-10 leading-tight">
             Turned Marketers
           </h2>
-          <div className="space-y-6 text-lg text-[#331E5B] mb-12">
+          <div className="space-y-6 text-2xl text-[#331E5B] mb-12">
             <p>
               Ten years ago, if you&apos;d told us we&apos;d be running a
               marketing consultancy together, we would have laughed. Viviana
@@ -69,13 +70,13 @@ const AboutPage = () => {
       </section>
       {/* About Viviana Section */}
       <section className="w-full bg-[#5233B0] py-20 px-16">
-        <div className="max-w-8xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12">
+        <div className="max-w-7xl mx-auto flex lg:flex-row items-center lg:items-start gap-12">
           {/* Text */}
-          <div className="flex-1 text-white">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+          <div className="text-white">
+            <h2 className="text-5xl md:text-6xl font-bold mb-8 text-right ml-auto w-5/6">
               Viviana Urbaneja
             </h2>
-            <div className="space-y-6 text-lg">
+            <div className="space-y-6 text-2xl w-full text-right ml-auto">
               <p>
                 I spent six years as a freelance English to Spanish translator,
                 experiencing the familiar feast-or-famine cycle that every
@@ -83,6 +84,7 @@ const AboutPage = () => {
                 freelance business without any formal business training, just
                 like the majority of translators and agency owners out there.
               </p>
+
               <p>
                 When I discovered how powerful clear messaging helped me gain
                 more clients than I ever had, I fell in love with marketing. For
@@ -91,6 +93,7 @@ const AboutPage = () => {
                 marketing expertise to help language service providers grow
                 their businesses.
               </p>
+
               <p>
                 I&apos;m Venezuelan, currently living in Argentina and pursuing
                 a B.A. in Philosophy. I speak Spanish, English, French, and
@@ -103,7 +106,7 @@ const AboutPage = () => {
             </div>
           </div>
           {/* Image */}
-          <div className="flex-shrink-0 w-full max-w-md bg-[#DDDDDD] flex items-center justify-center rounded-sm">
+          <div className="flex-shrink-0 w-full max-w-lg bg-[#DDDDDD] flex items-start justify-start rounded-sm">
             <Image
               src="/images/viviana-photo.png"
               alt="Viviana Urbaneja"
@@ -116,27 +119,26 @@ const AboutPage = () => {
       </section>
       {/* About Jorge Section */}
       <section className="w-full bg-[#5233B0] py-20 px-16">
-        <div className="max-w-8xl mx-auto flex flex-col lg:flex-row-reverse items-center lg:items-start gap-12">
+        <div className="max-w-7xl mx-auto flex lg:flex-row-reverse items-center lg:items-start gap-12">
           {/* Text */}
-          <div className="flex-1 text-white text-center lg:text-left">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+          <div className="flex-1 text-white text-center">
+            <h2 className="text-5xl md:text-6xl font-bold mb-8 text-left w-5/6">
               Jorge Valderrama
             </h2>
-            <div className="space-y-6 text-lg">
+            <div className="space-y-6 text-2xl w-full text-left mr-auto w-5/6">
               <p>
                 As a materials engineer, I spent years understanding the
                 technical side of manufacturing—working within tight tolerances,
                 engineering efficient production workflows, and enforcing
-                data-driven quality control. Once I entered marketing during my
-                years of study, I already felt the frustration of watching less
-                robust products gain market dominance simply because they were
-                marketed better.
+                data-driven quality control. I felt the frustration of watching
+                less robust products gain market dominance simply because they
+                were marketed better.
               </p>
               <p>
                 After three years as a marketing specialist and manager, I
                 realized I could bridge that gap between technical excellence
                 and effective marketing. My background taught me the "how" of
-                things, but I&apos;ve always been interested in the "why" behind
+                things, but I've always been interested in the "why" behind
                 things. This blend of analytical thinking and genuine curiosity
                 is what I bring to every client project.
               </p>
@@ -145,19 +147,13 @@ const AboutPage = () => {
                 English, studied French, and love interacting with people from
                 all over the world.
               </p>
-              <p>
-                Outside of work, I&apos;m a dog lover, a loyal friend, and
-                I&apos;m also good at making memes, not gonna lie (I&apos;m the
-                meme engine in the agency). Video games and animation have been
-                constant hobbies since childhood, and I find that creativity
-                often sparks the best marketing ideas.
-              </p>
+
             </div>
           </div>
           {/* Image */}
-          <div className="flex-shrink-0 w-full max-w-md bg-[#DDDDDD] flex items-center justify-center rounded-sm">
+          <div className="flex-shrink-0 w-full max-w-lg bg-[#DDDDDD] flex items-center justify-center rounded-sm">
             <Image
-              src="/images/jorge-photo2.svg"
+              src="/images/jorge-photo3.png"
               alt="Jorge Valderrama"
               width={500}
               height={500}
@@ -172,13 +168,15 @@ const AboutPage = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-6">
             Let&apos;s Make Your Expertise Shine
           </h2>
-          <p className="text-gray-700 text-lg mb-10">
+          <p className="text-gray-700 text-2xl mb-10">
             Work with marketers who&apos;ve been where you are and know exactly
             how to help you stand out
           </p>
-          <button className="bg-[#FF8A71] hover:bg-[#e2725b] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors">
-            Book a discovery call
-          </button>
+          <Link href="https://taplink.cc/vivaldimkt.com">
+            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+              BOOK A DISCOVERY CALL
+            </button>
+          </Link>
         </div>
       </section>
       <Footer />

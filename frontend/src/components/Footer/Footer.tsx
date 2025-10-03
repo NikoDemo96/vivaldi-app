@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link  from "next/link";
 
 const Footer = () => {
   return (
@@ -16,50 +17,46 @@ const Footer = () => {
             height={180}
           />
           <span className="text-white text-sm">www.vivaldimkt.com</span>
+          <span className="text-white text-sm">info@vivaldimkt.com</span>
         </div>
         {/* Center: Navigation */}
         <div className="flex-1 flex flex-col items-center">
-          <div className="flex flex-row gap-10 mb-2">
-            <a
-              href="#"
+          <div className="flex flex-row gap-25 mb-2">
+            <Link
+              href="/"
+              className="text-white font-semibold text-sm hover:underline"
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
               className="text-white font-semibold text-sm hover:underline"
             >
               About
-            </a>
+            </Link>
             <div className="flex flex-col items-center">
-              <a
-                href="#"
-                className="text-white font-semibold text-sm hover:underline"
+              <p
+                
+                className="text-white font-semibold text-sm"
               >
                 Services
-              </a>
-              <div className="flex flex-col items-center mt-1">
-                <a href="#" className="text-white text-xs hover:underline">
+              </p>
+              
+              <div className="flex flex-col items-center gap-4 mt-5">
+                <Link href="/services/messaging-and-positioning-strategy" className="text-white text-xs hover:underline">
                   Messaging &amp; Positioning
-                </a>
-                <a href="#" className="text-white text-xs hover:underline">
+                </Link>
+                <Link href="/services/social-media-ghostwriting" className="text-white text-xs hover:underline">
                   Ghostwriting
-                </a>
-                <a href="#" className="text-white text-xs hover:underline">
+                </Link>
+                <Link href="/services/google-and-meta-ads" className="text-white text-xs hover:underline">
                   Google Ads
-                </a>
-                <a href="#" className="text-white text-xs hover:underline">
+                </Link>
+                <Link href="/services/seo" className="text-white text-xs hover:underline">
                   SEO
-                </a>
+                </Link>
               </div>
             </div>
-            <a
-              href="#"
-              className="text-white font-semibold text-sm hover:underline"
-            >
-              Resources
-            </a>
-            <a
-              href="#"
-              className="text-white font-semibold text-sm hover:underline"
-            >
-              Contact Us
-            </a>
           </div>
         </div>
       </div>

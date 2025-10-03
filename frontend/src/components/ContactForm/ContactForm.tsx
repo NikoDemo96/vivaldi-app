@@ -28,11 +28,11 @@ const ContactForm = () => {
 
   return (
     <section className="w-full py-24 flex justify-center items-center">
-      <div className="bg-white shadow-md border border-gray-200 rounded-sm max-w-md w-full px-8 py-10 mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#331E5B] text-center mb-4">
+      <div className="bg-white shadow-md border border-gray-200 rounded-xl max-w-md w-full px-8 py-10 mx-auto">
+        <h2 className="text-2xl md:text-4xl font-bold text-[#331E5B] text-center mb-4">
           Prefer to write? Use this form
         </h2>
-        <p className="text-gray-700 text-center mb-6 text-sm">
+        <p className="text-gray-700 text-center mb-6 text-lg">
           We’d love to hear about your project or idea.
           <br />
           Fill out the form and we’ll get back to you soon.
@@ -43,14 +43,14 @@ const ContactForm = () => {
             type="text"
             name="user_name"
             placeholder="Full Name"
-            className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
+            className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-lg"
             required
           />
           <input
             type="email"
             name="user_email" 
             placeholder="Email Address"
-            className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
+            className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-lg"
             required
           />
           <div className="flex items-center">
@@ -58,9 +58,9 @@ const ContactForm = () => {
               type="text"
               name="company" 
               placeholder="Company Name"
-              className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
+              className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-lg"
             />
-            <span className="text-xs text-[#E2725B] ml-2">Optional</span>
+            <span className="text-lg text-[#E2725B] ml-2">Optional</span>
           </div>
           <div>
             <label
@@ -72,7 +72,7 @@ const ContactForm = () => {
               id="project"
               name="message" 
               rows={5}
-              className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-sm"
+              className="w-full border border-purple-200 rounded-sm px-3 py-2 focus:outline-none focus:border-purple-400 text-lg"
               required
               placeholder="Tell us about your project..."
             />
@@ -80,7 +80,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#10002B] hover:bg-[#2a1e4d] text-white font-semibold py-2 rounded-sm mt-2 transition-colors"
+            className="w-full bg-[#10002B] hover:bg-[#2a1e4d] text-white font-semibold py-2 rounded-sm mt-2 transition-colors text-lg"
           >
             {loading ? "Sending..." : "Submit"}
           </button>

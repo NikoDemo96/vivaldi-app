@@ -26,13 +26,15 @@ const Navbar = () => {
       <div className="w-full flex items-center justify-between h-[64px] max-w-none">
         {/* Logo and Brand */}
         <div className="mt-10 flex items-center pl-8 min-w-[260px]">
-          <Image
-            src="/images/vivaldi-logo.svg"
-            alt="Vivaldi Logo"
-            width={180}
-            height={180}
-            className="mr-2"
-          />
+          <Link href="/">
+            <Image
+              src="/images/vivaldi-logo.svg"
+              alt="Vivaldi Logo"
+              width={180}
+              height={180}
+              className="mr-2"
+            />
+          </Link>
         </div>
 
         {/* Navigation */}
@@ -65,20 +67,21 @@ const Navbar = () => {
                 id="services-dropdown"
                 className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2 z-50 min-w-[200px]"
               >
-                <Link
-                  href="/services/ghostwriting"
-                  className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-base font-medium transition-colors"
-                  onClick={() => setServicesOpen(false)}
-                >
-                  Ghostwriting
-                </Link>
-                <Link
-                  href="/services/messaging&pos"
+                   <Link
+                  href="/services/messaging-and-positioning-strategy"
                   className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-base font-medium transition-colors"
                   onClick={() => setServicesOpen(false)}
                 >
                   Messaging & Positioning
                 </Link>
+                <Link
+                  href="/services/social-media-ghostwriting"
+                  className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-base font-medium transition-colors"
+                  onClick={() => setServicesOpen(false)}
+                >
+                  Ghostwriting
+                </Link>
+             
                 <Link
                   href="/services/seo"
                   className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-base font-medium transition-colors"
@@ -87,7 +90,7 @@ const Navbar = () => {
                   SEO
                 </Link>
                 <Link
-                  href="/services/google&meta"
+                  href="/services/google-and-meta-ads"
                   className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-base font-medium transition-colors"
                   onClick={() => setServicesOpen(false)}
                 >
@@ -98,9 +101,11 @@ const Navbar = () => {
           </div>
           {/* Contact Button */}
           <div className="flex items-center pr-0">
-            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-base font-semibold transition-colors rounded-none h-[64px] min-w-[160px] rounded-xl">
-              Contact Us
-            </button>
+            <Link href="#contact-form" className="hidden md:block">
+              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-base font-semibold transition-colors rounded-none h-[64px] min-w-[160px] rounded-xl">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </nav>
       </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import Link from "next/link";
 
 const SeoPage = () => {
   return (
@@ -18,19 +19,23 @@ const SeoPage = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-[#FF8A71] mb-8 leading-tight text-left">
             Who Value Your Expertise
           </h2>
-          <p className="text-[#6C3FC5] text-base md:text-lg mb-10 text-left">
+          <p className="text-[#6C3FC5] text-xl md:text-2xl mb-10 text-left">
             We help translation agencies and manufacturers build sustainable
             organic
             <br />
             traffic that attracts quality leads.
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-start w-full mb-8">
-            <button className="bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors text-left w-full md:w-auto">
-              Contact us by email
-            </button>
-            <button className="border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent text-left w-full md:w-auto">
-              Book a discovery call
-            </button>
+            <Link href="#contact-form">
+              <button className="bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors text-left w-full md:w-auto">
+                CONTACT US BY EMAIL
+              </button>
+            </Link>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent text-left w-full md:w-auto">
+                BOOK A DISCOVERY CALL
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -64,37 +69,34 @@ const SeoPage = () => {
       {/* Our Approach to SEO Section */}
       <section className="w-full bg-[#faf9fb] py-20 px-2 md:px-0">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-[#6C3FC5] text-4xl md:text-5xl font-bold mb-10">
+          <h2 className="text-[#6C3FC5] text-5xl md:text-6xl font-bold mb-10">
             Our Approach to SEO
           </h2>
-          <div className="text-[#18102B] text-base md:text-lg mb-4">
+          <div className="text-[#18102B] text-lg md:text-xl mb-4">
             SEO isn&apos;t about ranking for the sake of ranking. It&apos;s
             about connecting you with prospects who are actually looking for
             what you offer and have the budget to hire you.
           </div>
-          <div className="text-[#18102B] text-base md:text-lg mb-4">
+          <div className="text-[#18102B] text-lg md:text-xl mb-4">
             That&apos;s why we focus on searches that generate qualified leads
             and create content that feels authentic to your expertise. Whether
             that means targeting specific technical terms or broader industry
             searches depends entirely on your situation and what&apos;s actually
             achievable for your business.
           </div>
-          <div className="text-[#18102B] text-base md:text-lg mb-10">
-            Every strategy is different because every business is different.
-            That&apos;s why we create tailored solutions, not cookie-cutter
-            formulas.
-          </div>
           <div className="flex justify-center">
-            <button className="mt-2 px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base">
-              Book a discovery call
-            </button>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="bg-[#18102B] hover:bg-[#2a1e4d] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+                BOOK A DISCOVERY CALL
+              </button>
+            </Link>
           </div>
         </div>
       </section>
       {/* Our Process Section */}
       <section className="w-full bg-[#5233B0] py-16 px-2 md:px-0">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-12">
+          <h2 className="text-white text-5xl md:text-6xl font-bold text-center mb-12">
             Our Process
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
@@ -226,91 +228,91 @@ const SeoPage = () => {
       {/* Choose Your Growth Path Section */}
       <section className="w-full bg-[#faf9fb] py-20 px-2 md:px-0">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-[#6C3FC5] text-4xl md:text-5xl font-bold text-center mb-12">
-            Choose Your Growth Path
+          <h2 className="text-[#6C3FC5] text-5xl md:text-6xl font-bold text-center mb-12">
+            Starting Prices
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Foundation Package */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center border border-[#ececec]">
+              <div className="text-[#6C3FC5] text-4xl font-bold mb-2">
+                Basic SEO Work
+              </div>
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
-                $700<span className="text-lg font-normal">/month</span>
+                $700<span className="text-xl font-normal">/month</span>
               </div>
-              <div className="text-[#6C3FC5] text-xl font-bold mb-2">
-                Foundation Package
-              </div>
-              <div className="text-[#18102B] text-base mb-4">
+
+              <div className="text-[#18102B] text-xl">
                 Perfect for establishing your SEO presence
               </div>
-              <ul className="text-[#18102B] text-left text-base mb-6 space-y-2">
-                <li>• 6-month minimum</li>
-                <li>• Technical SEO audit & fixes</li>
-                <li>• 30 target keywords research & mapping</li>
-                <li>• On-page optimization for 15 key pages</li>
-                <li>• 2 strategic content pieces monthly</li>
-                <li>• Monthly performance reporting</li>
-                <li>
-                  • Best for: Companies just starting with SEO or fixing past
-                  mistakes
-                </li>
-              </ul>
+              <div className="mt-6">
+                <p className="text-[#18102B] text-left text-base">
+                  Core technical SEO work and consistent content creation. We
+                  fix the foundation of your site and start building your
+                  content library to attract your target customers.
+                </p>
+                <br />
+                <p className="text-[#18102B] text-left text-base mb-6">
+                  Ideal for: Local businesses just starting with SEO or fixing
+                  technical problems that are holding them back
+                </p>
+              </div>
               <button className="mt-auto px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base w-full">
                 Learn more
               </button>
             </div>
             {/* Growth Package */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center border border-[#ececec]">
+              <div className="text-[#6C3FC5] text-4xl font-bold mb-2">
+                Standard SEO
+              </div>
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
                 $1,500<span className="text-lg font-normal">/month</span>
               </div>
-              <div className="text-[#6C3FC5] text-xl font-bold mb-2">
-                Growth Package
-              </div>
-              <div className="text-[#18102B] text-base mb-4">
+
+              <div className="text-[#18102B] text-xl">
                 For companies ready to dominate their niche
               </div>
-              <ul className="text-[#18102B] text-left text-base mb-6 space-y-2">
-                <li>• 6-month minimum</li>
-                <li>• Everything in Foundation, plus:</li>
-                <li>• 75 target keywords strategy</li>
-                <li>• On-page optimization for 30 pages</li>
-                <li>• 4 in-depth content pieces monthly</li>
-                <li>• Competitor gap analysis</li>
-                <li>• Conversion optimization basics</li>
-                <li>• Bi-weekly strategy calls</li>
-                <li>
-                  • Best for: Established businesses wanting consistent lead
-                  flow
-                </li>
-              </ul>
+              <div className="mt-6">
+                <p className="text-[#18102B] text-left text-base">
+                  Complete SEO strategy with competitive analysis and conversion
+                  focus. We optimize your entire site structure, create content
+                  that converts, and identify gaps your competitors are missing.
+                </p>
+                <br />
+                <p className="text-[#18102B] text-left text-base mb-6">
+                  Ideal for: Established small and mid-size businesses that need
+                  consistent leads and want to outrank their competition.
+                </p>
+              </div>
               <button className="mt-auto px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base w-full">
                 Learn more
               </button>
             </div>
             {/* Authority Package */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center border border-[#ececec]">
+              <div className="text-[#6C3FC5] text-4xl font-bold mb-2">
+                Premium SEO
+              </div>
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
                 $2,500<span className="text-lg font-normal">/month</span>
               </div>
-              <div className="text-[#6C3FC5] text-xl font-bold mb-2">
-                Authority Package
-              </div>
-              <div className="text-[#18102B] text-base mb-4">
+
+              <div className="text-[#18102B] text-xl">
                 Build industry leadership and sustained growth
               </div>
-              <ul className="text-[#18102B] text-left text-base mb-6 space-y-2">
-                <li>• 6-month minimum</li>
-                <li>• Everything in Growth, plus:</li>
-                <li>• 150+ keyword comprehensive strategy</li>
-                <li>• Unlimited page optimizations</li>
-                <li>• 6-8 authoritative content pieces monthly</li>
-                <li>• Link building & digital PR campaigns</li>
-                <li>• Advanced technical SEO implementations</li>
-                <li>• Integration with your sales tracking</li>
-                <li>• Weekly progress meetings</li>
-                <li>
-                  • Best for: Companies serious about becoming industry leaders
-                </li>
-              </ul>
+              <div className="mt-6">
+                <p className="text-[#18102B] text-left text-base">
+                  Full-scale SEO with link building and digital PR. We position
+                  you as the go-to authority in your industry through
+                  comprehensive content, strategic partnerships, and integration
+                  with your sales process
+                </p>
+                <br />
+                <p className="text-[#18102B] text-left text-base mb-6">
+                  Ideal for: Companies ready to dominate their market and become
+                  the recognized leader in their industry.
+                </p>
+              </div>
               <button className="mt-auto px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base w-full">
                 Learn more
               </button>
@@ -328,7 +330,7 @@ const SeoPage = () => {
       {/* Why Choose Vivaldi for SEO Section */}
       <section className="w-full bg-[#5233B0] py-20 px-2 md:px-0">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16">
+          <h2 className="text-white text-5xl md:text-6xl font-bold text-center mb-16">
             Why Choose Vivaldi for SEO
           </h2>
           {/* Row 1 */}
@@ -337,7 +339,7 @@ const SeoPage = () => {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 We Speak Your Language
               </h3>
-              <p className="text-white text-base md:text-lg max-w-lg">
+              <p className="text-white text-lg md:text-xl max-w-lg">
                 Writing effective SEO content is easier when you actually
                 understand the industries you’re writing for. We know
                 manufacturing processes and translation specializations, which
@@ -351,7 +353,6 @@ const SeoPage = () => {
                 alt="SEO Language"
                 width={541}
                 height={429}
-                
               />
             </div>
           </div>
@@ -363,14 +364,13 @@ const SeoPage = () => {
                 alt="SEO Report"
                 width={595}
                 height={375}
-                
               />
             </div>
             <div className="flex-1 order-1 md:order-2">
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 Quality Leads, Not Vanity Metrics
               </h3>
-              <p className="text-white text-base md:text-lg max-w-lg">
+              <p className="text-white text-lg md:text-xl max-w-lg">
                 Our success is measured by qualified inquiries from companies
                 with real projects and appropriate budgets. Every strategy
                 decision prioritizes lead quality over traffic quantity.
@@ -383,7 +383,7 @@ const SeoPage = () => {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 Transparent, Partnership Approach
               </h3>
-              <p className="text-white text-base md:text-lg max-w-lg">
+              <p className="text-white text-lg md:text-xl max-w-lg">
                 No black-box tactics or mysterious “proprietary methods.” We
                 show you exactly what we’re doing, why we’re doing it, and how
                 it connects to your business goals. Monthly reports focus on
@@ -396,14 +396,15 @@ const SeoPage = () => {
                 alt="SEO Partnership"
                 width={481}
                 height={302}
-                
               />
             </div>
           </div>
           <div className="flex justify-center">
-            <button className="px-10 py-3 bg-[#F07C5A] text-white font-semibold rounded-md shadow-md hover:bg-[#e05c2a] transition-colors text-base">
-              Book a discovery call
-            </button>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+                BOOK A DISCOVERY CALL
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -412,18 +413,22 @@ const SeoPage = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-6">
             Stop Being Invisible to Your Best Clients
           </h2>
-          <p className="text-gray-700 text-lg mb-10">
+          <p className="text-gray-700 text-xl md:text-2xl mb-10">
             Your expertise deserves to be found by clients who value it. But in
             today's digital landscape, being excellent isn't enough.
           </p>
-          <p className="text-[#18102B] text-lg md:text-xl font-bold mb-10">
+          <p className="text-[#18102B] text-xl md:text-2xl font-bold mb-10">
             You need to be visible to the right people at the right time.
           </p>
-          <button className="bg-[#FF8A71] hover:bg-[#e2725b] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors">
-            Book a discovery call
-          </button>
+          <Link href="https://taplink.cc/vivaldimkt.com">
+            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+              BOOK A DISCOVERY CALL
+            </button>
+          </Link>
         </div>
-        <ContactForm />
+        <div id="contact-form">
+          <ContactForm />
+        </div>
       </section>
       <Footer />
     </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import Link from "next/link";
 
 const MessagingAndPositioningPage = () => {
   return (
@@ -18,23 +19,24 @@ const MessagingAndPositioningPage = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-[#FF8A71] mb-8 leading-tight text-left">
             so Clients Say Yes
           </h2>
-          <p className="text-[#6C3FC5] text-base md:text-lg mb-10 text-left">
-            We help you discover exactly what your ideal clients care about. We
-            help you
+          <p className="text-[#6C3FC5] text-base md:text-xl mb-10 text-left">
+            We help you discover exactly what your ideal clients care about and
             <br />
-            discover exactly what your ideal clients care about and give you a
-            complete
+            give you a complete roadmap for how to talk to them so they choose 
             <br />
-            roadmap for how to talk to them so they choose you over your
-            competitors.
+            you over your competitors.
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-start w-full mb-8">
-            <button className="bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors text-left w-full md:w-auto">
-              Contact us by email
-            </button>
-            <button className="border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent text-left w-full md:w-auto">
-              Book a discovery call
-            </button>
+            <Link href="#contact-form">
+              <button className="bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors text-left w-full md:w-auto">
+                CONTACT US BY EMAIL
+              </button>
+            </Link>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent text-left w-full md:w-auto">
+                BOOK A DISCOVERY CALL
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -47,7 +49,7 @@ const MessagingAndPositioningPage = () => {
             <div className="flex-1 order-1 md:order-1">
               <p className="text-[#331E5B] text-lg md:text-xl mb-0 font-medium leading-relaxed">
                 You know your work is exceptional. Your translations capture
-                nuances that AI misses, or your manufacturing processes deliver
+                nuances that AI misses, or your operational standards deliver
                 precision that sets you apart. But when prospects compare you to
                 cheaper alternatives, they can't see the difference.
                 <br />
@@ -80,9 +82,9 @@ const MessagingAndPositioningPage = () => {
             </div>
             <div className="flex-1 order-1 md:order-2">
               <h3 className="text-[#F07C5A] text-xl md:text-2xl font-bold mb-2">
-                The missing piece isn’t more marketing,
+                The missing piece is the right foundation
                 <br />
-                it’s the right foundation.
+                not just more marketing.
               </h3>
               <p className="text-[#331E5B] text-lg md:text-xl font-medium leading-relaxed mb-2">
                 Before you invest in websites, social media, or advertising, you
@@ -101,7 +103,7 @@ const MessagingAndPositioningPage = () => {
         </div>
       </section>
       {/* Testimonial Section Diana*/}
-      <section className="bg-[#10002B] py-16">
+      {/* <section className="bg-[#10002B] py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="text-left mb-8">
             <p className="text-white text-lg leading-relaxed">
@@ -134,7 +136,7 @@ const MessagingAndPositioningPage = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Our Process Section */}
       <section className="w-full bg-[#5233B0] py-16 px-2 md:px-0">
         <div className="max-w-4xl mx-auto">
@@ -158,7 +160,7 @@ const MessagingAndPositioningPage = () => {
                 className="mb-4"
               />
               <h3 className="text-xl md:text-2xl font-bold mb-2">
-                What You'll Receive Discovery & Strategic Interviews
+                Discovery & Strategic Interviews
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
                 We conduct two in-depth workshops with you. The first focuses on
@@ -282,10 +284,10 @@ const MessagingAndPositioningPage = () => {
       {/* What You'll Receive Section */}
       <section className="w-full bg-[#5233B0] py-16 px-2 md:px-0">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-6">
+          <h2 className="text-white text-5xl md:text-6xl font-bold text-center mb-6">
             What You&apos;ll Receive
           </h2>
-          <div className="text-white text-lg md:text-xl text-left mb-2 font-normal">
+          <div className="text-white text-xl md:text-2xl text-left mb-2 font-normal">
             Messaging strategy is the foundation that answers three critical
             questions:
           </div>
@@ -323,7 +325,7 @@ const MessagingAndPositioningPage = () => {
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
-                Messaging &amp; Positioning Blueprint
+              Messaging &amp; Positioning Guide
               </h3>
               <p className="text-[#18102B] text-base">
                 Includes your value proposition, unique differentiators,
@@ -394,21 +396,25 @@ const MessagingAndPositioningPage = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-6">
             Let&apos;s Make Your Expertise Shine
           </h2>
-          <p className="text-gray-700 text-lg mb-10">
+          <p className="text-gray-700 text-xl md:text-2xl mb-10">
             Tactics without the right message are like building a house without
             a foundation.  But with strategic messaging, every marketing
             effort—from your website to your sales conversations—becomes
             exponentially more effective because you're finally speaking your
             prospects' language.
           </p>
-          <p className="text-[#18102B] text-lg md:text-xl font-bold mb-10">
+          <p className="text-[#18102B] text-xl md:text-2xl font-bold mb-10">
             Ready to stop competing on price and start winning on value?
           </p>
-          <button className="bg-[#FF8A71] hover:bg-[#e2725b] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors">
-            Book a discovery call
-          </button>
+          <Link href="https://taplink.cc/vivaldimkt.com">
+            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+              BOOK A DISCOVERY CALL
+            </button>
+          </Link>
         </div>
-        <ContactForm />
+        <div id="contact-form">
+          <ContactForm />
+        </div>
       </section>
       <Footer />
     </div>

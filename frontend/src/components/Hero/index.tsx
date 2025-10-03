@@ -4,6 +4,7 @@ import Image from "next/image";
 import NavBar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import ContactForm from "../ContactForm/ContactForm";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -29,7 +30,7 @@ const Hero = () => {
           <div className="flex flex-col items-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-2 leading-tight">
               Work with Marketers <br className="hidden md:block" />
-              <span>Who Speak Your Language</span>
+              <h1>Who Speak Your Language</h1>
             </h1>
             <div className="w-[340px] md:w-[765px] mx-auto">
               <Image
@@ -50,9 +51,19 @@ const Hero = () => {
             industries.
           </p>
 
-          <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-3 text-lg font-semibold rounded-md transition-colors">
-            BOOK A DISCOVERY CALL
-          </button>
+          <div className="flex flex-col md:flex-row justify-center gap-6 mt-8">
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+                BOOK A DISCOVERY CALL 
+              </button>
+            </Link>
+
+            <Link href="#contact-form">
+              <button className="bg-transparent border-2 border-solid text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors hover:border-[#d45c43] hover:text-[#E2725B] hover:bg-transparent">
+                CONTACT US BY EMAIL
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -61,46 +72,54 @@ const Hero = () => {
         {/* No background image */}
         {/* Client Logos Section */}
         <div className="py-12 bg-transparent relative z-10">
-          <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-6">
             <div className="flex items-center justify-center space-x-12 md:space-x-16">
-              <Image
-                src="/images/america-sur-logo.svg"
-                alt="America del Sur"
-                width={235}
-                height={87}
-              />
-              <Image
-                src="/images/wushutao-logo.svg"
-                alt="Wu Shu Tao"
-                width={87}
-                height={87}
-              />
-              <Image
-                src="/images/dictum-logo.svg"
-                alt="Dictum Translation Solutions"
-                width={235}
-                height={80}
-              />
-              <Image
-                src="/images/sarris-logo.svg"
-                alt="Sarris Marketing"
-                width={235}
-                height={62}
-              />
+              <Link href="https://americahostel.com.ar/">
+                <Image
+                  src="/images/america-sur-logo.svg"
+                  alt="America del Sur"
+                  width={235}
+                  height={87}
+                />
+              </Link>
+              <Link href="https://www.wushutao.com.ar/">
+                <Image
+                  src="/images/wushutao-logo.svg"
+                  alt="Wu Shu Tao"
+                  width={87}
+                  height={87}
+                />
+              </Link>
+              <Link href="https://www.dictumtranslationsolutions.com/">
+                <Image
+                  src="/images/dictum-logo.svg"
+                  alt="Dictum Translation Solutions"
+                  width={235}
+                  height={80}
+                />
+              </Link>
+              <Link href="https://sarrismarketing.com/">
+                <Image
+                  src="/images/sarris-logo.svg"
+                  alt="Sarris Marketing"
+                  width={235}
+                  height={62}
+                />
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Expertise Section */}
         <div className="py-16 bg-transparent relative z-10">
-          <div className="max-w-6xl mx-auto px-6">
-            <h2 className="text-4xl md:text-6xl font-bold text-[#6947D2] text-center mb-16 leading-tight">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-5xl md:text-6xl font-bold text-[#6947D2] text-center mb-16 leading-tight">
               Your Expertise Deserves the Spotlight
             </h2>
 
-            <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-12">
+            <div className="flex flex-col-2 lg:flex-row lg:justify-between items-center gap-12">
               <div className="lg:w-1/2 space-y-6">
-                <p className="text-[#1204AA] text-lg leading-relaxed">
+                <p className="text-[#1204AA] text-xl leading-relaxed">
                   You&apos;ve built expertise that truly matters, whether
                   it&apos;s bridging language barriers or manufacturing
                   precision components that power industries. But in
@@ -108,13 +127,13 @@ const Hero = () => {
                   consistent client bookings.
                 </p>
 
-                <p className="text-[#1204AA] text-lg leading-relaxed">
+                <p className="text-[#1204AA] text-xl leading-relaxed">
                   One month you&apos;re thriving with more work than you can
                   handle. The next, you&apos;re stressing about where the next
                   client will come from.
                 </p>
 
-                <p className="text-lg leading-relaxed">
+                <p className="text-xl leading-relaxed">
                   <span className="text-[#E2725B] font-semibold">
                     That&apos;s why we started Vivaldi Marketing.
                   </span>{" "}
@@ -126,7 +145,7 @@ const Hero = () => {
                   </span>
                 </p>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-[#6947D2] pt-4">
+                <h3 className="text-3xl md:text-4xl font-bold text-[#6947D2] pt-4">
                   Your expertise matters—and we&apos;re here to make it shine
                 </h3>
               </div>
@@ -135,8 +154,8 @@ const Hero = () => {
                 <Image
                   src="/images/planing.png"
                   alt="Professional working on documents at desk"
-                  width={372}
-                  height={512}
+                  width={472}
+                  height={612}
                   className="ml-auto"
                 />
               </div>
@@ -146,7 +165,7 @@ const Hero = () => {
       </section>
 
       {/* Testimonial Section Diana*/}
-      <section className="bg-[#10002B] py-16">
+      {/* <section className="bg-[#10002B] py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="text-left mb-8">
             <p className="text-white text-lg leading-relaxed">
@@ -179,16 +198,16 @@ const Hero = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Section */}
       <section className="bg-[#5233B0] py-16">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-5xl md:text-5xl font-bold text-white mb-6">
               How We Can Help You Grow
             </h2>
-            <p className="text-white/90 text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-white/90 text-2xl max-w-7xl mx-auto leading-relaxed">
               Most consultants jump straight into tactics without understanding
               your customers first. We start with comprehensive customer
               research to discover what your prospects care about, and then
@@ -199,7 +218,7 @@ const Hero = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Messaging Strategy Card */}
-            <div className="bg-white rounded-lg p-6 text-center flex flex-col justify-between h-full">
+            <div className="bg-white rounded-lg p-10 text-center flex flex-col justify-between h-full">
               <div className="mb-4 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
@@ -219,13 +238,16 @@ const Hero = () => {
                 else you do—from your website to your sales calls—more
                 effective.
               </p>
-              <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
-                LEARN MORE
-              </button>
+              
+              <Link href="/services/messaging-and-positioning-strategy" className="w-full">
+                <button className="w-full bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
+                  LEARN MORE
+                </button>
+              </Link>
             </div>
 
             {/* Social Media Ghostwriting Card */}
-            <div className="bg-white rounded-lg p-6 text-center flex flex-col justify-between h-full">
+            <div className="bg-white rounded-lg p-10 text-center flex flex-col justify-between h-full">
               <div className="mb-4 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
@@ -245,13 +267,15 @@ const Hero = () => {
                 showcase your knowledge, feel authentic, and attract your target
                 clients.
               </p>
-              <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
-                LEARN MORE
-              </button>
+              <Link href="/services/social-media-ghostwriting" className="w-full">
+                <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
+                  LEARN MORE
+                </button>
+              </Link>
             </div>
 
             {/* SEO & Content Writing Card */}
-            <div className="bg-white rounded-lg p-6 text-center flex flex-col justify-between h-full">
+            <div className="bg-white rounded-lg p-10 text-center flex flex-col justify-between h-full">
               <div className="mb-4 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
@@ -271,13 +295,15 @@ const Hero = () => {
                 Google, bringing qualified prospects to you instead of you
                 chasing after them.
               </p>
-              <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
-                LEARN MORE
-              </button>
+              <Link href="/services/seo" className="w-full">
+                <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
+                  LEARN MORE
+                </button>
+              </Link>
             </div>
 
             {/* Google Ads Card */}
-            <div className="bg-white rounded-lg p-6 text-center flex flex-col justify-between h-full">
+            <div className="bg-white rounded-lg p-10 text-center flex flex-col justify-between h-full">
               <div className="mb-4 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
@@ -297,9 +323,11 @@ const Hero = () => {
                 the right time, generating leads from prospects who are ready to
                 work with specialists.
               </p>
-              <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
-                LEARN MORE
-              </button>
+              <Link href="/services/google-and-meta-ads" className="w-full">
+                <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
+                  LEARN MORE
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -337,33 +365,33 @@ const Hero = () => {
 
       {/* How We Work Section */}
       <section className="bg-[#faf9fb] py-16">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#6947D2] mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold text-[#6947D2] mb-6">
               How We Work
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Discovery Card */}
-            <div className="bg-white rounded-lg p-8 text-center relative flex flex-col justify-between h-full">
+            <div className="bg-white rounded-lg p-10 text-center relative flex flex-col justify-between h-120">
               <div className="absolute -top-4 left-8">
                 <span className="text-6xl font-bold text-orange-500">1</span>
               </div>
-              <div className="mt-8 mb-6 flex justify-center">
+              <div className="mt-4 mb-6 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/loupe-icon.svg"
                     alt="Discovery Icon"
-                    width={80}
-                    height={80}
+                    width={120}
+                    height={120}
                   />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-[#6947D2] mb-4">
                 DISCOVERY
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-lg leading-relaxed">
                 We&apos;ll talk through what&apos;s happening in your business
                 right now: what&apos;s working, what isn&apos;t, and what your
                 goals are. Then we&apos;ll tell you exactly what we think would
@@ -376,20 +404,20 @@ const Hero = () => {
               <div className="absolute -top-4 left-8">
                 <span className="text-6xl font-bold text-orange-500">2</span>
               </div>
-              <div className="mt-8 mb-6 flex justify-center">
+              <div className="mt-4 mb-6 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/strategy-icon.svg"
                     alt="Strategy Icon"
-                    width={80}
-                    height={80}
+                    width={145}
+                    height={145}
                   />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-[#6947D2] mb-4">
                 STRATEGY
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-lg leading-relaxed">
                 We research your customers and competitors to figure out what
                 messages will resonate. No generic advice, we dig into your
                 specific industry and situation to create a plan that makes
@@ -402,20 +430,20 @@ const Hero = () => {
               <div className="absolute -top-4 left-8">
                 <span className="text-6xl font-bold text-orange-500">3</span>
               </div>
-              <div className="mt-8 mb-6 flex justify-center">
+              <div className="mt-4 mb-6 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/execution-icon.svg"
                     alt="Execution Icon"
-                    width={80}
-                    height={80}
+                    width={120}
+                    height={120}
                   />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-[#6947D2] mb-4">
                 EXECUTION
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-lg leading-relaxed">
                 Time to get down to work. We write your content, run your ads,
                 or build your SEO presence. For ongoing work, we&apos;ll have a
                 monthly consultation call to review what&apos;s working and what
@@ -425,30 +453,31 @@ const Hero = () => {
           </div>
 
           <div className="text-center">
-            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
-              BOOK A DISCOVERY CALL
-            </button>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+                BOOK A DISCOVERY CALL
+              </button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Who We Are Section */}
       <section className="relative py-24 bg-[#5233B0]">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-5xl md:text-6xl font-bold text-white text-center mb-16">
             Who We Are
           </h2>
           <div className="flex flex-row justify-between gap-16">
-            {/* Top row: Viviana */}
+            {/* Bottom row: Viviana */}
             <div className="flex flex-col md:flex-col items-center md:justify-start gap-8">
               <Image
                 src="/images/viviana-photo2.svg"
                 alt="Viviana"
                 width={455}
                 height={381}
-                className="rounded-md"
               />
-              <p className="text-white text-lg text-center md:pt-8">
+              <p className="text-white text-3xl text-center md:pt-8">
                 Viviana spent six years as a
                 <br />
                 freelance translator before
@@ -463,9 +492,8 @@ const Hero = () => {
                 alt="Valdi"
                 width={455}
                 height={381}
-                className="rounded-md"
               />
-              <p className="text-white text-lg text-center md:pt-8">
+              <p className="text-white text-3xl text-center md:pt-8">
                 Valdi is a materials engineer
                 <br />
                 who discovered his passion for
@@ -474,10 +502,12 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-center mt-16">
-            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
-              Discover more about us
-            </button>
+          <div className="flex justify-center mt-24">
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+                DISCOVER MORE ABOUT US
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -517,20 +547,25 @@ const Hero = () => {
         </div>
         {/* Predictable Growth CTA */}
         <div className="bg-[#5233B0] py-20 px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Ready to Build Predictable Growth?
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Ready to Get More Clients?
           </h2>
-          <p className="text-white/90 text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-white/90 text-2xl max-w-7xl mx-auto mb-8">
             Work with marketers who&apos;ve been where you are and know exactly
             how to help you stand out.
           </p>
-          <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
-            BOOK A DISCOVERY CALL
-          </button>
+          <Link href="https://taplink.cc/vivaldimkt.com">
+            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+              BOOK A DISCOVERY CALL
+            </button>
+          </Link>
         </div>
       </section>
       {/* Contact Form Section */}
-      <ContactForm />
+      <div id="contact-form">
+        <ContactForm  />
+      </div>
+      
       {/* Footer Section */}
       <Footer />
     </div>

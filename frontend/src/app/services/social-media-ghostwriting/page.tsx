@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import Link from "next/link";
 
 const GhostwritingPage = () => {
   return (
@@ -19,7 +20,7 @@ const GhostwritingPage = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-[#FF8A71] mb-8 leading-tight text-left">
             Without Writing a Single Post
           </h2>
-          <p className="text-[#6C3FC5] text-base md:text-lg mb-10 text-left">
+          <p className="text-[#6C3FC5] text-base md:text-xl mb-10 text-left">
             LinkedIn ghostwriting for translation agencies and manufacturers who
             need to build their professional reputation
             <br />
@@ -27,12 +28,16 @@ const GhostwritingPage = () => {
             industry
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-start w-full mb-8">
-            <button className="bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors text-left w-full md:w-auto">
-              Contact us by email
-            </button>
-            <button className="border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent text-left w-full md:w-auto">
-              Book a discovery call
-            </button>
+            <Link href="#contact-form">
+              <button className="bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors text-left w-full md:w-auto">
+                CONTACT US BY EMAIL
+              </button>
+            </Link>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent text-left w-full md:w-auto">
+                BOOK A DISCOVERY CALL
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -70,7 +75,7 @@ const GhostwritingPage = () => {
               <span className="text-[#6947D2]">Our LinkedIn</span>{" "}
               <span className="text-[#F07C5A]">Philosophy</span>
             </h2>
-            <div className="text-[#18102B] text-base md:text-lg mb-10 space-y-5 max-w-xl">
+            <div className="text-[#18102B] text-base md:text-xl mb-10 space-y-5 max-w-xl">
               <p>
                 LinkedIn has become crowded, which means generic advice and
                 formulaic posts get lost in the noise. The platform rewards
@@ -89,12 +94,14 @@ const GhostwritingPage = () => {
               </p>
             </div>
 
-            <button
-              className="mt-2 px-8 py-3 bg-[#18102B] text-white font-semibold rounded-lg shadow-md hover:bg-[#2a1e4d] transition-colors text-base md:text-lg"
-              style={{ minWidth: "200px" }}
-            >
-              Book a discovery call
-            </button>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button
+                className="mt-2 px-8 py-3 bg-[#18102B] text-white font-semibold rounded-lg shadow-md hover:bg-[#2a1e4d] transition-colors text-base md:text-lg"
+                style={{ minWidth: "200px" }}
+              >
+                Book a discovery call
+              </button>
+            </Link>
           </div>
           <div className="flex items-center justify-center w-full h-full">
             <Image
@@ -112,7 +119,7 @@ const GhostwritingPage = () => {
       {/* --- How We Work Section --- */}
       <section className="w-full bg-[#5233B0] py-16 px-2 md:px-0">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-12">
+          <h2 className="text-white text-5xl md:text-6xl font-bold text-center mb-12">
             How We Work
           </h2>
           <div className="flex flex-col gap-8">
@@ -128,12 +135,7 @@ const GhostwritingPage = () => {
                 Discovery & Strategy Foundation
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
-                If you've completed our messaging strategy service, we jump
-                straight to content planning. For standalone projects, we start
-                with discovery interviews about your service and customers, plus
-                interviews about your business at help us understand your unique
-                perspective plus customer research so we can write content that
-                is both persuasive and authentic to what you do.
+ For standalone projects, we start with discovery interviews about your service and customers, plus interviews about your business that help us understand your unique perspective and customer research so we can write content that is both persuasive and authentic to what you do.
               </p>
             </div>
             {/* Step 2 */}
@@ -209,7 +211,9 @@ const GhostwritingPage = () => {
             Let’s turn your industry insights into posts that generate leads.
           </p>
         </div>
-        <ContactForm />
+        <div id="contact-form">
+          <ContactForm />
+        </div>
       </section>
       <Footer />
     </div>

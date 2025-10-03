@@ -4,6 +4,7 @@ import Image from "next/image";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import Link from "next/link";
 
 const GoogleAndMetaAdsPage = () => {
   return (
@@ -18,19 +19,22 @@ const GoogleAndMetaAdsPage = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-[#FF8A71] mb-8 leading-tight text-left">
             Through Targeted Google Ads
           </h2>
-          <p className="text-[#6C3FC5] text-base md:text-lg mb-10 text-left">
+          <p className="text-[#6C3FC5] text-xl md:text-2xl mb-10 text-left">
             Stop burning budget on clicks that don't convert. Start attracting
-            qualified buyers who actually need what you
-            <br />
-            manufacture or translate.
+            qualified buyers who actually need what you manufacture or
+            translate.
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-start w-full mb-8">
-            <button className="bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors text-left w-full md:w-auto">
-              Get Your Free Campaign Audit
-            </button>
-            <button className="border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent text-left w-full md:w-auto">
-              Book a discovery call
-            </button>
+            <Link href="#contact-form">
+              <button className="bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors text-left w-full md:w-auto">
+                GET YOUR FREE CAMPAIGN AUDIT
+              </button>
+            </Link>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent text-left w-full md:w-auto">
+                BOOK A DISCOVERY CALL
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -56,7 +60,7 @@ const GoogleAndMetaAdsPage = () => {
             <br />
             This approach is particularly effective for businesses that offer
             specialized products or services. If you're a manufacturer looking
-            for precision component orders, or a language service provider
+            for specialized component sourcing, or a language service provider
             offering certified legal translations or highly specialized
             localization in niche industries, Google Ads helps you reach those
             specific needs.
@@ -96,7 +100,7 @@ const GoogleAndMetaAdsPage = () => {
       {/* Why Choose Vivaldi Section */}
       <section className="w-full bg-[#6C3FC5] py-20 px-2 md:px-0">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16">
+          <h2 className="text-white text-5xl md:text-6xl font-bold text-center mb-16">
             Why Choose Vivaldi
           </h2>
           {/* Row 1 */}
@@ -105,7 +109,7 @@ const GoogleAndMetaAdsPage = () => {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 Industry Insider Knowledge
               </h3>
-              <p className="text-white text-base md:text-lg max-w-lg">
+              <p className="text-white text-lg md:text-xl max-w-lg">
                 We don’t have to Google what “5-axis CNC machining” means, the
                 nuances of ISO 17100 compliance for translation, or why
                 certified translations matter for medical devices. We speak your
@@ -136,7 +140,7 @@ const GoogleAndMetaAdsPage = () => {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 Lead Quality Obsession
               </h3>
-              <p className="text-white text-base md:text-lg max-w-lg">
+              <p className="text-white text-lg md:text-xl max-w-lg">
                 We optimize for qualified conversations. Our strategies use
                 advanced targeting, rigorous negative keyword management, and
                 precise ad copy to filter out irrelevant traffic (students, job
@@ -151,7 +155,7 @@ const GoogleAndMetaAdsPage = () => {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 Transparent, No-Contract Approach
               </h3>
-              <p className="text-white text-base md:text-lg max-w-lg">
+              <p className="text-white text-lg md:text-xl max-w-lg">
                 No locked-in contracts. No mysterious “proprietary methods.” We
                 show you exactly what we’re doing, why we’re doing it, and how
                 it connects to your revenue goals. Month-to-month agreements
@@ -181,9 +185,9 @@ const GoogleAndMetaAdsPage = () => {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 Built for B2B Complexity
               </h3>
-              <p className="text-white text-base md:text-lg max-w-lg">
+              <p className="text-white text-lg md:text-xl max-w-lg">
                 Understanding the often-extended sales cycles in manufacturing
-                and enterprise LSP deals, we implement sophisticated attribution
+                and enterprise LSP deals, we implement custom attribution
                 windows (90–180 days) to accurately measure long-term impact.
                 <br />
                 <br />
@@ -195,16 +199,18 @@ const GoogleAndMetaAdsPage = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <button className="px-10 py-3 bg-[#F07C5A] text-white font-semibold rounded-md shadow-md hover:bg-[#e05c2a] transition-colors text-base">
-              Book a discovery call
-            </button>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+                BOOK A DISCOVERY CALL
+              </button>
+            </Link>
           </div>
         </div>
       </section>
       {/* Our Strategic Approach Section */}
       <section className="w-full bg-[#10002B] py-20 px-2 md:px-0">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-12">
+          <h2 className="text-white text-5xl md:text-6xl font-bold text-center mb-12">
             Our Strategic Approach
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -221,10 +227,11 @@ const GoogleAndMetaAdsPage = () => {
                 Deep Discovery
               </h3>
               <p className="text-[#18102B] text-base">
-                We’ll talk through what’s happening in your business right now:
-                what’s working, what isn’t, and what your goals are. Then we’ll
-                tell you exactly what we think would help and what it would
-                cost.
+                We start where others don't: understanding your business model,
+                sales process, and ideal customer profile. We analyze your
+                competitors, review your past campaigns, and identify the
+                specific search terms that indicate buying intent in your
+                industry.
               </p>
             </div>
             {/* Card 2 */}
@@ -240,10 +247,11 @@ const GoogleAndMetaAdsPage = () => {
                 Campaign Architecture
               </h3>
               <p className="text-[#18102B] text-base">
-                We research your customers and competitors to figure out what
-                messages will resonate. No generic advice, we dig into your
-                specific industry and situation to create a plan that makes
-                sense for your business.
+                We build campaigns organized by solution type and buyer intent,
+                not product features. For manufacturers, this might mean
+                separating "emergency production capacity" searches from "vendor
+                evaluation" queries. Each requires different messaging and
+                landing pages.
               </p>
             </div>
             {/* Card 3 */}
@@ -259,10 +267,10 @@ const GoogleAndMetaAdsPage = () => {
                 Launch & Optimize
               </h3>
               <p className="text-[#18102B] text-base">
-                Time to get down to work. We write your content, run your ads,
-                or build your SEO presence. For ongoing work, we’ll have a
-                monthly consultation call to review what’s working and what
-                needs adjusting.
+                We start conservatively, testing messages and keywords with
+                small budgets before scaling what works. Monitoring ensures we
+                catch and fix issues before they waste budget. Weekly
+                optimization based on real data, not gut feelings.
               </p>
             </div>
             {/* Card 4 */}
@@ -290,7 +298,7 @@ const GoogleAndMetaAdsPage = () => {
       {/* See Our Packages & Pricing Section */}
       <section className="w-full bg-[#faf9fb] py-20 px-2 md:px-0">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-[#6C3FC5] text-4xl md:text-5xl font-bold text-center mb-12">
+          <h2 className="text-[#6C3FC5] text-5xl md:text-6xl font-bold text-center mb-12">
             See Our Packages & Pricing
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -375,23 +383,28 @@ const GoogleAndMetaAdsPage = () => {
           </div>
         </div>
       </section>
+      {/* Ready to Engineer Your Lead Generation?*/}
       <section className="w-full py-24 bg-[#5233B0] text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-5xl md:text-6xl font-bold text-[#F9F6FF] mb-6">
-            Stop Being Invisible to Your Best Clients
+            Ready to Engineer Your Lead Generation?
           </h2>
-          <p className="text-[#F9F6FF] text-lg mb-10">
-            Your expertise deserves to be found by clients who value it. But in
-            today's digital landscape, being excellent isn't enough.
+          <p className="text-[#F9F6FF] text-xl md:text-2xl mb-10">
+            Stop the guesswork and start building valuable relationships. With a
+            carefully planned Google Ads strategy, you can attract clients who
+            value quality, expertise, and precision. We connect you with the
+            specific clients your specialized products or services are designed
+            for.
           </p>
-          <p className="text-[#F9F6FF] text-lg md:text-xl font-bold mb-10">
-            You need to be visible to the right people at the right time.
-          </p>
-          <button className="bg-[#FF8A71] hover:bg-[#e2725b] text-white font-semibold px-8 py-3 rounded-md text-base transition-colors">
-            Book a discovery call
-          </button>
+          <Link href="https://taplink.cc/vivaldimkt.com">
+            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+              BOOK A DISCOVERY CALL
+            </button>
+          </Link>
         </div>
-        <ContactForm />
+        <div id="contact-form">
+          <ContactForm />
+        </div>
       </section>
       <Footer />
     </div>
