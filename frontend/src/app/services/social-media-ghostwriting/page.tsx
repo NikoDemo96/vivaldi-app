@@ -1,4 +1,4 @@
-"use client";
+
 
 import React from "react";
 import Navbar from "@/components/Navbar/Navbar";
@@ -6,6 +6,12 @@ import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Vivaldi Marketing | Social Media Ghostwriting | LinkedIn | Instagram",
+  description:
+    "Professional ghostwriting services for LinkedIn and Instagram to elevate your business presence.",
+};
 
 const GhostwritingPage = () => {
   return (
@@ -135,7 +141,11 @@ const GhostwritingPage = () => {
                 Discovery & Strategy Foundation
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
- For standalone projects, we start with discovery interviews about your service and customers, plus interviews about your business that help us understand your unique perspective and customer research so we can write content that is both persuasive and authentic to what you do.
+                For standalone projects, we start with discovery interviews
+                about your service and customers, plus interviews about your
+                business that help us understand your unique perspective and
+                customer research so we can write content that is both
+                persuasive and authentic to what you do.
               </p>
             </div>
             {/* Step 2 */}

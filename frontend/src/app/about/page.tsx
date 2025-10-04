@@ -1,10 +1,15 @@
-"use client";
+
 
 import React from "react";
 import Image from "next/image";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Vivaldi Marketing | About Us",
+  description: "Learn more about Vivaldi Marketing and our mission.",
+};
 
 const AboutPage = () => {
   return (
@@ -147,7 +152,6 @@ const AboutPage = () => {
                 English, studied French, and love interacting with people from
                 all over the world.
               </p>
-
             </div>
           </div>
           {/* Image */}
