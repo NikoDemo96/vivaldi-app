@@ -241,10 +241,10 @@ const SeoPage = () => {
                 $700<span className="text-xl font-normal">/month</span>
               </div>
 
-              <div className="text-[#18102B] text-xl">
+              <div className="text-[#18102B] text-xl mb-4">
                 Perfect for establishing your SEO presence
               </div>
-              <div className="mt-6">
+              <div className="mt-6 mb-6">
                 <p className="text-[#18102B] text-left text-base">
                   Core technical SEO work and consistent content creation. We
                   fix the foundation of your site and start building your
@@ -269,7 +269,7 @@ const SeoPage = () => {
                 $1,500<span className="text-lg font-normal">/month</span>
               </div>
 
-              <div className="text-[#18102B] text-xl">
+              <div className="text-[#18102B] text-xl mb-4">
                 For companies ready to dominate their niche
               </div>
               <div className="mt-6">
@@ -297,7 +297,7 @@ const SeoPage = () => {
                 $2,500<span className="text-lg font-normal">/month</span>
               </div>
 
-              <div className="text-[#18102B] text-xl">
+              <div className="text-[#18102B] text-xl mb-4">
                 Build industry leadership and sustained growth
               </div>
               <div className="mt-6">

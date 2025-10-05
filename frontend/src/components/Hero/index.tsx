@@ -54,7 +54,7 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row justify-center gap-6 mt-8">
             <Link href="https://taplink.cc/vivaldimkt.com">
               <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
-                BOOK A DISCOVERY CALL 
+                BOOK A DISCOVERY CALL
               </button>
             </Link>
 
@@ -238,8 +238,11 @@ const Hero = () => {
                 else you do—from your website to your sales calls—more
                 effective.
               </p>
-              
-              <Link href="/services/messaging-and-positioning-strategy" className="w-full">
+
+              <Link
+                href="/services/messaging-and-positioning-strategy"
+                className="w-full"
+              >
                 <button className="w-full bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors">
                   LEARN MORE
                 </button>
@@ -267,7 +270,10 @@ const Hero = () => {
                 showcase your knowledge, feel authentic, and attract your target
                 clients.
               </p>
-              <Link href="/services/social-media-ghostwriting" className="w-full">
+              <Link
+                href="/services/social-media-ghostwriting"
+                className="w-full"
+              >
                 <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
                   LEARN MORE
                 </button>
@@ -469,13 +475,13 @@ const Hero = () => {
             Who We Are
           </h2>
           <div className="flex flex-row justify-between gap-16">
-            {/* Bottom row: Viviana */}
+            {/*Viviana */}
             <div className="flex flex-col md:flex-col items-center md:justify-start gap-8">
               <Image
                 src="/images/viviana-photo2.svg"
                 alt="Viviana"
                 width={455}
-                height={381}
+                height={541}
               />
               <p className="text-white text-3xl text-center md:pt-8">
                 Viviana spent six years as a
@@ -484,14 +490,27 @@ const Hero = () => {
                 <br />
                 switching to marketing.
               </p>
+              <Link
+                href="https://www.linkedin.com/in/viviana-urbaneja-marketer/"
+                target="_blank"
+                className="mb-4 block w-12"
+              >
+                <Image
+                  src="/images/linkedin3.png"
+                  alt="Viviana Urbaneja"
+                  width={50}
+                  height={50}
+                  className="rounded-lg bg-white"
+                />
+              </Link>
             </div>
-            {/* Bottom row: Valdi */}
+            {/*Valdi */}
             <div className="flex flex-col md:flex-col items-center md:justify-end gap-8">
               <Image
-                src="/images/jorge-photo2.svg"
+                src="/images/jorge-photo3.png"
                 alt="Valdi"
-                width={455}
-                height={381}
+                width={400}
+                height={541}
               />
               <p className="text-white text-3xl text-center md:pt-8">
                 Valdi is a materials engineer
@@ -500,6 +519,19 @@ const Hero = () => {
                 <br />
                 marketing.
               </p>
+              <Link
+                href="https://www.linkedin.com/in/valdimarketing/"
+                target="_blank"
+                className="mb-4 block w-12"
+              >
+                <Image
+                  src="/images/linkedin3.png"
+                  alt="Jorge Valderrama"
+                  width={50}
+                  height={50}
+                  className="rounded-lg bg-white"
+                />
+              </Link>
             </div>
           </div>
           <div className="flex justify-center mt-24">
@@ -563,9 +595,9 @@ const Hero = () => {
       </section>
       {/* Contact Form Section */}
       <div id="contact-form">
-        <ContactForm  />
+        <ContactForm />
       </div>
-      
+
       {/* Footer Section */}
       <Footer />
     </div>

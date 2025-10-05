@@ -211,7 +211,7 @@ const GoogleAndMetaAdsPage = () => {
       <section className="w-full bg-[#10002B] py-20 px-2 md:px-0">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-white text-5xl md:text-6xl font-bold text-center mb-12">
-            Our Strategic Approach
+            Our Approach
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
@@ -247,11 +247,10 @@ const GoogleAndMetaAdsPage = () => {
                 Campaign Architecture
               </h3>
               <p className="text-[#18102B] text-base">
-                We build campaigns organized by solution type and buyer intent,
-                not product features. For manufacturers, this might mean
-                separating "emergency production capacity" searches from "vendor
-                evaluation" queries. Each requires different messaging and
-                landing pages.
+                We start conservatively, testing messages and keywords with
+                small budgets before scaling what works. Monitoring ensures we
+                catch and fix issues before they waste budget. Weekly
+                optimization based on real data, not gut feelings.
               </p>
             </div>
             {/* Card 3 */}
@@ -288,8 +287,8 @@ const GoogleAndMetaAdsPage = () => {
               <p className="text-[#18102B] text-base">
                 As we gather data on what converts, we expand successful
                 campaigns and cut underperformers. Monthly strategy calls keep
-                you informed and aligned with your sales team’s feedback about
-                lead quality.
+                you informed and aligned with your sales team's feedback about
+                lead quality
               </p>
             </div>
           </div>
@@ -304,70 +303,84 @@ const GoogleAndMetaAdsPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Starter Package */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center border border-[#ececec]">
+              <div className="text-[#6C3FC5] text-4xl font-bold mb-2">
+                Starter Package
+              </div>
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
                 $1000<span className="text-lg font-normal">/month</span>
               </div>
-              <div className="text-[#6C3FC5] text-xl font-bold mb-2">
-                Starter Package
-              </div>
-              <div className="text-[#18102B] text-base mb-4">
+
+              <div className="text-[#18102B] text-xl mb-4">
                 Perfect for testing B2B Google Ads
               </div>
-              <ul className="text-[#18102B] text-left text-base mb-6 space-y-2">
-                <li>• 3-month minimum</li>
-                <li>• Campaign setup & optimization</li>
-                <li>• Up to 3 campaigns</li>
-                <li>• Monthly reporting & strategy call</li>
-                <li>• Email support</li>
-              </ul>
+              <div className="mt-6 mb-6">
+                <p className="text-[#18102B] text-left text-base mb-6">
+                  Launch your first Google Ads campaigns and discover what
+                  resonates with your target customers. We test different
+                  messages and audiences to find what drives qualified leads for
+                  your business.
+                </p>
+                <p className="text-[#18102B] text-left text-base mb-6">
+                  Ideal for: B2B companies exploring paid ads for the first time
+                  or testing new service offerings.
+                </p>
+              </div>
               <button className="mt-auto px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base w-full">
                 Learn more
               </button>
             </div>
             {/* Growth Package */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center border border-[#ececec]">
+              <div className="text-[#6C3FC5] text-4xl font-bold mb-2">
+                Standard Package
+              </div>
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
                 $1,700<span className="text-lg font-normal">/month</span>
               </div>
-              <div className="text-[#6C3FC5] text-xl font-bold mb-2">
-                Growth Package
-              </div>
-              <div className="text-[#18102B] text-base mb-4">
+
+              <div className="text-[#18102B] text-xl mb-4">
                 For companies ready to scale
               </div>
-              <ul className="text-[#18102B] text-left text-base mb-6 space-y-2">
-                <li>• 3-month minimum</li>
-                <li>• Everything in Starter, plus:</li>
-                <li>• Unlimited campaigns</li>
-                <li>• Bi-weekly optimization</li>
-                <li>• CRM integration & tracking</li>
-                <li>• Custom landing page optimization</li>
-                <li>• Priority support</li>
-              </ul>
+              <div className="mt-6 mb-6">
+                <p className="text-[#18102B] text-left text-base mb-6">
+                  Expand your advertising across multiple campaigns and
+                  platforms. We manage more keywords, test additional audiences,
+                  and optimize across Google and Meta to maximize your reach and
+                  lead generation.
+                </p>
+                <p className="text-[#18102B] text-left text-base mb-6">
+                  Ideal for: Small to mid-sized companies that want to run more
+                  campaigns or already have some ads experience and need
+                  professional management.
+                </p>
+              </div>
               <button className="mt-auto px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base w-full">
                 Learn more
               </button>
             </div>
             {/* Strategic Package */}
             <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center border border-[#ececec]">
+              <div className="text-[#6C3FC5] text-4xl font-bold mb-2">
+                Premium Package
+              </div>
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
                 $2,500<span className="text-lg font-normal">/month</span>
               </div>
-              <div className="text-[#6C3FC5] text-xl font-bold mb-2">
-                Strategic Package
-              </div>
-              <div className="text-[#18102B] text-base mb-4">
+              <div className="text-[#18102B] text-xl mb-4">
                 Full-service B2B lead generation
               </div>
-              <ul className="text-[#18102B] text-left text-base mb-6 space-y-2">
-                <li>• 3-month minimum</li>
-                <li>• Everything in Growth, plus:</li>
-                <li>• Weekly strategy sessions</li>
-                <li>• Account-based campaign development</li>
-                <li>• Advanced attribution modeling</li>
-                <li>• Sales team alignment meetings</li>
-                <li>• Dedicated account strategist</li>
-              </ul>
+              <div className="mt-6 mb-6">
+                <p className="text-[#18102B] text-left text-base mb-6">
+                  Enterprise-level campaign management for complex advertising
+                  needs. We handle large keyword portfolios, multi-regional
+                  targeting, account-based strategies, and coordinate closely
+                  with your sales team to align campaigns with revenue goals.
+                </p>
+                <p className="text-[#18102B] text-left text-base mb-6">
+                  Ideal for: Larger companies with multiple locations, extensive
+                  keyword lists, or sophisticated targeting requirements.
+                </p>
+              </div>
               <button className="mt-auto px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base w-full">
                 Learn more
               </button>

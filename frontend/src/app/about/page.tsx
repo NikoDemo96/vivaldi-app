@@ -73,9 +73,24 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto flex lg:flex-row items-center lg:items-start gap-12">
           {/* Text */}
           <div className="text-white">
-            <h2 className="text-5xl md:text-6xl font-bold mb-8 text-right ml-auto w-5/6">
-              Viviana Urbaneja
-            </h2>
+            <div>
+              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-right ml-auto w-5/6">
+                Viviana Urbaneja
+              </h2>
+              <Link
+                href="https://www.linkedin.com/in/viviana-urbaneja-marketer/"
+                target="_blank"
+                className="mb-4 block w-12 ml-auto"
+              >
+                <Image
+                  src="/images/linkedin3.png"
+                  alt="Viviana Urbaneja"
+                  width={50}
+                  height={50}
+                  className="rounded-lg bg-white"
+                />
+              </Link>
+            </div>
             <div className="space-y-6 text-2xl w-full text-right ml-auto">
               <p>
                 I spent six years as a freelance English to Spanish translator,
@@ -122,9 +137,24 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto flex lg:flex-row-reverse items-center lg:items-start gap-12">
           {/* Text */}
           <div className="flex-1 text-white text-center">
-            <h2 className="text-5xl md:text-6xl font-bold mb-8 text-left w-5/6">
-              Jorge Valderrama
-            </h2>
+            <div>
+              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-left w-5/6">
+                Jorge Valderrama
+              </h2>
+              <Link
+                href="https://www.linkedin.com/in/valdimarketing/"
+                target="_blank"
+                className="mb-4 block w-12 mr-auto"
+              >
+                <Image
+                  src="/images/linkedin3.png"
+                  alt="Jorge Valderrama"
+                  width={50}
+                  height={50}
+                  className="rounded-lg bg-white"
+                />
+              </Link>
+            </div>
             <div className="space-y-6 text-2xl w-full text-left mr-auto w-5/6">
               <p>
                 As a materials engineer, I spent years understanding the
@@ -147,7 +177,6 @@ const AboutPage = () => {
                 English, studied French, and love interacting with people from
                 all over the world.
               </p>
-
             </div>
           </div>
           {/* Image */}
