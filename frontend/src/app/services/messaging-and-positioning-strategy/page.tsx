@@ -1,10 +1,16 @@
-"use client";
+
 import React from "react";
 import Image from "next/image";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Vivaldi Marketing | Messaging & Positioning Strategy",
+  description:
+    "Developing effective messaging and positioning strategies for translation and manufacturing businesses.",
+};
 
 const MessagingAndPositioningPage = () => {
   return (
