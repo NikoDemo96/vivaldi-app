@@ -314,7 +314,7 @@ const GoogleAndMetaAdsPage = () => {
                 Starter Package
               </div>
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
-                $1000<span className="text-lg font-normal">/month</span>
+                {/* $1000<span className="text-lg font-normal">/month</span> */}
               </div>
 
               <div className="text-[#18102B] text-xl mb-4">
@@ -342,7 +342,7 @@ const GoogleAndMetaAdsPage = () => {
                 Standard Package
               </div>
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
-                $1,700<span className="text-lg font-normal">/month</span>
+                {/* $1,700<span className="text-lg font-normal">/month</span> */}
               </div>
 
               <div className="text-[#18102B] text-xl mb-4">
@@ -371,7 +371,7 @@ const GoogleAndMetaAdsPage = () => {
                 Premium Package
               </div>
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
-                $2,500<span className="text-lg font-normal">/month</span>
+                {/* $2,500<span className="text-lg font-normal">/month</span> */}
               </div>
               <div className="text-[#18102B] text-xl mb-4">
                 Full-service B2B lead generation
