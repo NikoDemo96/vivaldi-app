@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Instrument_Sans } from "next/font/google";
 import "../styles/globals.css";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <GoogleTagManager gtmId="G-44JC7GYF2W" />
       <body className={instrumentSans.variable}>
         {children}
       </body>
