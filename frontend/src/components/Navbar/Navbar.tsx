@@ -75,11 +75,11 @@ const Navbar = () => {
                   Messaging & Positioning
                 </Link>
                 <Link
-                  href="/services/social-media-ghostwriting"
+                  href="/services/linkedIn-ghostwriting"
                   className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-base font-medium transition-colors"
                   onClick={() => setServicesOpen(false)}
                 >
-                  Ghostwriting
+                  LinkedIn Ghostwriting
                 </Link>
              
                 <Link
@@ -90,11 +90,11 @@ const Navbar = () => {
                   SEO
                 </Link>
                 <Link
-                  href="/services/google-and-meta-ads"
+                  href="/services/google-ads"
                   className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-base font-medium transition-colors"
                   onClick={() => setServicesOpen(false)}
                 >
-                  Google & Meta Ads
+                  Google Ads
                 </Link>
               </div>
             )}

@@ -54,13 +54,13 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row justify-center gap-6 mt-8">
             <Link href="https://taplink.cc/vivaldimkt.com">
               <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
-                BOOK A DISCOVERY CALL
+                BOOK A FREE CONSULTATION CALL
               </button>
             </Link>
 
             <Link href="#contact-form">
               <button className="bg-transparent border-2 border-solid text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors hover:border-[#d45c43] hover:text-[#E2725B] hover:bg-transparent">
-                CONTACT US BY EMAIL
+                GET A 30-MIN MESSASING AUDIT
               </button>
             </Link>
           </div>
@@ -114,23 +114,20 @@ const Hero = () => {
         <div className="py-16 bg-transparent relative z-10">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-5xl md:text-6xl font-bold text-[#6947D2] text-center mb-16 leading-tight">
-              Your Expertise Deserves the Spotlight
+              You're great at getting clients through word of mouth.
             </h2>
 
             <div className="flex flex-col-2 lg:flex-row lg:justify-between items-center gap-12">
               <div className="lg:w-1/2 space-y-6">
                 <p className="text-[#1204AA] text-xl leading-relaxed">
-                  You&apos;ve built expertise that truly matters, whether
-                  it&apos;s bridging language barriers or manufacturing
-                  precision components that power industries. But in
-                  today&apos;s market, excellent work alone won&apos;t guarantee
-                  consistent client bookings.
+                  But when you try ads or social media, all you often get is
+                  frustration.
                 </p>
 
                 <p className="text-[#1204AA] text-xl leading-relaxed">
-                  One month you&apos;re thriving with more work than you can
-                  handle. The next, you&apos;re stressing about where the next
-                  client will come from.
+                  So you end up one month with more work than you can handle,
+                  and the next stressing about where the next client will come
+                  from.
                 </p>
 
                 <p className="text-xl leading-relaxed">
@@ -138,15 +135,17 @@ const Hero = () => {
                     That&apos;s why we started Vivaldi Marketing.
                   </span>{" "}
                   <span className="text-[#1204AA]">
-                    We&apos;re marketers who&apos;ve actually worked in your
-                    industries. We&apos;ve had to justify why human translation
-                    beats AI, and we&apos;ve watched subpar manufacturers win
-                    contracts simply because they were more visible.
+                    We&apos;ve actually worked in your industries. We know
+                    first-hand how damn hard it is to sell translation and
+                    manufacturing services.
                   </span>
+                </p>
+                <p className="text-[#1204AA] text-xl leading-relaxed">
+                  So now we help businesses like yours get past that.
                 </p>
 
                 <h3 className="text-3xl md:text-4xl font-bold text-[#6947D2] pt-4">
-                  Your expertise matters—and we&apos;re here to make it shine
+                  So now we help businesses like yours get past that.
                 </h3>
               </div>
 
@@ -165,20 +164,18 @@ const Hero = () => {
       </section>
 
       {/* Testimonial Section Diana*/}
-      {/* <section className="bg-[#10002B] py-16">
+      <section className="bg-[#10002B] py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="text-left mb-8">
             <p className="text-white text-lg leading-relaxed">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-              lorem metus. Phasellus consequat, massa vel sagittis dignissim,
-              urna lectus pretium libero, finibus hendrerit tellus orci id sem.
-              Nullam id volutpat justo, ut rutrum tortor. Phasellus egestas
-              dictum ante ut venenatis. Praesent vulputate ullamcorper
-              consequat. Integer condimentum, nisl in pretium suscipit, nibh
-              felis suscipit augue, nec pretium elit nisl non dui. Ut imperdiet
-              erat eget magna hendrerit rhoncus. Fusce aliquet leo eros, sit
-              amet euismod ligula tempor eget. Nunc tincidunt ex nec diam
-              aliquet viverra."
+              "Viviana has outstanding work ethics and a deep understanding of
+              the translation industry. She coordinated the development of our
+              new site seamlessly, with clarity and precision. Her marketing
+              recommendations are helping us define a new strategy moving
+              forward. She listens carefully, offers thoughtful insights, and
+              genuinely invests in her clients&apos; success. It&apos;s been a
+              pleasure collaborating with her, and I look forward to continuing
+              our partnership. Highly recommended!"
             </p>
           </div>
 
@@ -198,21 +195,20 @@ const Hero = () => {
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Services Section */}
       <section className="bg-[#5233B0] py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-6">
-              How We Can Help You Grow
+              Here's How We Can Help You
             </h2>
             <p className="text-white/90 text-2xl max-w-7xl mx-auto leading-relaxed">
-              Most consultants jump straight into tactics without understanding
-              your customers first. We start with comprehensive customer
-              research to discover what your prospects care about, and then
-              build a tailored strategy so you spend your budget on the right
-              channels for your business.
+              Most agencies guess what your clients want, then try a bunch of
+              tactics and hope something works. We do the opposite: we talk to
+              your actual clients first, figure out how they make decisions, and
+              then build the strategy to make those clients come to you.
             </p>
           </div>
 
@@ -233,10 +229,10 @@ const Hero = () => {
                 Messaging Strategy
               </h3>
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                We build a message that articulates your value in a way that
-                immediately positions you as the right choice, making everything
-                else you do—from your website to your sales calls—more
-                effective.
+                We figure out what your clients care and worry about, then tell
+                you exactly what to say to make them choose you. Once you know
+                what resonates, you can use it everywhere—your website, your
+                emails, your sales calls.
               </p>
 
               <Link
@@ -265,10 +261,10 @@ const Hero = () => {
                 Social Media Ghostwriting
               </h3>
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                Strategic LinkedIn content that establishes you as the go-to
-                expert for complex projects. We write tailored posts that
-                showcase your knowledge, feel authentic, and attract your target
-                clients.
+                We handle your LinkedIn presence: writing posts that sound like
+                you, optimizing for the algorithm, and focusing on topics that
+                make your ideal clients think 'this person gets it' and reach
+                out.
               </p>
               <Link
                 href="/services/social-media-ghostwriting"
@@ -296,10 +292,10 @@ const Hero = () => {
                 SEO & Content Writing
               </h3>
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                Show up when your ideal clients are searching for solutions. We
-                create content that demonstrates your expertise and ranks on
-                Google, bringing qualified prospects to you instead of you
-                chasing after them.
+                We handle everything SEO: keyword research, content strategy,
+                and writing articles that rank. Increase your website traffic
+                and get the right people to find you when they&apos;re looking
+                for your service.
               </p>
               <Link href="/services/seo" className="w-full">
                 <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
@@ -324,10 +320,9 @@ const Hero = () => {
                 Google Ads
               </h3>
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                Reach decision-makers who are ready to invest in quality. Our
-                targeted ads put your expertise in front of the right people at
-                the right time, generating leads from prospects who are ready to
-                work with specialists.
+                Google Ads are the fastest way to get in front of buyers
+                actively searching. We run campaigns that target the right
+                searches and turn those clicks into conversations.
               </p>
               <Link href="/services/google-and-meta-ads" className="w-full">
                 <button className="bg-[#10002B] hover:bg-[#2a1e4d] text-white px-6 py-2 text-sm font-semibold rounded transition-colors w-full">
@@ -398,10 +393,10 @@ const Hero = () => {
                 DISCOVERY
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                We&apos;ll talk through what&apos;s happening in your business
-                right now: what&apos;s working, what isn&apos;t, and what your
-                goals are. Then we&apos;ll tell you exactly what we think would
-                help and what it would cost.
+                We&apos;ll talk through what's happening in your business right
+                now: what's working, what isn't, and what your goals are. Then
+                we'll tell you exactly what we think would help and what it
+                would cost.
               </p>
             </div>
 
@@ -424,10 +419,10 @@ const Hero = () => {
                 STRATEGY
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                We research your customers and competitors to figure out what
-                messages will resonate. No generic advice, we dig into your
-                specific industry and situation to create a plan that makes
-                sense for your business.
+                We research how buyers in your industry make decisions: talking
+                to your clients, reviewing online conversations and analyzing
+                your competition. Then we tell you what to say and which
+                channels to prioritize.
               </p>
             </div>
 
@@ -451,8 +446,8 @@ const Hero = () => {
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Time to get down to work. We write your content, run your ads,
-                or build your SEO presence. For ongoing work, we&apos;ll have a
-                monthly consultation call to review what&apos;s working and what
+                or build your SEO presence. For ongoing work, we'll have a
+                monthly consultation call to review what's working and what
                 needs adjusting.
               </p>
             </div>
@@ -580,11 +575,10 @@ const Hero = () => {
         {/* Predictable Growth CTA */}
         <div className="bg-[#5233B0] py-20 px-4 text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Ready to Get More Clients?
+            Ready to Attract More Clients?
           </h2>
           <p className="text-white/90 text-2xl max-w-7xl mx-auto mb-8">
-            Work with marketers who&apos;ve been where you are and know exactly
-            how to help you stand out.
+            Let&apos;s figure out the right approach for your business.
           </p>
           <Link href="https://taplink.cc/vivaldimkt.com">
             <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">

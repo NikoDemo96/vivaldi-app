@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -21,17 +19,14 @@ const GhostwritingPage = () => {
       <section className="w-full pt-16 pb-16 px-16 bg-[#faf9fb]">
         <div className="max-w-5xl mx-8">
           <h1 className="text-5xl md:text-6xl font-bold text-[#6947D2] mb-2 leading-tight text-left">
-            Establish Thought Leadership
+            Attract Clients on LinkedIn
           </h1>
           <h2 className="text-5xl md:text-6xl font-bold text-[#FF8A71] mb-8 leading-tight text-left">
             Without Writing a Single Post
           </h2>
           <p className="text-[#6C3FC5] text-base md:text-xl mb-10 text-left">
-            LinkedIn ghostwriting for translation agencies and manufacturers who
-            need to build their professional reputation
-            <br />
-            but don&apos;t have time to create content that resonates with their
-            industry
+            LinkedIn ghostwriting for business owners who need client-generating
+            content but don't have time to figure out what works.
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-start w-full mb-8">
             <Link href="#contact-form">
@@ -62,11 +57,10 @@ const GhostwritingPage = () => {
         </div>
         <div className="relative z-10 w-full flex items-center justify-center">
           <p className="text-white text-xl md:text-2xl font-semibold text-center max-w-3xl px-4">
-            You know LinkedIn content builds credibility and attracts clients.
-            But most ghostwriters create generic posts that get engagement
-            without generating qualified leads, and writing industry-specific
-            content yourself eats up hours you should be spending on client
-            work.
+            You know you should be on LinkedIn consistently. But between client
+            work and running your business, sitting down to write posts feels
+            impossible. And if those posts only get likes without bringing
+            actual client calls, what's the point?
           </p>
         </div>
       </section>
@@ -83,20 +77,21 @@ const GhostwritingPage = () => {
             </h2>
             <div className="text-[#18102B] text-base md:text-xl mb-10 space-y-5 max-w-xl">
               <p>
-                LinkedIn has become crowded, which means generic advice and
-                formulaic posts get lost in the noise. The platform rewards
-                content that gets your specific audience actually talking and
-                engaging.
+                LinkedIn isn't just about posting industry tips. It's about
+                showing you understand your clients' challenges while letting
+                them see the person behind the business. That means sharing real
+                stories, being relatable, and choosing which wins to showcase
+                strategically.
               </p>
               <p>
-                That's why we don't write for your industry colleagues or chase
-                vanity metrics. We write for your prospective clients, using
-                your unique perspective and stories to build trust in ways that
-                make them think “This person understands my challenges”.
+                We write posts that make your potential clients stop scrolling
+                and think 'this person gets it' because generic corporate
+                content that racks up likes from people who'll never hire you
+                isn’t efficient and, to be honest, it makes us sleepy.
               </p>
               <p>
-                Every post serves a purpose: building the trust that makes you
-                the obvious choice when your ideal clients are ready to hire.
+                The goal is simple: build enough trust that when they need help,
+                you're the first person they call.
               </p>
             </div>
 
@@ -137,15 +132,11 @@ const GhostwritingPage = () => {
               >
                 1
               </span>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">
-                Discovery & Strategy Foundation
-              </h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">Discovery</h3>
               <p className="text-[#18102B] text-base md:text-lg">
-                For standalone projects, we start with discovery interviews
-                about your service and customers, plus interviews about your
-                business that help us understand your unique perspective and
-                customer research so we can write content that is both
-                persuasive and authentic to what you do.
+                We start with interviews to understand your service, your
+                customers, and your unique perspective. This helps us write
+                content that sounds like you and actually persuades people.
               </p>
             </div>
             {/* Step 2 */}
@@ -156,15 +147,12 @@ const GhostwritingPage = () => {
               >
                 2
               </span>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">
-                Content Strategy Development
-              </h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">Strategy</h3>
               <p className="text-[#18102B] text-base md:text-lg">
-                Before writing a single post, we build your LinkedIn strategy.
-                What topics position you as an expert? Which tone resonates with
-                your prospects? Who should you connect with and how? We map out
-                your content themes, networking approach, and storytelling
-                framework.
+                Before we write anything, we figure out your LinkedIn approach:
+                what topics make sense for you, what tone works with your
+                clients, and who you should be connecting with. We map out your
+                content plan and how to network without it feeling forced.
               </p>
             </div>
             {/* Step 3 */}
@@ -176,12 +164,12 @@ const GhostwritingPage = () => {
                 3
               </span>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">
-                Content Creation & Refinement
+                Writing & Approval
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
-                We write 14 LinkedIn posts monthly that reflect your expertise
-                and voice. After your revisions and approval, you have a month's
-                worth of effective content ready to publish on your schedule.
+                We write 14 LinkedIn posts each month in your voice. You review
+                and approve them, then you've got a month of content ready to
+                post whenever you want.
               </p>
             </div>
             {/* Step 4 */}
@@ -193,14 +181,13 @@ const GhostwritingPage = () => {
                 4
               </span>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">
-                Monthly Consulting Calls
+                Ongoing Support
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
-                Great content is only half the equation—you also need continuing
-                networking to drive real results. During our monthly calls, we
-                discuss your networking questions, review which content is
-                performing best, and adjust your strategy based on what's
-                working.
+                Good content needs good networking to actually bring clients.
+                Depending on what works best for you, we either jump on monthly
+                calls to discuss your networking questions and what's working,
+                or we handle the networking side for you directly.
               </p>
             </div>
           </div>
@@ -210,15 +197,10 @@ const GhostwritingPage = () => {
       <section className="w-full py-24 bg-[#faf9fb] text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-6">
-            Let&apos;s Make Your Expertise Shine
+            Ready to Attract More Clients?
           </h2>
-          <p className="text-gray-700 text-lg mb-10">
-            Industry knowledge without visibility is like being the best kept
-            secret in your field: incredibly valuable, but invisible to the
-            people who need your help.
-          </p>
-          <p className="text-[#18102B] text-lg md:text-xl font-bold">
-            Let’s turn your industry insights into posts that generate leads.
+          <p className="text-gray-700 text-xl md:text-2xl mb-10">
+           Let's get you showing up consistently on LinkedIn with posts that actually bring clients.
           </p>
         </div>
         <div id="contact-form">

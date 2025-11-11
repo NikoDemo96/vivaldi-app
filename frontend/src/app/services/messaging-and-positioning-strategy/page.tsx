@@ -1,4 +1,3 @@
-
 import React from "react";
 import Image from "next/image";
 import NavBar from "@/components/Navbar/Navbar";
@@ -23,14 +22,13 @@ const MessagingAndPositioningPage = () => {
             Articulate Your Value
           </h1>
           <h2 className="text-5xl md:text-6xl font-bold text-[#FF8A71] mb-8 leading-tight text-left">
-            so Clients Say Yes
+            So Clients Say Yes
           </h2>
           <p className="text-[#6C3FC5] text-base md:text-xl mb-10 text-left">
-            We help you discover exactly what your ideal clients care about and
+            Stop guessing how to make clients trust you and start using
             <br />
-            give you a complete roadmap for how to talk to them so they choose 
+            research-backed messaging that actually sells
             <br />
-            you over your competitors.
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-start w-full mb-8">
             <Link href="#contact-form">
@@ -53,16 +51,23 @@ const MessagingAndPositioningPage = () => {
           {/* Row 1 */}
           <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
             <div className="flex-1 order-1 md:order-1">
+              <h3 className="text-[#F07C5A] text-xl md:text-2xl font-bold mb-2">
+                Most businesses skip the most important step in marketing:
+                <br />
+                figuring out what to say.
+              </h3>
               <p className="text-[#331E5B] text-lg md:text-xl mb-0 font-medium leading-relaxed">
-                You know your work is exceptional. Your translations capture
-                nuances that AI misses, or your operational standards deliver
-                precision that sets you apart. But when prospects compare you to
-                cheaper alternatives, they can't see the difference.
+                You&apos;ve probably tried ads, invested in your website, or
+                posted on LinkedIn hoping to attract clients. But instead of
+                steady inquiries, you got frustration… and went back to relying
+                on word of mouth.
                 <br />
                 <br />
-                It's not that you lack compelling advantages—it's that you
-                haven't articulated them in a way that immediately resonates
-                with your ideal clients.
+                Here&apos;s the problem: most translation agencies and
+                manufacturers websites talk about quality, precision, or
+                expertise. But so does everyone else. And when your prospects
+                can&apos;t tell the difference between you and cheaper
+                competitors, they default to comparing on price.
               </p>
             </div>
             <div className="flex-1 order-2 md:order-2 flex justify-end">
@@ -88,41 +93,38 @@ const MessagingAndPositioningPage = () => {
             </div>
             <div className="flex-1 order-1 md:order-2">
               <h3 className="text-[#F07C5A] text-xl md:text-2xl font-bold mb-2">
-                The missing piece is the right foundation
-                <br />
-                not just more marketing.
+                The missing piece is the right message, not more tactics.
               </h3>
               <p className="text-[#331E5B] text-lg md:text-xl font-medium leading-relaxed mb-2">
-                Before you invest in websites, social media, or advertising, you
-                need to nail down exactly what to say and how to say it. That's
-                what we call messaging strategy.
+                Before you spend another dollar on marketing tactics, you need
+                to know exactly what to say and how to say it. That's messaging
+                strategy.
                 <br />
                 <br />
-                We start with comprehensive research to understand what your
-                ideal clients care about and what makes them choose one provider
-                over another. Then we craft a clear message that positions your
-                expertise as the solution they've been looking for and that
-                addresses their specific hesitations.
+                We figure out how clients in your specialization make buying
+                decisions: what they care about, what makes them trust one
+                provider over another, and what hesitations keep them from
+                saying yes. Then we give you the exact words to use everywhere:
+                your website, your emails, your sales calls. Once your message
+                is clear, everything else starts working.
               </p>
             </div>
           </div>
         </div>
       </section>
       {/* Testimonial Section Diana*/}
-      {/* <section className="bg-[#10002B] py-16">
+      <section className="bg-[#10002B] py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="text-left mb-8">
             <p className="text-white text-lg leading-relaxed">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-              lorem metus. Phasellus consequat, massa vel sagittis dignissim,
-              urna lectus pretium libero, finibus hendrerit tellus orci id sem.
-              Nullam id volutpat justo, ut rutrum tortor. Phasellus egestas
-              dictum ante ut venenatis. Praesent vulputate ullamcorper
-              consequat. Integer condimentum, nisl in pretium suscipit, nibh
-              felis suscipit augue, nec pretium elit nisl non dui. Ut imperdiet
-              erat eget magna hendrerit rhoncus. Fusce aliquet leo eros, sit
-              amet euismod ligula tempor eget. Nunc tincidunt ex nec diam
-              aliquet viverra."
+              "Viviana has outstanding work ethics and a deep understanding of
+              the translation industry. She coordinated the development of our
+              new site seamlessly, with clarity and precision. Her marketing
+              recommendations are helping us define a new strategy moving
+              forward. She listens carefully, offers thoughtful insights, and
+              genuinely invests in her clients&apos; success. It&apos;s been a
+              pleasure collaborating with her, and I look forward to continuing
+              our partnership. Highly recommended!"
             </p>
           </div>
 
@@ -142,7 +144,7 @@ const MessagingAndPositioningPage = () => {
             />
           </div>
         </div>
-      </section> */}
+      </section>
       {/* Our Process Section */}
       <section className="w-full bg-[#5233B0] py-16 px-2 md:px-0">
         <div className="max-w-4xl mx-auto">
@@ -169,11 +171,10 @@ const MessagingAndPositioningPage = () => {
                 Discovery & Strategic Interviews
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
-                We conduct two in-depth workshops with you. The first focuses on
-                your service: what you deliver, your differentiators, and your
-                processes. The second dives deep into everything you know about
-                your customers and what makes them choose one provider over
-                another.
+                We talk with you twice. First, about your service: what you do,
+                how you're different, how you work. Second, about your clients:
+                who they are, what they care about, and why they choose one
+                company over another.
               </p>
             </div>
             {/* Step 2 */}
@@ -195,11 +196,10 @@ const MessagingAndPositioningPage = () => {
                 Market Research
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
-                We research your prospects through multiple methods:
-                interviewing your previous customers, analyzing online
-                discussions where your target market shares their experiences,
-                and studying chosen competitors to identify what clients truly
-                value when making decisions.
+                We talk to your past clients to hear what made them choose you.
+                We read what people in your industry say online about their
+                problems and frustrations. And we look at your competitors to
+                see what's working for them and what gaps you can fill.
               </p>
             </div>
             {/* Step 3 */}
@@ -221,11 +221,10 @@ const MessagingAndPositioningPage = () => {
                 Strategic Document Creation
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
-                Using all this research, we create practical documents that
-                become your go-to guide for every marketing decision. Instead of
-                dense reports you’ll never use again, they’re designed as
-                reference guides for everything from website copy to content
-                creation to sales calls.
+                We organize everything into clear guides: what makes you
+                different, what benefits to highlight, and the actual phrases
+                your clients use. These become the reference for your website,
+                emails, content, and sales calls.
               </p>
             </div>
             {/* Step 4 */}
@@ -247,11 +246,9 @@ const MessagingAndPositioningPage = () => {
                 Website Copy & Revisions
               </h3>
               <p className="text-[#18102B] text-base md:text-lg">
-                We write compelling website copy that reflects your new
-                messaging strategy, then work with you through revisions until
-                everything perfectly captures your value proposition. Web
-                development services are also available if you need a complete
-                website refresh to match your new messaging.
+                We write your website copy using your new messaging, then work
+                with you to refine it until it sounds right. If you need help
+                building or redesigning your site, we can help with that too.
               </p>
             </div>
           </div>
@@ -294,31 +291,32 @@ const MessagingAndPositioningPage = () => {
             What You&apos;ll Receive
           </h2>
           <div className="text-white text-xl md:text-2xl text-left mb-2 font-normal">
-            Messaging strategy is the foundation that answers three critical
-            questions:
+            Messaging strategy answers three critical questions:
           </div>
           <div className="text-white text-base md:text-lg text-left mb-6 font-semibold">
             <ul className="list-none p-0 m-0">
               <li>
-                • <span className="font-bold">Who are your ideal clients?</span>
-              </li>
-              <li>
                 •{" "}
                 <span className="font-bold">
-                  What do they actually care about when choosing a provider?
+                  Who specifically are your ideal clients?
                 </span>
               </li>
               <li>
                 •{" "}
                 <span className="font-bold">
-                  And how do you communicate your value in a way that
-                  immediately resonates with them?
+                  What do they care about when choosing a provider?
+                </span>
+              </li>
+              <li>
+                •{" "}
+                <span className="font-bold">
+                  How do you talk about your service so they choose you?
                 </span>
               </li>
             </ul>
           </div>
           <div className="text-white text-base md:text-lg text-left mb-10 font-normal">
-            We answer those questions through four key deliverables:
+            We answer those through four deliverables:
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
@@ -331,12 +329,12 @@ const MessagingAndPositioningPage = () => {
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
-              Messaging &amp; Positioning Guide
+                Messaging &amp; Positioning Guide
               </h3>
               <p className="text-[#18102B] text-base">
-                Includes your value proposition, unique differentiators,
-                customer profiles, and the specific benefits only you can
-                provide. Your reference guide for all messaging decisions.
+                A clear document that explains how to talk about your business:
+                what makes you different, what benefits to highlight, and what
+                proof to show.
               </p>
             </div>
             {/* Card 2 */}
@@ -352,10 +350,9 @@ const MessagingAndPositioningPage = () => {
                 Service Overview
               </h3>
               <p className="text-[#18102B] text-base">
-                A comprehensive breakdown of your service that covers who you
-                serve, what problems you solve, and how you deliver value.
-                Ensures your entire team can is aligned on how to talk about
-                your service. Especially valuable for your sales reps.
+                A short summary of who you help, what problems you solve, and
+                how your service delivers results so your sales team can explain
+                it the same way.
               </p>
             </div>
             {/* Card 3 */}
@@ -368,11 +365,11 @@ const MessagingAndPositioningPage = () => {
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
-                Competitor Research Summary
+                Voice of Customer Summary
               </h3>
               <p className="text-[#18102B] text-base">
-                Insights into how your competitors position themselves and what
-                messaging gaps you can exploit to stand out in your market.
+                Real quotes from your ideal clients. Words you can reuse in your
+                copy, emails, or sales calls.
               </p>
             </div>
             {/* Card 4 */}
@@ -388,26 +385,25 @@ const MessagingAndPositioningPage = () => {
                 Website Copy
               </h3>
               <p className="text-[#18102B] text-base">
-                Your website is the first place prospects learn about your
-                business, and where your messaging strategy comes to life. We
-                write copy for your homepage and additional pages (based on
-                project scope) that guide all your other marketing copy.
+                We rewrite your homepage (and other pages if needed) so your
+                value comes across clearly from the first line.
               </p>
             </div>
           </div>
         </div>
       </section>
       <section className="w-full py-24 bg-[#faf9fb] text-center">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-6">
-            Let&apos;s Make Your Expertise Shine
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-8">
+            Once your messaging is clear, everything starts working together.
           </h2>
           <p className="text-gray-700 text-xl md:text-2xl mb-10">
-            Tactics without the right message are like building a house without
-            a foundation.  But with strategic messaging, every marketing
-            effort—from your website to your sales conversations—becomes
-            exponentially more effective because you're finally speaking your
-            prospects' language.
+            Your ads bring real inquiries. Your posts attract clients, not just
+            likes. Your website visitors actually call you. 
+            <br />
+            <br />
+            That's when your marketing starts doing what word of mouth has done all along: make
+            people trust you.
           </p>
           <p className="text-[#18102B] text-xl md:text-2xl font-bold mb-10">
             Ready to stop competing on price and start winning on value?

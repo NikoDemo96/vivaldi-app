@@ -1,4 +1,3 @@
-
 import React from "react";
 import Image from "next/image";
 import NavBar from "@/components/Navbar/Navbar";
@@ -8,9 +7,9 @@ import Link from "next/link";
 
 export const metadata = {
   title:
-    "Vivaldi Marketing | Google & Meta Ads for Translation and Manufacturing Businesses",
+    "Vivaldi Marketing | Google Ads for Translation and Manufacturing Businesses",
   description:
-    "Google Ads and Meta Ads strategies designed to grow translation and manufacturing businesses.",
+    "Google Ads strategies designed to grow translation and manufacturing businesses.",
 };
 
 const GoogleAndMetaAdsPage = () => {
@@ -21,15 +20,14 @@ const GoogleAndMetaAdsPage = () => {
       <section className="w-full pt-16 pb-20 px-16 bg-[#faf9fb]">
         <div className="max-w-5xl mx-8">
           <h1 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight text-left">
-            Consistent Growth
+            Turn Google Ads
           </h1>
           <h2 className="text-5xl md:text-6xl font-bold text-[#FF8A71] mb-8 leading-tight text-left">
-            Through Targeted Google Ads
+            Into Client Calls
           </h2>
           <p className="text-[#6C3FC5] text-xl md:text-2xl mb-10 text-left">
-            Stop burning budget on clicks that don't convert. Start attracting
-            qualified buyers who actually need what you manufacture or
-            translate.
+            Google Ads management for specialized businesses by people who
+            understand your industries and how your clients buy.
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-start w-full mb-8">
             <Link href="#contact-form">
@@ -58,19 +56,23 @@ const GoogleAndMetaAdsPage = () => {
         </div>
         <div className="relative z-10 w-full flex items-center justify-center">
           <p className="text-white text-xl md:text-2xl font-semibold text-center max-w-7xl px-4">
-            Google Ads ensures your business appears right at the top when
-            potential clients are actively searching for your services or
-            products. It's a direct way to capture immediate interest and gain
-            visibility, working hand-in-hand with your SEO without the huge time
-            investment that SEO represents.
+            Google Ads puts you at the top of search results when potential
+            clients are looking for what you offer. It's the fastest way to get
+            in front of buyers with immediate need while your SEO builds
+            long-term visibility.
             <br />
             <br />
-            This approach is particularly effective for businesses that offer
-            specialized products or services. If you're a manufacturer looking
-            for specialized component sourcing, or a language service provider
-            offering certified legal translations or highly specialized
-            localization in niche industries, Google Ads helps you reach those
-            specific needs.
+            But getting clicks is only half the battle. If your landing page
+            doesn't immediately build trust and explain your value clearly,
+            you've wasted that ad spend. That's why we don't just manage your
+            ads, we make sure your messaging actually converts those clicks into
+            conversations.
+            <br />
+            <br />
+            This is especially critical for specialized services. When buyers
+            are investing in precision manufacturing or certified translations,
+            the stakes are high: they need to fully trust you before committing.
+            Your messaging has to build that trust fast.
           </p>
         </div>
       </section>
@@ -117,11 +119,9 @@ const GoogleAndMetaAdsPage = () => {
                 Industry Insider Knowledge
               </h3>
               <p className="text-white text-lg md:text-xl max-w-lg">
-                We don’t have to Google what “5-axis CNC machining” means, the
-                nuances of ISO 17100 compliance for translation, or why
-                certified translations matter for medical devices. We speak your
-                language and understand your buyers’ needs and purchasing
-                drivers.
+                We don’t have to Google what “5-axis CNC machining” mean or the
+                difference between legal and certified translation. We speak
+                your language and understand what matters to your buyers.
               </p>
             </div>
             <div className="flex-1 flex justify-center">
@@ -148,11 +148,10 @@ const GoogleAndMetaAdsPage = () => {
                 Lead Quality Obsession
               </h3>
               <p className="text-white text-lg md:text-xl max-w-lg">
-                We optimize for qualified conversations. Our strategies use
-                advanced targeting, rigorous negative keyword management, and
-                precise ad copy to filter out irrelevant traffic (students, job
-                seekers, casual researchers), ensuring your budget attracts only
-                genuine, high-intent prospects.
+                We focus on bringing you actual client conversations. That means
+                filtering out students, job seekers, and casual browsers through
+                careful targeting and ad copy so your budget goes toward people
+                ready to hire.
               </p>
             </div>
           </div>
@@ -160,13 +159,14 @@ const GoogleAndMetaAdsPage = () => {
           <div className="flex flex-col md:flex-row items-center mb-12 gap-8">
             <div className="flex-1">
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
-                Transparent, No-Contract Approach
+                We Fix What Most Agencies Ignore: Your Message
               </h3>
               <p className="text-white text-lg md:text-xl max-w-lg">
-                No locked-in contracts. No mysterious “proprietary methods.” We
-                show you exactly what we’re doing, why we’re doing it, and how
-                it connects to your revenue goals. Month-to-month agreements
-                because we earn your business through results.
+                Most Google Ads agencies focus only on keywords and bidding. We
+                know that messaging is 70% of whether an ad converts. We review
+                your landing pages, make sure your value is clear, and help you
+                build trust fast, because great targeting with weak messaging
+                just burns budget.
               </p>
             </div>
             <div className="flex-1 flex justify-center">
@@ -190,18 +190,13 @@ const GoogleAndMetaAdsPage = () => {
             </div>
             <div className="flex-1 order-1 md:order-2">
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
-                Built for B2B Complexity
+                We Get B2B Sales Cycles
               </h3>
               <p className="text-white text-lg md:text-xl max-w-lg">
-                Understanding the often-extended sales cycles in manufacturing
-                and enterprise LSP deals, we implement custom attribution
-                windows (90–180 days) to accurately measure long-term impact.
-                <br />
-                <br />
-                We also integrate with your CRM for lead tracking from the
-                initial click to a closed deal, and we develop targeting and
-                bidding strategies that align precisely with your specific sales
-                objectives and sales team’s workflows.
+                Manufacturing and translation deals take time. We track leads
+                over 90-180 days to see what actually closes, integrate with
+                your CRM to follow the full journey, and adjust our strategy
+                based on what your sales team tells us about lead quality.
               </p>
             </div>
           </div>
@@ -231,14 +226,13 @@ const GoogleAndMetaAdsPage = () => {
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
-                Deep Discovery
+                Discovery
               </h3>
               <p className="text-[#18102B] text-base">
-                We start where others don't: understanding your business model,
-                sales process, and ideal customer profile. We analyze your
-                competitors, review your past campaigns, and identify the
-                specific search terms that indicate buying intent in your
-                industry.
+                We start by understanding your business, sales process, and who
+                you're trying to reach. We look at your competitors, review any
+                past campaigns, and figure out which search terms actually show
+                buying intent in your industry.
               </p>
             </div>
             {/* Card 2 */}
@@ -251,13 +245,13 @@ const GoogleAndMetaAdsPage = () => {
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
-                Campaign Architecture
+                Campaign Setup
               </h3>
               <p className="text-[#18102B] text-base">
-                We start conservatively, testing messages and keywords with
-                small budgets before scaling what works. Monitoring ensures we
-                catch and fix issues before they waste budget. Weekly
-                optimization based on real data, not gut feelings.
+                We organize campaigns around how your buyers search—not just
+                your product list. For manufacturers, that might mean separating
+                "need this now" searches from "comparing vendors" searches. Each
+                needs different messaging and landing pages.
               </p>
             </div>
             {/* Card 3 */}
@@ -270,13 +264,13 @@ const GoogleAndMetaAdsPage = () => {
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
-                Launch & Optimize
+                Launch & Test
               </h3>
               <p className="text-[#18102B] text-base">
-                We start conservatively, testing messages and keywords with
-                small budgets before scaling what works. Monitoring ensures we
-                catch and fix issues before they waste budget. Weekly
-                optimization based on real data, not gut feelings.
+                We start small, testing different messages and keywords with
+                conservative budgets to see what works. Weekly monitoring
+                catches problems early. We optimize based on what the data
+                shows, not hunches.
               </p>
             </div>
             {/* Card 4 */}
@@ -289,13 +283,13 @@ const GoogleAndMetaAdsPage = () => {
                 className="mb-4"
               />
               <h3 className="text-[#18102B] text-lg md:text-xl font-bold mb-2">
-                Scale & Refine
+                Scale What Works
               </h3>
               <p className="text-[#18102B] text-base">
-                As we gather data on what converts, we expand successful
-                campaigns and cut underperformers. Monthly strategy calls keep
-                you informed and aligned with your sales team's feedback about
-                lead quality
+                As we see what brings quality leads, we expand those campaigns
+                and cut what's not performing. Monthly calls keep you informed
+                and let us adjust based on your sales team's feedback about lead
+                quality.
               </p>
             </div>
           </div>
@@ -316,20 +310,15 @@ const GoogleAndMetaAdsPage = () => {
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
                 {/* $1000<span className="text-lg font-normal">/month</span> */}
               </div>
-
-              <div className="text-[#18102B] text-xl mb-4">
-                Perfect for testing B2B Google Ads
-              </div>
               <div className="mt-6 mb-6">
                 <p className="text-[#18102B] text-left text-base mb-6">
-                  Launch your first Google Ads campaigns and discover what
-                  resonates with your target customers. We test different
-                  messages and audiences to find what drives qualified leads for
-                  your business.
+                  Launch your first Google Ads campaigns and test what works. We
+                  try different messages and targeting to see what gets people
+                  to reach out.
                 </p>
-                <p className="text-[#18102B] text-left text-base mb-6">
-                  Ideal for: B2B companies exploring paid ads for the first time
-                  or testing new service offerings.
+                <p className="text-[#18102B] text-left text-base mb-6 italic  ">
+                  Ideal for: Companies new to paid ads or testing ads for a new
+                  service
                 </p>
               </div>
               <button className="mt-auto px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base w-full">
@@ -344,21 +333,15 @@ const GoogleAndMetaAdsPage = () => {
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
                 {/* $1,700<span className="text-lg font-normal">/month</span> */}
               </div>
-
-              <div className="text-[#18102B] text-xl mb-4">
-                For companies ready to scale
-              </div>
               <div className="mt-6 mb-6">
                 <p className="text-[#18102B] text-left text-base mb-6">
-                  Expand your advertising across multiple campaigns and
-                  platforms. We manage more keywords, test additional audiences,
-                  and optimize across Google and Meta to maximize your reach and
-                  lead generation.
+                  Run multiple campaigns across Google and Meta. We manage more
+                  keywords, test different audiences, and optimize to bring you
+                  more qualified leads.
                 </p>
-                <p className="text-[#18102B] text-left text-base mb-6">
-                  Ideal for: Small to mid-sized companies that want to run more
-                  campaigns or already have some ads experience and need
-                  professional management.
+                <p className="text-[#18102B] text-left text-base mb-6 italic">
+                  Ideal for: Small to mid-sized companies that want professional
+                  ads management or need to scale beyond a single campaign
                 </p>
               </div>
               <button className="mt-auto px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base w-full">
@@ -373,19 +356,16 @@ const GoogleAndMetaAdsPage = () => {
               <div className="text-3xl md:text-4xl font-bold text-[#F07C5A] mb-2">
                 {/* $2,500<span className="text-lg font-normal">/month</span> */}
               </div>
-              <div className="text-[#18102B] text-xl mb-4">
-                Full-service B2B lead generation
-              </div>
+
               <div className="mt-6 mb-6">
                 <p className="text-[#18102B] text-left text-base mb-6">
-                  Enterprise-level campaign management for complex advertising
-                  needs. We handle large keyword portfolios, multi-regional
-                  targeting, account-based strategies, and coordinate closely
-                  with your sales team to align campaigns with revenue goals.
+                  Comprehensive campaign management for complex needs. We handle
+                  large keyword lists, multiple regions, account-based
+                  targeting, and work closely with your sales team.
                 </p>
-                <p className="text-[#18102B] text-left text-base mb-6">
+                <p className="text-[#18102B] text-left text-base mb-6 italic">
                   Ideal for: Larger companies with multiple locations, extensive
-                  keyword lists, or sophisticated targeting requirements.
+                  targeting needs, or complex sales processes
                 </p>
               </div>
               <button className="mt-auto px-8 py-3 bg-[#18102B] text-white font-semibold rounded-md shadow-md hover:bg-[#2a1e4d] transition-colors text-base w-full">
@@ -395,7 +375,7 @@ const GoogleAndMetaAdsPage = () => {
           </div>
           <div className="text-center text-[#18102B] text-base md:text-lg font-semibold mt-8">
             <span className="font-normal">Setup Fee: </span>
-            <span className="font-bold text-[#F07C5A]">$1,500</span>{" "}
+            <span className="font-bold">$1,000</span>{" "}
             <span className="font-normal">
               (waived if you&apos;ve completed our Messaging & Positioning
               Strategy)
@@ -407,14 +387,11 @@ const GoogleAndMetaAdsPage = () => {
       <section className="w-full py-24 bg-[#5233B0] text-center">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-5xl md:text-6xl font-bold text-[#F9F6FF] mb-6">
-            Ready to Engineer Your Lead Generation?
+            Ready to Attract More Clients?
           </h2>
           <p className="text-[#F9F6FF] text-xl md:text-2xl mb-10">
-            Stop the guesswork and start building valuable relationships. With a
-            carefully planned Google Ads strategy, you can attract clients who
-            value quality, expertise, and precision. We connect you with the
-            specific clients your specialized products or services are designed
-            for.
+            Let's get your ads in front of buyers who need specialized services
+            like yours.
           </p>
           <Link href="https://taplink.cc/vivaldimkt.com">
             <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
