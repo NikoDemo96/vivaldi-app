@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <GoogleTagManager gtmId="G-44JC7GYF2W" />
+       <GoogleTagManager gtmId="GTM-PVJHL6DD" />
       <body className={instrumentSans.variable}>
         {children}
       </body>
