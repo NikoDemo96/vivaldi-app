@@ -1,8 +1,8 @@
-
 import type { Metadata } from "next";
 import { Instrument_Sans } from "next/font/google";
 import "../styles/globals.css";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
@@ -19,20 +19,19 @@ export const metadata: Metadata = {
   description:
     "Marketing solutions for translation and manufacturing businesses. We specialize in SEO, Ads, and content strategy.",
   icons: {
-    icon: "/vivaldi-logo.svg", 
+    icon: "/vivaldi-logo.svg",
   },
   openGraph: {
     title: "Vivaldi Marketing",
     description:
       "Helping translation and manufacturing businesses grow with tailored marketing strategies.",
-    url: "https://vivaldimkt.com", 
+    url: "https://vivaldimkt.com",
     siteName: "Vivaldi Marketing",
     locale: "en_US",
     type: "website",
   },
   metadataBase: new URL("https://vivaldimkt.com"),
 };
-
 
 export default function RootLayout({
   children,
@@ -41,10 +40,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <GoogleTagManager gtmId="GTM-PVJHL6DD" />
-      <body className={instrumentSans.variable}>
-        {children}
-      </body>
+      <body className={instrumentSans.variable}>{children}</body>
+      <GoogleAnalytics gaId="G-0E0FDF02GS" />
     </html>
   );
 }
