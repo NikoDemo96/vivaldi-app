@@ -16,15 +16,15 @@ const AboutPage = () => {
     <div className="min-h-screen bg-[#faf9fb]">
       <NavBar />
       {/* Description Section */}
-      <section className="w-full pt-16 pb-16 px-16">
-        <div className="max-w-7xl mx-8">
-          <h1 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight">
+      <section className="w-full pt-12 md:pt-16 pb-12 md:pb-16 px-4 md:px-8 lg:px-16">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight">
             A Translator And an Engineer
           </h1>
-          <h2 className="text-5xl md:text-6xl font-bold text-[#E2725B] mb-10 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#E2725B] mb-8 md:mb-10 leading-tight">
             Turned Marketers
           </h2>
-          <div className="space-y-6 text-2xl text-[#331E5B] mb-12">
+          <div className="space-y-4 md:space-y-6 text-base sm:text-lg md:text-xl lg:text-2xl text-[#331E5B] mb-8 md:mb-12">
             <p>
               Ten years ago, if you&apos;d told us we&apos;d be running a
               marketing consultancy together, we would have laughed. Viviana
@@ -74,18 +74,18 @@ const AboutPage = () => {
         </div>
       </section>
       {/* About Viviana Section */}
-      <section className="w-full bg-[#5233B0] py-20 px-16">
-        <div className="max-w-7xl mx-auto flex lg:flex-row items-center lg:items-start gap-12">
+      <section className="w-full bg-[#5233B0] py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8 md:gap-12">
           {/* Text */}
-          <div className="text-white">
-            <div>
-              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-right ml-auto w-5/6">
+          <div className="text-white w-full lg:w-1/2 order-2 lg:order-1">
+            <div className="flex flex-col items-center lg:items-end mb-6 md:mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center lg:text-right w-full lg:w-5/6">
                 Viviana Urbaneja
               </h2>
               <Link
                 href="https://www.linkedin.com/in/viviana-urbaneja-marketer/"
                 target="_blank"
-                className="mb-4 block w-12 ml-auto"
+                className="block w-12"
               >
                 <Image
                   src="/images/linkedin3.png"
@@ -96,7 +96,7 @@ const AboutPage = () => {
                 />
               </Link>
             </div>
-            <div className="space-y-6 text-2xl w-full text-right ml-auto">
+            <div className="space-y-4 md:space-y-6 text-base sm:text-lg md:text-xl lg:text-2xl w-full text-center lg:text-right">
               <p>
                 I spent six years as a freelance English to Spanish translator,
                 experiencing the familiar feast-or-famine cycle that every
@@ -126,7 +126,7 @@ const AboutPage = () => {
             </div>
           </div>
           {/* Image */}
-          <div className="flex-shrink-0 w-full max-w-lg bg-[#DDDDDD] flex items-start justify-start rounded-sm">
+          <div className="flex-shrink-0 w-full lg:w-1/2 max-w-md lg:max-w-lg bg-[#DDDDDD] flex items-start justify-start rounded-sm order-1 lg:order-2">
             <Image
               src="/images/viviana-photo.png"
               alt="Viviana Urbaneja"
@@ -138,18 +138,18 @@ const AboutPage = () => {
         </div>
       </section>
       {/* About Jorge Section */}
-      <section className="w-full bg-[#5233B0] py-20 px-16">
-        <div className="max-w-7xl mx-auto flex lg:flex-row-reverse items-center lg:items-start gap-12">
+      <section className="w-full bg-[#5233B0] py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8 md:gap-12">
           {/* Text */}
-          <div className="flex-1 text-white text-center">
-            <div>
-              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-left w-5/6">
+          <div className="w-full lg:w-1/2 text-white order-2 lg:order-1">
+            <div className="flex flex-col items-center lg:items-start mb-6 md:mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center lg:text-left w-full lg:w-5/6">
                 Jorge Valderrama
               </h2>
               <Link
                 href="https://www.linkedin.com/in/valdimarketing/"
                 target="_blank"
-                className="mb-4 block w-12 mr-auto"
+                className="block w-12"
               >
                 <Image
                   src="/images/linkedin3.png"
@@ -160,7 +160,7 @@ const AboutPage = () => {
                 />
               </Link>
             </div>
-            <div className="space-y-6 text-2xl w-full text-left mr-auto w-5/6">
+            <div className="space-y-4 md:space-y-6 text-base sm:text-lg md:text-xl lg:text-2xl w-full text-center lg:text-left">
               <p>
                 As a materials engineer, I spent years understanding the
                 technical side of manufacturing—working within tight tolerances,
@@ -185,7 +185,7 @@ const AboutPage = () => {
             </div>
           </div>
           {/* Image */}
-          <div className="flex-shrink-0 w-full max-w-lg bg-[#DDDDDD] flex items-center justify-center rounded-sm">
+          <div className="flex-shrink-0 w-full lg:w-1/2 max-w-md lg:max-w-lg bg-[#DDDDDD] flex items-center justify-center rounded-sm order-1 lg:order-2">
             <Image
               src="/images/jorge-photo3.png"
               alt="Jorge Valderrama"
@@ -197,17 +197,17 @@ const AboutPage = () => {
         </div>
       </section>
       {/* Make Your Expertise Shine Section */}
-      <section className="w-full py-24 bg-[#faf9fb] text-center">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-5xl md:text-6xl font-bold text-[#6C3FC5] mb-6">
+      <section className="w-full py-12 md:py-16 lg:py-24 bg-[#faf9fb] text-center">
+        <div className="max-w-3xl mx-auto px-4 md:px-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6C3FC5] mb-4 md:mb-6">
             Let&apos;s Make Your Expertise Shine
           </h2>
-          <p className="text-gray-700 text-2xl mb-10">
+          <p className="text-gray-700 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10">
             Work with marketers who&apos;ve been where you are and know exactly
             how to help you stand out
           </p>
-          <Link href="https://taplink.cc/vivaldimkt.com">
-            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+          <Link href="https://taplink.cc/vivaldimkt.com" className="inline-block">
+            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors w-full sm:w-auto">
               BOOK A DISCOVERY CALL
             </button>
           </Link>

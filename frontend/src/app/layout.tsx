@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={instrumentSans.variable}>{children}</body>
-      <GoogleAnalytics gaId="G-0E0FDF02GS" />
+      <GoogleAnalytics gaId="G-44JC7GYF2W" />
     </html>
   );
 }

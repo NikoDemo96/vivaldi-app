@@ -3,12 +3,16 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 const Navbar = () => {
+  const router = useRouter();
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
-  // Close dropdown when clicking outside
+  // Close desktop dropdown when clicking outside
   React.useEffect(() => {
     if (!servicesOpen) return;
     function handleClick(e: MouseEvent) {
@@ -22,23 +26,32 @@ const Navbar = () => {
   }, [servicesOpen]);
 
   return (
-    <header className="w-full bg-[#5233B0] px-16 py-5">
+    <header className="w-full bg-[#5233B0] px-4 md:px-8 lg:px-16 py-5">
       <div className="w-full flex items-center justify-between h-[64px] max-w-none">
         {/* Logo and Brand */}
-        <div className="mt-10 flex items-center pl-8 min-w-[260px]">
+        <div className="flex items-center">
           <Link href="/">
             <Image
               src="/images/vivaldi-logo.svg"
               alt="Vivaldi Logo"
-              width={180}
-              height={180}
-              className="mr-2"
+              width={140}
+              height={140}
+              className="md:w-[180px] md:h-[180px]"
             />
           </Link>
         </div>
 
-        {/* Navigation */}
-        <nav className="flex-1 flex items-center justify-end space-x-20">
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden text-white p-2 hover:bg-white/10 rounded-md transition-colors"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex flex-1 items-center justify-end space-x-12 xl:space-x-20">
           <Link
             href="/"
             className="text-white font-medium hover:text-[#E2725B] transition-colors text-base"
@@ -101,14 +114,99 @@ const Navbar = () => {
           </div>
           {/* Contact Button */}
           <div className="flex items-center pr-0">
-            <Link href="#contact-form" className="hidden md:block">
-              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-base font-semibold transition-colors rounded-none h-[64px] min-w-[160px] rounded-xl">
+            <Link href="#contact-form">
+              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 lg:px-8 py-4 text-base font-semibold transition-colors rounded-xl h-[64px] min-w-[140px] lg:min-w-[160px]">
                 Contact Us
               </button>
             </Link>
           </div>
         </nav>
       </div>
+
+      {/* Mobile Navigation */}
+      {mobileMenuOpen && (
+        <nav className="lg:hidden bg-[#5233B0] border-t border-white/20 py-4 px-4">
+          <div className="flex flex-col space-y-4">
+            <Link
+              href="/"
+              className="text-white font-medium hover:text-[#E2725B] transition-colors text-base py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className="text-white font-medium hover:text-[#E2725B] transition-colors text-base py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About Us
+            </Link>
+            
+            {/* Mobile Services Dropdown */}
+            <div>
+              <button
+                className="text-white font-medium hover:text-[#E2725B] transition-colors flex items-center gap-1 text-base py-2 w-full"
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                type="button"
+              >
+                Services
+                <ChevronDown className={`w-4 h-4 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {mobileServicesOpen && (
+                <div className="pl-4 mt-2 space-y-2">
+                  <button
+                    className="block py-2 text-white/90 hover:text-[#E2725B] text-sm transition-colors text-left w-full"
+                    onClick={() => {
+                      router.push("/services/messaging-and-positioning-strategy");
+                      setMobileServicesOpen(false);
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Messaging & Positioning
+                  </button>
+                  <button
+                    className="block py-2 text-white/90 hover:text-[#E2725B] text-sm transition-colors text-left w-full"
+                    onClick={() => {
+                      router.push("/services/linkedIn-ghostwriting");
+                      setMobileServicesOpen(false);
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    LinkedIn Ghostwriting
+                  </button>
+                  <button
+                    className="block py-2 text-white/90 hover:text-[#E2725B] text-sm transition-colors text-left w-full"
+                    onClick={() => {
+                      router.push("/services/seo");
+                      setMobileServicesOpen(false);
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    SEO
+                  </button>
+                  <button
+                    className="block py-2 text-white/90 hover:text-[#E2725B] text-sm transition-colors text-left w-full"
+                    onClick={() => {
+                      router.push("/services/google-ads");
+                      setMobileServicesOpen(false);
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Google Ads
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {/* Mobile Contact Button */}
+            <Link href="#contact-form" onClick={() => setMobileMenuOpen(false)}>
+              <button className="w-full bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-3 text-base font-semibold transition-colors rounded-xl">
+                Contact Us
+              </button>
+            </Link>
+          </div>
+        </nav>
+      )}
     </header>
   );
 };

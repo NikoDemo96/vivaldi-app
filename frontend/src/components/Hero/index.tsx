@@ -13,7 +13,7 @@ const Hero = () => {
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative h-[895px] flex items-center justify-center">
+      <section className="relative min-h-[600px] md:h-[895px] flex items-center justify-center py-12 md:py-0">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -26,13 +26,13 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/10" />
 
         {/* Content */}
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-2 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 leading-tight">
               Work with Marketers <br className="hidden md:block" />
-              <h1>Who Speak Your Language</h1>
+              <span className="md:hidden"> </span>Who Speak Your Language
             </h1>
-            <div className="w-[340px] md:w-[765px] mx-auto">
+            <div className="w-[280px] sm:w-[340px] md:w-[765px] mx-auto">
               <Image
                 src="/images/Horizontal-Straight-line.svg"
                 alt="Underline"
@@ -43,23 +43,23 @@ const Hero = () => {
             </div>
           </div>
 
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed mt-4">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed mt-4">
             Marketing strategy for translation agencies
           </p>
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed">
             and manufacturing companies by people who&apos;ve worked in your
             industries.
           </p>
 
-          <div className="flex flex-col md:flex-row justify-center gap-6 mt-8">
-            <Link href="https://taplink.cc/vivaldimkt.com">
-              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-6 md:mt-8">
+            <Link href="https://taplink.cc/vivaldimkt.com" className="w-full sm:w-auto">
+              <button className="w-full sm:w-auto bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors">
                 BOOK A FREE CONSULTATION CALL
               </button>
             </Link>
 
-            <Link href="#contact-form">
-              <button className="bg-transparent border-2 border-solid text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors hover:border-[#d45c43] hover:text-[#E2725B] hover:bg-transparent">
+            <Link href="#contact-form" className="w-full sm:w-auto">
+              <button className="w-full sm:w-auto bg-transparent border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors hover:border-[#E2725B] hover:text-[#E2725B] hover:bg-transparent">
                 GET A 30-MIN MESSASING AUDIT
               </button>
             </Link>
@@ -71,39 +71,43 @@ const Hero = () => {
       <section className="relative">
         {/* No background image */}
         {/* Client Logos Section */}
-        <div className="py-12 bg-transparent relative z-10">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="flex items-center justify-center space-x-12 md:space-x-16">
-              <Link href="https://americahostel.com.ar/">
+        <div className="py-8 md:py-12 bg-transparent relative z-10">
+          <div className="max-w-7xl mx-auto px-4 md:px-6">
+            <div className="flex items-center justify-start md:justify-center space-x-8 md:space-x-12 lg:space-x-16 overflow-x-auto pb-4 md:pb-0 scrollbar-hide">
+              <Link href="https://americahostel.com.ar/" className="flex-shrink-0">
                 <Image
                   src="/images/america-sur-logo.svg"
                   alt="America del Sur"
-                  width={235}
-                  height={87}
+                  width={160}
+                  height={60}
+                  className="md:w-[235px] md:h-[87px]"
                 />
               </Link>
-              <Link href="https://www.wushutao.com.ar/">
+              <Link href="https://www.wushutao.com.ar/" className="flex-shrink-0">
                 <Image
                   src="/images/wushutao-logo.svg"
                   alt="Wu Shu Tao"
-                  width={87}
-                  height={87}
+                  width={60}
+                  height={60}
+                  className="md:w-[87px] md:h-[87px]"
                 />
               </Link>
-              <Link href="https://www.dictumtranslationsolutions.com/">
+              <Link href="https://www.dictumtranslationsolutions.com/" className="flex-shrink-0">
                 <Image
                   src="/images/dictum-logo.svg"
                   alt="Dictum Translation Solutions"
-                  width={235}
-                  height={80}
+                  width={160}
+                  height={55}
+                  className="md:w-[235px] md:h-[80px]"
                 />
               </Link>
-              <Link href="https://sarrismarketing.com/">
+              <Link href="https://sarrismarketing.com/" className="flex-shrink-0">
                 <Image
                   src="/images/sarris-logo.svg"
                   alt="Sarris Marketing"
-                  width={235}
-                  height={62}
+                  width={160}
+                  height={42}
+                  className="md:w-[235px] md:h-[62px]"
                 />
               </Link>
             </div>
@@ -111,26 +115,26 @@ const Hero = () => {
         </div>
 
         {/* Expertise Section */}
-        <div className="py-16 bg-transparent relative z-10">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-5xl md:text-6xl font-bold text-[#6947D2] text-center mb-16 leading-tight">
+        <div className="py-12 md:py-16 bg-transparent relative z-10">
+          <div className="max-w-7xl mx-auto px-4 md:px-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6947D2] text-center mb-12 md:mb-16 leading-tight px-2">
               You're great at getting clients through word of mouth.
             </h2>
 
-            <div className="flex flex-col-2 lg:flex-row lg:justify-between items-center gap-12">
-              <div className="lg:w-1/2 space-y-6">
-                <p className="text-[#1204AA] text-xl leading-relaxed">
+            <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-8 md:gap-12">
+              <div className="lg:w-1/2 space-y-4 md:space-y-6">
+                <p className="text-[#1204AA] text-lg md:text-xl leading-relaxed">
                   But when you try ads or social media, all you often get is
                   frustration.
                 </p>
 
-                <p className="text-[#1204AA] text-xl leading-relaxed">
+                <p className="text-[#1204AA] text-lg md:text-xl leading-relaxed">
                   So you end up one month with more work than you can handle,
                   and the next stressing about where the next client will come
                   from.
                 </p>
 
-                <p className="text-xl leading-relaxed">
+                <p className="text-lg md:text-xl leading-relaxed">
                   <span className="text-[#E2725B] font-semibold">
                     That&apos;s why we started Vivaldi Marketing.
                   </span>{" "}
@@ -140,22 +144,22 @@ const Hero = () => {
                     manufacturing services.
                   </span>
                 </p>
-                <p className="text-[#1204AA] text-xl leading-relaxed">
+                <p className="text-[#1204AA] text-lg md:text-xl leading-relaxed">
                   So now we help businesses like yours get past that.
                 </p>
 
-                <h3 className="text-3xl md:text-4xl font-bold text-[#6947D2] pt-4">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#6947D2] pt-4">
                   So now we help businesses like yours get past that.
                 </h3>
               </div>
 
-              <div className="lg:w-1/2">
+              <div className="lg:w-1/2 w-full max-w-md lg:max-w-none">
                 <Image
                   src="/images/planing.png"
                   alt="Professional working on documents at desk"
                   width={472}
                   height={612}
-                  className="ml-auto"
+                  className="ml-auto w-full h-auto"
                 />
               </div>
             </div>
@@ -164,10 +168,10 @@ const Hero = () => {
       </section>
 
       {/* Testimonial Section Diana*/}
-      <section className="bg-[#10002B] py-16">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <div className="text-left mb-8">
-            <p className="text-white text-lg leading-relaxed">
+      <section className="bg-[#10002B] py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
+          <div className="text-left mb-6 md:mb-8">
+            <p className="text-white text-base md:text-lg leading-relaxed">
               "Viviana has outstanding work ethics and a deep understanding of
               the translation industry. She coordinated the development of our
               new site seamlessly, with clarity and precision. Her marketing
@@ -180,18 +184,18 @@ const Hero = () => {
           </div>
 
           <div className="text-left">
-            <p className="text-white font-semibold text-lg mb-1">
+            <p className="text-white font-semibold text-base md:text-lg mb-1">
               Diana Pompa Morris
             </p>
-            <p className="text-white/80 mb-4">
+            <p className="text-white/80 mb-4 text-sm md:text-base">
               Founder at Dictum Translation Solutions
             </p>
             <Image
               src="/images/diana.svg"
               alt="Diana Pompa Morris"
-              width={90}
-              height={90}
-              className="rounded-full"
+              width={70}
+              height={70}
+              className="rounded-full md:w-[90px] md:h-[90px]"
             />
           </div>
         </div>
