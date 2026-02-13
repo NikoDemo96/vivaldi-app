@@ -18,7 +18,7 @@ const GoogleAndMetaAdsPage = () => {
       <NavBar />
       {/* Description Section */}
       <section className="w-full pt-12 md:pt-16 pb-12 md:pb-20 px-4 md:px-8 lg:px-16 bg-[#faf9fb]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight text-left">
             Turn Google Ads
           </h1>

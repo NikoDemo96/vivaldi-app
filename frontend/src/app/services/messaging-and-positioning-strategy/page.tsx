@@ -17,7 +17,7 @@ const MessagingAndPositioningPage = () => {
       <NavBar />
       {/* Articulate your value section */}
       <section className="w-full pt-12 md:pt-16 pb-12 md:pb-16 px-4 md:px-8 lg:px-16 bg-[#faf9fb]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight text-left">
             Articulate Your Value
           </h1>
@@ -25,7 +25,10 @@ const MessagingAndPositioningPage = () => {
             So Clients Say Yes
           </h2>
           <p className="text-[#6C3FC5] text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-left">
-            Stop guessing how to make clients trust you and start using research-backed messaging that actually sells
+            Stop guessing how to make clients trust you and start using 
+            <br />
+            research-backed messaging that actually sells
+            <br />
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-start w-full mb-8">
             <Link href="#contact-form" className="w-full sm:w-auto">
@@ -43,13 +46,15 @@ const MessagingAndPositioningPage = () => {
       </section>
 
       {/* Exceptional work section */}
-      <section className="w-full bg-[#faf9fb] pt-4 pb-12 md:pb-20 px-4 md:px-8 lg:px-16">
-        <div className="max-w-7xl mx-auto flex flex-col gap-8 md:gap-16">
+      <section className="w-full pt-4 pb-12 md:pb-20 px-4 md:px-8 lg:px-16 bg-[#faf9fb]">
+        <div className="max-w-8xl flex flex-col gap-8 md:gap-16">
           {/* Row 1 */}
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
             <div className="flex-1 order-1 md:order-1">
               <h3 className="text-[#F07C5A] text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-2">
-                Most businesses skip the most important step in marketing: figuring out what to say.
+                Most businesses skip the most important step in marketing: 
+                <br />
+                figuring out what to say.
               </h3>
               <p className="text-[#331E5B] text-base sm:text-lg md:text-xl mb-0 font-medium leading-relaxed">
                 You&apos;ve probably tried ads, invested in your website, or
@@ -141,7 +146,7 @@ const MessagingAndPositioningPage = () => {
         </div>
       </section>
       {/* Our Process Section */}
-      <section className="w-full bg-[#5233B0] py-12 md:py-16 px-4 md:px-6 lg:px-8">
+      <section className="w-full bg-[#5233B0] px-6 md:py-16 px-4 md:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 md:mb-12">
             Our Process
@@ -393,7 +398,10 @@ const MessagingAndPositioningPage = () => {
             Once your messaging is clear, everything starts working together.
           </h2>
           <p className="text-gray-700 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10">
-            Your ads bring real inquiries. Your posts attract clients, not just likes. Your website visitors actually call you. That's when your marketing starts doing what word of mouth has done all along: make people trust you.
+            Your ads bring real inquiries. Your posts attract clients, not just likes. Your website visitors actually call you. 
+             <br />
+             <br />
+            That's when your marketing starts doing what word of mouth has done all along: make people trust you.
           </p>
           <p className="text-[#18102B] text-lg sm:text-xl md:text-2xl font-bold mb-8 md:mb-10">
             Ready to stop competing on price and start winning on value?

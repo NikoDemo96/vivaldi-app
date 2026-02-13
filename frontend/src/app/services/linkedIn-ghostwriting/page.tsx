@@ -17,7 +17,7 @@ const GhostwritingPage = () => {
       <Navbar />
       {/* Main Description */}
       <section className="w-full pt-12 md:pt-16 pb-12 md:pb-16 px-4 md:px-8 lg:px-16 bg-[#faf9fb]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6947D2] mb-2 leading-tight text-left">
             Attract Clients on LinkedIn
           </h1>
@@ -66,7 +66,7 @@ const GhostwritingPage = () => {
       </section>
       {/* Our LinkedIn Philosophy */}
       <section className="w-full bg-transparent pt-12 md:pt-16 pb-12 md:pb-16 px-4 md:px-8 lg:px-16">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-start max-w-7xl mx-auto">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-start">
           <div className="flex flex-col items-start justify-start">
             <h2
               className="text-[2rem] sm:text-[2.5rem] md:text-[2.7rem] lg:text-[3.2rem] font-extrabold leading-tight mb-6 md:mb-8"
@@ -123,7 +123,7 @@ const GhostwritingPage = () => {
           <h2 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8 md:mb-12">
             How We Work
           </h2>
-          <div className="flex flex-col gap-6 md:gap-8">
+          <div className="flex flex-col gap-6 px-4 md:gap-8">
             {/* Step 1 */}
             <div className="relative bg-white rounded-xl shadow-lg p-6 md:p-8 lg:p-10 min-h-[120px] md:min-h-[140px] flex flex-col justify-center">
               <span

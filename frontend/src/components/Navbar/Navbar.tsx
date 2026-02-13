@@ -29,7 +29,7 @@ const Navbar = () => {
     <header className="w-full bg-[#5233B0] px-4 md:px-8 lg:px-16 py-5">
       <div className="w-full flex items-center justify-between h-[64px] max-w-none">
         {/* Logo and Brand */}
-        <div className="flex items-center">
+        <div className="mt-10 flex items-center min-w-[260px]">
           <Link href="/">
             <Image
               src="/images/vivaldi-logo.svg"

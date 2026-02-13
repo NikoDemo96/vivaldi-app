@@ -153,13 +153,13 @@ const Hero = () => {
                 </h3>
               </div>
 
-              <div className="lg:w-1/2 w-full max-w-md lg:max-w-none">
+              <div className="lg:w-1/2 ">
                 <Image
                   src="/images/planing.png"
                   alt="Professional working on documents at desk"
                   width={472}
                   height={612}
-                  className="ml-auto w-full h-auto"
+                  className="ml-auto"
                 />
               </div>
             </div>
@@ -202,13 +202,13 @@ const Hero = () => {
       </section>
 
       {/* Services Section */}
-      <section className="bg-[#5233B0] py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-5xl font-bold text-white mb-6">
+      <section className="bg-[#5233B0] py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 md:mb-6">
               Here's How We Can Help You
             </h2>
-            <p className="text-white/90 text-2xl max-w-7xl mx-auto leading-relaxed">
+            <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl max-w-7xl mx-auto leading-relaxed">
               Most agencies guess what your clients want, then try a bunch of
               tactics and hope something works. We do the opposite: we talk to
               your actual clients first, figure out how they make decisions, and
@@ -216,23 +216,24 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-6">
             {/* Messaging Strategy Card */}
-            <div className="bg-white rounded-lg p-10 text-center flex flex-col justify-between h-full">
-              <div className="mb-4 flex justify-center">
+            <div className="bg-white rounded-lg p-6 md:p-10 text-center flex flex-col justify-between h-full">
+              <div className="mb-3 md:mb-4 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/megafono.svg"
                     alt="Messaging Icon"
-                    width={110}
-                    height={90}
+                    width={90}
+                    height={75}
+                    className="md:w-[110px] md:h-[90px]"
                   />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                 Messaging Strategy
               </h3>
-              <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-sm mb-4 md:mb-6 leading-relaxed">
                 We figure out what your clients care and worry about, then tell
                 you exactly what to say to make them choose you. Once you know
                 what resonates, you can use it everywhere—your website, your
@@ -250,21 +251,22 @@ const Hero = () => {
             </div>
 
             {/* Social Media Ghostwriting Card */}
-            <div className="bg-white rounded-lg p-10 text-center flex flex-col justify-between h-full">
-              <div className="mb-4 flex justify-center">
+            <div className="bg-white rounded-lg p-6 md:p-10 text-center flex flex-col justify-between h-full">
+              <div className="mb-3 md:mb-4 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/linkedin-icon.svg"
                     alt="Social Media Icon"
-                    width={90}
-                    height={90}
+                    width={75}
+                    height={75}
+                    className="md:w-[90px] md:h-[90px]"
                   />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                 Social Media Ghostwriting
               </h3>
-              <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-sm mb-4 md:mb-6 leading-relaxed">
                 We handle your LinkedIn presence: writing posts that sound like
                 you, optimizing for the algorithm, and focusing on topics that
                 make your ideal clients think 'this person gets it' and reach
@@ -281,21 +283,22 @@ const Hero = () => {
             </div>
 
             {/* SEO & Content Writing Card */}
-            <div className="bg-white rounded-lg p-10 text-center flex flex-col justify-between h-full">
-              <div className="mb-4 flex justify-center">
+            <div className="bg-white rounded-lg p-6 md:p-10 text-center flex flex-col justify-between h-full">
+              <div className="mb-3 md:mb-4 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/seo-icon.svg"
                     alt="SEO Icon"
-                    width={90}
-                    height={90}
+                    width={75}
+                    height={75}
+                    className="md:w-[90px] md:h-[90px]"
                   />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                 SEO & Content Writing
               </h3>
-              <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-sm mb-4 md:mb-6 leading-relaxed">
                 We handle everything SEO: keyword research, content strategy,
                 and writing articles that rank. Increase your website traffic
                 and get the right people to find you when they&apos;re looking
@@ -309,21 +312,22 @@ const Hero = () => {
             </div>
 
             {/* Google Ads Card */}
-            <div className="bg-white rounded-lg p-10 text-center flex flex-col justify-between h-full">
-              <div className="mb-4 flex justify-center">
+            <div className="bg-white rounded-lg p-6 md:p-10 text-center flex flex-col justify-between h-full">
+              <div className="mb-3 md:mb-4 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/google-ads-icon.svg"
                     alt="Google Ads Icon"
-                    width={90}
-                    height={90}
+                    width={75}
+                    height={75}
+                    className="md:w-[90px] md:h-[90px]"
                   />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                 Google Ads
               </h3>
-              <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-sm mb-4 md:mb-6 leading-relaxed">
                 Google Ads are the fastest way to get in front of buyers
                 actively searching. We run campaigns that target the right
                 searches and turn those clicks into conversations.
@@ -338,10 +342,10 @@ const Hero = () => {
         </div>
       </section>
       {/* Testimonial Section Justin*/}
-      <section className="bg-[#10002B] py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-left mb-8">
-            <p className="text-white text-lg leading-relaxed">
+      <section className="bg-[#10002B] py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="text-left mb-6 md:mb-8">
+            <p className="text-white text-base sm:text-lg leading-relaxed">
               &quot;I had the pleasure of working with Viviana as a Strategic
               Messaging Specialist at Sarris Marketing. Her ability to analyze a
               business&apos;s digital presence and identify what makes them
@@ -353,50 +357,51 @@ const Hero = () => {
           </div>
 
           <div className="text-left">
-            <p className="text-white font-semibold text-lg mb-1">
+            <p className="text-white font-semibold text-base sm:text-lg mb-1">
               Justin Sarris
             </p>
-            <p className="text-white/80 mb-4">Founder at Sarris Marketing</p>
+            <p className="text-white/80 text-sm sm:text-base mb-4">Founder at Sarris Marketing</p>
             <Image
               src="/images/justin.svg"
               alt="Justin Sarris"
-              width={90}
-              height={90}
-              className="rounded-full"
+              width={70}
+              height={70}
+              className="rounded-full sm:w-[90px] sm:h-[90px]"
             />
           </div>
         </div>
       </section>
 
       {/* How We Work Section */}
-      <section className="bg-[#faf9fb] py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold text-[#6947D2] mb-6">
+      <section className="bg-[#faf9fb] py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6947D2] mb-4 md:mb-6">
               How We Work
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
             {/* Discovery Card */}
-            <div className="bg-white rounded-lg p-10 text-center relative flex flex-col justify-between h-120">
-              <div className="absolute -top-4 left-8">
-                <span className="text-6xl font-bold text-orange-500">1</span>
+            <div className="bg-white rounded-lg p-6 md:p-10 text-center relative flex flex-col justify-between min-h-[320px] md:h-120">
+              <div className="absolute -top-4 left-4 md:left-8">
+                <span className="text-5xl md:text-6xl font-bold text-orange-500">1</span>
               </div>
-              <div className="mt-4 mb-6 flex justify-center">
+              <div className="mt-4 mb-4 md:mb-6 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/loupe-icon.svg"
                     alt="Discovery Icon"
-                    width={120}
-                    height={120}
+                    width={90}
+                    height={90}
+                    className="md:w-[120px] md:h-[120px]"
                   />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-[#6947D2] mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-[#6947D2] mb-3 md:mb-4">
                 DISCOVERY
               </h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                 We&apos;ll talk through what's happening in your business right
                 now: what's working, what isn't, and what your goals are. Then
                 we'll tell you exactly what we think would help and what it
@@ -405,24 +410,25 @@ const Hero = () => {
             </div>
 
             {/* Strategy Card */}
-            <div className="bg-white rounded-lg p-8 text-center relative flex flex-col justify-between h-full">
-              <div className="absolute -top-4 left-8">
-                <span className="text-6xl font-bold text-orange-500">2</span>
+            <div className="bg-white rounded-lg p-6 md:p-8 text-center relative flex flex-col justify-between min-h-[320px]">
+              <div className="absolute -top-4 left-4 md:left-8">
+                <span className="text-5xl md:text-6xl font-bold text-orange-500">2</span>
               </div>
-              <div className="mt-4 mb-6 flex justify-center">
+              <div className="mt-4 mb-4 md:mb-6 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/strategy-icon.svg"
                     alt="Strategy Icon"
-                    width={145}
-                    height={145}
+                    width={110}
+                    height={110}
+                    className="md:w-[145px] md:h-[145px]"
                   />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-[#6947D2] mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-[#6947D2] mb-3 md:mb-4">
                 STRATEGY
               </h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                 We research how buyers in your industry make decisions: talking
                 to your clients, reviewing online conversations and analyzing
                 your competition. Then we tell you what to say and which
@@ -431,24 +437,25 @@ const Hero = () => {
             </div>
 
             {/* Execution Card */}
-            <div className="bg-white rounded-lg p-8 text-center relative flex flex-col justify-between h-full">
-              <div className="absolute -top-4 left-8">
-                <span className="text-6xl font-bold text-orange-500">3</span>
+            <div className="bg-white rounded-lg p-6 md:p-8 text-center relative flex flex-col justify-between min-h-[320px]">
+              <div className="absolute -top-4 left-4 md:left-8">
+                <span className="text-5xl md:text-6xl font-bold text-orange-500">3</span>
               </div>
-              <div className="mt-4 mb-6 flex justify-center">
+              <div className="mt-4 mb-4 md:mb-6 flex justify-center">
                 <div className="flex items-center justify-center">
                   <Image
                     src="/images/execution-icon.svg"
                     alt="Execution Icon"
-                    width={120}
-                    height={120}
+                    width={90}
+                    height={90}
+                    className="md:w-[120px] md:h-[120px]"
                   />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-[#6947D2] mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-[#6947D2] mb-3 md:mb-4">
                 EXECUTION
               </h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                 Time to get down to work. We write your content, run your ads,
                 or build your SEO presence. For ongoing work, we'll have a
                 monthly consultation call to review what's working and what
@@ -458,8 +465,8 @@ const Hero = () => {
           </div>
 
           <div className="text-center">
-            <Link href="https://taplink.cc/vivaldimkt.com">
-              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+            <Link href="https://taplink.cc/vivaldimkt.com" className="inline-block w-full sm:w-auto">
+              <button className="w-full sm:w-auto bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors">
                 BOOK A DISCOVERY CALL
               </button>
             </Link>
@@ -468,74 +475,72 @@ const Hero = () => {
       </section>
 
       {/* Who We Are Section */}
-      <section className="relative py-24 bg-[#5233B0]">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-5xl md:text-6xl font-bold text-white text-center mb-16">
+      <section className="relative py-12 md:py-16 lg:py-24 bg-[#5233B0]">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-8 md:mb-12 lg:mb-16">
             Who We Are
           </h2>
-          <div className="flex flex-row justify-between gap-16">
+          <div className="flex flex-col lg:flex-row justify-between gap-8 md:gap-12 lg:gap-16">
             {/*Viviana */}
-            <div className="flex flex-col md:flex-col items-center md:justify-start gap-8">
+            <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
               <Image
                 src="/images/viviana-photo2.svg"
                 alt="Viviana"
-                width={455}
-                height={541}
+                width={340}
+                height={400}
+                className="md:w-[400px] md:h-[475px] lg:w-[455px] lg:h-[541px]"
               />
-              <p className="text-white text-3xl text-center md:pt-8">
-                Viviana spent six years as a
-                <br />
-                freelance translator before
-                <br />
-                switching to marketing.
+              <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl text-center md:pt-4 lg:pt-8">
+                Viviana spent six years as a<br className="hidden md:block" />
+                <span className="md:hidden"> </span>freelance translator before<br className="hidden md:block" />
+                <span className="md:hidden"> </span>switching to marketing.
               </p>
               <Link
                 href="https://www.linkedin.com/in/viviana-urbaneja-marketer/"
                 target="_blank"
-                className="mb-4 block w-12"
+                className="block w-10 sm:w-12"
               >
                 <Image
                   src="/images/linkedin3.png"
                   alt="Viviana Urbaneja"
-                  width={50}
-                  height={50}
-                  className="rounded-lg bg-white"
+                  width={40}
+                  height={40}
+                  className="rounded-lg bg-white sm:w-[50px] sm:h-[50px]"
                 />
               </Link>
             </div>
             {/*Valdi */}
-            <div className="flex flex-col md:flex-col items-center md:justify-end gap-8">
+            <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
               <Image
                 src="/images/jorge-photo3.png"
                 alt="Valdi"
-                width={400}
-                height={541}
+                width={300}
+                height={400}
+                className="md:w-[350px] md:h-[475px] lg:w-[400px] lg:h-[541px]"
               />
-              <p className="text-white text-3xl text-center md:pt-8">
-                Valdi is a materials engineer
-                <br />
-                who discovered his passion for
-                <br />
-                marketing.
+              <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl text-center md:pt-4 lg:pt-8">
+                Valdi is a materials engineer<br className="hidden md:block" />
+                <span className="md:hidden"> </span>who discovered his passion for<br className="hidden md:block" />
+                <span className="md:hidden"> </span>marketing.
               </p>
               <Link
                 href="https://www.linkedin.com/in/valdimarketing/"
                 target="_blank"
-                className="mb-4 block w-12"
+                className="block w-10 sm:w-12"
               >
                 <Image
                   src="/images/linkedin3.png"
                   alt="Jorge Valderrama"
-                  width={50}
-                  height={50}
-                  className="rounded-lg bg-white"
+                  width={40}
+                  height={40}
+                  className="rounded-lg bg-white sm:w-[50px] sm:h-[50px]"
                 />
               </Link>
             </div>
           </div>
-          <div className="flex justify-center mt-24">
-            <Link href="https://taplink.cc/vivaldimkt.com">
-              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+          <div className="flex justify-center mt-8 md:mt-16 lg:mt-24">
+            <Link href="https://taplink.cc/vivaldimkt.com" className="inline-block w-full sm:w-auto px-4">
+              <button className="w-full sm:w-auto bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors">
                 DISCOVER MORE ABOUT US
               </button>
             </Link>
@@ -545,9 +550,9 @@ const Hero = () => {
       {/* Testimony and Predictable Growth Section */}
       <section className="w-full">
         {/* Testimony */}
-        <div className="bg-[#10002B] py-16 px-4">
+        <div className="bg-[#10002B] py-12 md:py-16 px-4 md:px-6">
           <div className="max-w-7xl mx-auto">
-            <p className="text-white text-lg md:text-xl mb-8">
+            <p className="text-white text-base sm:text-lg md:text-xl mb-6 md:mb-8">
               &quot;We have 50,000 photos from our two hostels but no time to
               manage social media properly. Viviana and Jorge understood exactly
               what we needed—a simple, effective strategy without the fluff.
@@ -557,11 +562,11 @@ const Hero = () => {
               structured approach that showcases what makes our hostels special
               to international travelers.&quot;
             </p>
-            <div className="mb-4">
-              <span className="font-bold text-white">
+            <div className="mb-3 md:mb-4">
+              <span className="font-bold text-white text-base sm:text-lg">
                 Sebastian Rinsky Vinagura
               </span>
-              <div className="text-white/80 text-base">
+              <div className="text-white/80 text-sm sm:text-base">
                 Founder at America del Sur Hostel
               </div>
             </div>
@@ -569,23 +574,23 @@ const Hero = () => {
               <Image
                 src="/images/sebastian-icon.svg"
                 alt="Sebastian Rinsky Vinagura"
-                width="64"
-                height="64"
-                className="rounded-full object-cover"
+                width="54"
+                height="54"
+                className="rounded-full object-cover sm:w-16 sm:h-16"
               />
             </div>
           </div>
         </div>
         {/* Predictable Growth CTA */}
-        <div className="bg-[#5233B0] py-20 px-4 text-center">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+        <div className="bg-[#5233B0] py-12 md:py-16 lg:py-20 px-4 md:px-6 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
             Ready to Attract More Clients?
           </h2>
-          <p className="text-white/90 text-2xl max-w-7xl mx-auto mb-8">
+          <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl max-w-7xl mx-auto mb-6 md:mb-8">
             Let&apos;s figure out the right approach for your business.
           </p>
-          <Link href="https://taplink.cc/vivaldimkt.com">
-            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-4 text-xl font-semibold rounded-xl transition-colors">
+          <Link href="https://taplink.cc/vivaldimkt.com" className="inline-block w-full sm:w-auto">
+            <button className="w-full sm:w-auto bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors">
               BOOK A DISCOVERY CALL
             </button>
           </Link>

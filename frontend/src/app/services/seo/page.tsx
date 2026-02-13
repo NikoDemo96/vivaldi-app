@@ -17,7 +17,7 @@ const SeoPage = () => {
       <NavBar />
       {/* Get Found by Clients section */}
       <section className="w-full pt-12 md:pt-16 pb-12 md:pb-16 px-4 md:px-8 lg:px-16 bg-[#faf9fb]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight text-left">
             Get Found by Clients
           </h1>
@@ -25,7 +25,9 @@ const SeoPage = () => {
             Who Need Your Expertise
           </h2>
           <p className="text-[#6C3FC5] text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 text-left">
-            We help translation agencies and manufacturers show up on Google with industry-specific content.
+            We help translation agencies and manufacturers show up on Google 
+             <br/>
+            with industry-specific content.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-start w-full mb-8">
             <Link href="#contact-form" className="w-full sm:w-auto">
@@ -101,7 +103,7 @@ const SeoPage = () => {
           <h2 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-8 md:mb-12">
             Our Process
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 mb-8 md:mb-10">
+          <div className="grid grid-cols-1 px-4 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 mb-8 md:mb-10">
             {/* Step 1 */}
             <div className="relative bg-white rounded-xl shadow-lg p-6 md:p-8 lg:p-10 flex flex-col items-center text-center min-h-[260px] md:min-h-[280px]">
               <span
@@ -174,7 +176,7 @@ const SeoPage = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 px-4 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
             {/* Step 4 */}
             <div className="relative bg-white rounded-xl shadow-lg p-6 md:p-8 lg:p-10 flex flex-col items-center text-center min-h-[260px] md:min-h-[280px]">
               <span

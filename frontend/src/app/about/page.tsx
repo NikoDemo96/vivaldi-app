@@ -17,7 +17,7 @@ const AboutPage = () => {
       <NavBar />
       {/* Description Section */}
       <section className="w-full pt-12 md:pt-16 pb-12 md:pb-16 px-4 md:px-8 lg:px-16">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight">
             A Translator And an Engineer
           </h1>
@@ -77,7 +77,7 @@ const AboutPage = () => {
       <section className="w-full bg-[#5233B0] py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-8 md:gap-12">
           {/* Text */}
-          <div className="text-white w-full lg:w-1/2 order-2 lg:order-1">
+          <div className="text-white w-full order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-end mb-6 md:mb-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center lg:text-right w-full lg:w-5/6">
                 Viviana Urbaneja
@@ -141,7 +141,7 @@ const AboutPage = () => {
       <section className="w-full bg-[#5233B0] py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8 md:gap-12">
           {/* Text */}
-          <div className="w-full lg:w-1/2 text-white order-2 lg:order-1">
+          <div className="w-full text-white order-2 lg:order-1">
             <div className="flex flex-col items-center lg:items-start mb-6 md:mb-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center lg:text-left w-full lg:w-5/6">
                 Jorge Valderrama
@@ -198,7 +198,7 @@ const AboutPage = () => {
       </section>
       {/* Make Your Expertise Shine Section */}
       <section className="w-full py-12 md:py-16 lg:py-24 bg-[#faf9fb] text-center">
-        <div className="max-w-3xl mx-auto px-4 md:px-6">
+        <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6C3FC5] mb-4 md:mb-6">
             Let&apos;s Make Your Expertise Shine
           </h2>
