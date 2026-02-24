@@ -80,7 +80,7 @@ const Navbar = () => {
                 id="services-dropdown"
                 className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2 z-50 min-w-[200px]"
               >
-                   <Link
+                <Link
                   href="/services/messaging-and-positioning-strategy"
                   className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-base font-medium transition-colors"
                   onClick={() => setServicesOpen(false)}
@@ -94,7 +94,7 @@ const Navbar = () => {
                 >
                   LinkedIn Ghostwriting
                 </Link>
-             
+
                 <Link
                   href="/services/seo"
                   className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-base font-medium transition-colors"
@@ -112,6 +112,12 @@ const Navbar = () => {
               </div>
             )}
           </div>
+          <Link
+            href="/audit"
+            className="text-white font-medium hover:text-[#E2725B] transition-colors text-base"
+          >
+            Get your Audit!
+          </Link>
           {/* Contact Button */}
           <div className="flex items-center pr-0">
             <Link href="#contact-form">
@@ -141,7 +147,7 @@ const Navbar = () => {
             >
               About Us
             </Link>
-            
+
             {/* Mobile Services Dropdown */}
             <div>
               <button
@@ -150,14 +156,18 @@ const Navbar = () => {
                 type="button"
               >
                 Services
-                <ChevronDown className={`w-4 h-4 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`}
+                />
               </button>
               {mobileServicesOpen && (
                 <div className="pl-4 mt-2 space-y-2">
                   <button
                     className="block py-2 text-white/90 hover:text-[#E2725B] text-sm transition-colors text-left w-full"
                     onClick={() => {
-                      router.push("/services/messaging-and-positioning-strategy");
+                      router.push(
+                        "/services/messaging-and-positioning-strategy",
+                      );
                       setMobileServicesOpen(false);
                       setMobileMenuOpen(false);
                     }}

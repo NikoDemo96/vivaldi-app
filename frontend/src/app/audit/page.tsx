@@ -8,7 +8,7 @@ import { AlertTriangle } from "lucide-react";
 export const metadata = {
   title: "Messaging Audit",
   description:
-    "Get a 30-minute video showing exactly where you're losing potential clients—whether it's your website, LinkedIn, or how you're talking about your service.",
+    "Get a short video showing exactly where you're losing potential clients—whether it's your website, LinkedIn, or how you're talking about your service.",
 };
 
 export default function AuditPage() {
@@ -17,7 +17,7 @@ export default function AuditPage() {
       <NavBar />
 
       {/* ── Hero Section ────────────────────────────────────────────── */}
-      <section className="bg-gradient-to-br from-[#5233B0] via-[#3b1a9a] to-[#1e0d6e] min-h-[480px] flex items-center py-16 px-4 md:px-8 lg:px-16">
+      <section className="bg-gradient-to-br from-[#8663F4] via-[#401AB4] to-[#2C0B63] min-h-[480px] flex items-center py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12">
 
           {/* Left – Headline + CTA */}
@@ -34,14 +34,14 @@ export default function AuditPage() {
             </h1>
 
             <p className="text-white/85 text-base md:text-lg leading-relaxed mb-8 max-w-md">
-              Get a 30-minute video showing exactly where you&apos;re losing
+              Get a short video showing exactly where you&apos;re losing
               potential clients—whether it&apos;s your website, LinkedIn, or
               how you&apos;re talking about your service.
             </p>
 
             <Link href="#contact-form">
               <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-3 rounded-lg font-semibold text-base transition-colors">
-                Get Your 30-Minute Messaging Audit
+                Get Your Messaging Audit
               </button>
             </Link>
           </div>
@@ -138,9 +138,9 @@ export default function AuditPage() {
                 </li>
               </ul>
 
-              <div className="border border-yellow-400 bg-yellow-50 rounded-md p-4 flex items-start gap-3">
+              <div className="border border-indigo-400 bg-indigo-50 rounded-md p-4 flex items-start gap-3">
                 <AlertTriangle className="text-yellow-500 w-5 h-5 mt-0.5 flex-shrink-0" />
-                <p className="text-gray-800 font-semibold text-sm md:text-base">
+                <p className="text-indigo-800 font-semibold text-sm md:text-base">
                   Every month without fixing this is another month relying only
                   on word of mouth.
                 </p>
@@ -149,9 +149,9 @@ export default function AuditPage() {
 
             {/* Right – Messaging Gap diagram */}
             <div className="lg:w-1/2 flex justify-center">
-              <div className="bg-[#10002B] rounded-2xl overflow-hidden flex w-full max-w-sm shadow-xl">
+              <div className="bg-[#10002B] rounded-2xl overflow-hidden flex w-full max-w-sm shadow-xl min-h-[360px]">
                 {/* YOUR INPUT column */}
-                <div className="w-[44%] p-5 text-white">
+                <div className="w-[44%] p-5 text-white ">
                   <div className="flex items-start gap-2 mb-5">
                     <span className="text-[#E2725B] text-xl leading-none mt-0.5">
                       ⚙
@@ -227,7 +227,7 @@ export default function AuditPage() {
           <div className="mx-auto w-72 sm:w-96 h-[3px] bg-gradient-to-r from-[#6947D2] to-[#E2725B] rounded mb-6" />
           <p className="text-[#6947D2] text-base md:text-lg leading-relaxed">
             We review how you present your business—your website, your LinkedIn,
-            how you stack up against competitors—and record a 30-minute video
+            how you stack up against competitors—and record a ~15 minutes video
             showing you exactly what&apos;s not working and how to fix it.
           </p>
         </div>
@@ -296,23 +296,20 @@ export default function AuditPage() {
         <div className="flex justify-center mb-10">
           <Link href="#contact-form">
             <button className="bg-[#10002B] hover:bg-[#1e0d6e] text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-colors">
-              Get Your 30-Minute Messaging Audit
+              Get Your Messaging Audit
             </button>
           </Link>
         </div>
 
         {/* Special Credit Offer card */}
         <div className="max-w-2xl mx-auto bg-[#2D0A6B] rounded-2xl p-8 text-center text-white">
-          <span className="inline-block bg-yellow-400 text-[#10002B] text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
-            Limited Time Offer
-          </span>
           <h3 className="text-2xl md:text-3xl font-bold mb-3">Special Credit Offer</h3>
           <p className="text-white/75 text-sm md:text-base leading-relaxed mb-6 max-w-md mx-auto">
             Love your audit and want the full strategy? If you decide to work with us on a
-            messaging project, we&apos;ll apply your audit cost directly to the total.
+            messaging project, we&apos;ll apply a discount.
           </p>
           <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl px-7 py-4 mb-5">
-            <span className="text-4xl font-extrabold">$150</span>
+            <span className="text-4xl font-extrabold">$200</span>
             <span className="text-yellow-400 font-bold text-sm leading-tight text-left">
               Full Project<br />Credit
             </span>
@@ -327,7 +324,7 @@ export default function AuditPage() {
       <div className="h-[8px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
 
       {/* ── Here's How It Works ─────────────────────────────────────── */}
-      <section className="py-16 px-4 md:px-8 lg:px-16">
+      <section className="pt-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-4xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-16">
@@ -351,12 +348,12 @@ export default function AuditPage() {
               {
                 num: "2",
                 title: "We Analyze & Record",
-                body: "We review everything and record a custom 30-minute video walking you through what we found.",
+                body: "We review everything and record a custom video walking you through what we found.",
               },
               {
                 num: "3",
-                title: "You Receive & Pay $150",
-                body: "We send you the video and written summary. Once you've received it, we process the $150 payment.",
+                title: "You Receive & Pay $50",
+                body: "We send you the video and written summary. Once you've received it, we process the $50 payment.",
               },
             ].map((step) => (
               <div key={step.num} className="relative flex flex-col items-center text-center md:w-1/3 md:px-6">
