@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import AuditContactForm from "@/components/AuditContactForm/AuditContactForm";
 import Link from "next/link";
 import { AlertTriangle } from "lucide-react";
 
@@ -104,9 +105,12 @@ export default function AuditPage() {
       {/* ── Client Acquisition Disconnect ───────────────────────────── */}
       <section className="bg-white py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#6947D2] text-center mb-12 underline decoration-[#6947D2] underline-offset-4">
-            The Client Acquisition Disconnect
-          </h2>
+          <div className="w-fit mx-auto mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#6947D2] text-center mb-2">
+              The Client Acquisition Disconnect
+            </h2>
+            <div className="w-full h-[3px] bg-gradient-to-r from-[#6947D2] to-[#E2725B] rounded" />
+          </div>
 
           <div className="flex flex-col lg:flex-row gap-12 items-start">
             {/* Left – Body copy */}
@@ -221,10 +225,12 @@ export default function AuditPage() {
       {/* ── Exactly What This Audit Fixes ───────────────────────────── */}
       <section className="bg-[#EDE9F8] py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#10002B] mb-1">
-            Exactly What This Audit Fixes
-          </h2>
-          <div className="mx-auto w-72 sm:w-96 h-[3px] bg-gradient-to-r from-[#6947D2] to-[#E2725B] rounded mb-6" />
+          <div className="w-fit mx-auto mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#10002B] mb-1">
+              Exactly What This Audit Fixes
+            </h2>
+            <div className="w-full h-[3px] bg-gradient-to-r from-[#6947D2] to-[#E2725B] rounded" />
+          </div>
           <p className="text-[#6947D2] text-base md:text-lg leading-relaxed">
             We review how you present your business—your website, your LinkedIn,
             how you stack up against competitors—and record a ~15 minutes video
@@ -328,10 +334,12 @@ export default function AuditPage() {
         <div className="max-w-4xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#10002B] mb-2">
-              Here&apos;s How It Works
-            </h2>
-            <div className="mx-auto w-56 sm:w-72 h-[3px] bg-gradient-to-r from-[#6947D2] to-[#E2725B] rounded" />
+            <div className="w-fit mx-auto">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#10002B] mb-2">
+                Here&apos;s How It Works
+              </h2>
+              <div className="w-full h-[3px] bg-gradient-to-r from-[#6947D2] to-[#E2725B] rounded" />
+            </div>
           </div>
 
           {/* Steps */}
@@ -379,7 +387,7 @@ export default function AuditPage() {
         </div>
 
         {/* Bottom banner */}
-        <div className="mt-16 -mx-4 md:-mx-8 lg:-mx-16 bg-gradient-to-r from-[#6947D2] to-[#E2725B] py-4 px-6 text-center">
+        <div className="mt-16 -mx-4 md:-mx-8 lg:-mx-16 bg-gradient-to-r from-[#FF8971] via-[#6947D2] to-[#FF8971]  py-4 px-6 text-center">
           <p className="text-white font-semibold text-sm md:text-base">
             Simple, straightforward process to get your personalized audit
           </p>
@@ -387,11 +395,11 @@ export default function AuditPage() {
       </section>
 
       {/* Section divider */}
-      <div className="h-[8px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
+      <div className="h-[8px] w-full bg-[#6947D2]" />
 
       {/* ── Contact Form ─────────────────────────────────────────────── */}
-      <div id="contact-form">
-        <ContactForm />
+      <div className="mt-16">
+        <AuditContactForm />
       </div>
 
       <Footer />
