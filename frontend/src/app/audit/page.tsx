@@ -40,7 +40,7 @@ export default function AuditPage() {
               how you&apos;re talking about your service.
             </p>
 
-            <Link href="#contact-form">
+            <Link href="#audit-contact-form">
               <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 py-3 rounded-lg font-semibold text-base transition-colors">
                 Get Your Messaging Audit
               </button>
@@ -300,7 +300,7 @@ export default function AuditPage() {
 
         {/* CTA Button */}
         <div className="flex justify-center mb-10">
-          <Link href="#contact-form">
+          <Link href="#audit-contact-form">
             <button className="bg-[#10002B] hover:bg-[#1e0d6e] text-white px-8 py-3.5 rounded-lg font-semibold text-base transition-colors">
               Get Your Messaging Audit
             </button>
@@ -398,7 +398,7 @@ export default function AuditPage() {
       <div className="h-[8px] w-full bg-[#6947D2]" />
 
       {/* ── Contact Form ─────────────────────────────────────────────── */}
-      <div className="mt-16">
+      <div id='audit-contact-form' className="mt-16">
         <AuditContactForm />
       </div>
 

@@ -207,6 +207,12 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+                      <Link
+            href="/audit"
+            className="text-white font-medium hover:text-[#E2725B] transition-colors text-base"
+          >
+            Get your Audit!
+          </Link>
 
             {/* Mobile Contact Button */}
             <Link href="#contact-form" onClick={() => setMobileMenuOpen(false)}>

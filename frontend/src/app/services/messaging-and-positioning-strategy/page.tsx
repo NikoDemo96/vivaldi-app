@@ -25,7 +25,7 @@ const MessagingAndPositioningPage = () => {
             So Clients Say Yes
           </h2>
           <p className="text-[#6C3FC5] text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-left">
-            Stop guessing how to make clients trust you and start using 
+            Stop guessing how to make clients trust you and start using
             <br />
             research-backed messaging that actually sells
             <br />
@@ -33,10 +33,13 @@ const MessagingAndPositioningPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 items-start w-full mb-8">
             <Link href="#contact-form" className="w-full sm:w-auto">
               <button className="w-full bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-6 md:px-8 py-3 rounded-md text-base transition-colors">
-                CONTACT US BY EMAIL
+                GET A MESSAGING AUDIT
               </button>
             </Link>
-            <Link href="https://taplink.cc/vivaldimkt.com" className="w-full sm:w-auto">
+            <Link
+              href="https://taplink.cc/vivaldimkt.com"
+              className="w-full sm:w-auto"
+            >
               <button className="w-full border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-6 md:px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent">
                 BOOK A DISCOVERY CALL
               </button>
@@ -52,7 +55,7 @@ const MessagingAndPositioningPage = () => {
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
             <div className="flex-1 order-1 md:order-1">
               <h3 className="text-[#F07C5A] text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-2">
-                Most businesses skip the most important step in marketing: 
+                Most businesses skip the most important step in marketing:
                 <br />
                 figuring out what to say.
               </h3>
@@ -273,7 +276,9 @@ const MessagingAndPositioningPage = () => {
             <p className="text-white font-semibold text-base md:text-lg mb-1">
               Justin Sarris
             </p>
-            <p className="text-white/80 mb-4 text-sm md:text-base">Founder at Sarris Marketing</p>
+            <p className="text-white/80 mb-4 text-sm md:text-base">
+              Founder at Sarris Marketing
+            </p>
             <Image
               src="/images/justin.svg"
               alt="Justin Sarris"
@@ -390,6 +395,13 @@ const MessagingAndPositioningPage = () => {
               </p>
             </div>
           </div>
+          <div className="flex justify-center mt-10 md:mt-14">
+          <Link href="#contact-form" className="inline-block">
+            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors w-full sm:w-auto">
+              NOT READY FOR A FULL MESSAGING PROJECT? GET AN AUDIT FIRST
+            </button>
+          </Link>
+          </div>
         </div>
       </section>
       <section className="w-full py-12 md:py-16 lg:py-24 bg-[#faf9fb] text-center">
@@ -398,15 +410,20 @@ const MessagingAndPositioningPage = () => {
             Once your messaging is clear, everything starts working together.
           </h2>
           <p className="text-gray-700 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10">
-            Your ads bring real inquiries. Your posts attract clients, not just likes. Your website visitors actually call you. 
-             <br />
-             <br />
-            That's when your marketing starts doing what word of mouth has done all along: make people trust you.
+            Your ads bring real inquiries. Your posts attract clients, not just
+            likes. Your website visitors actually call you.
+            <br />
+            <br />
+            That's when your marketing starts doing what word of mouth has done
+            all along: make people trust you.
           </p>
           <p className="text-[#18102B] text-lg sm:text-xl md:text-2xl font-bold mb-8 md:mb-10">
             Ready to stop competing on price and start winning on value?
           </p>
-          <Link href="https://taplink.cc/vivaldimkt.com" className="inline-block">
+          <Link
+            href="https://taplink.cc/vivaldimkt.com"
+            className="inline-block"
+          >
             <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors w-full sm:w-auto">
               BOOK A DISCOVERY CALL
             </button>

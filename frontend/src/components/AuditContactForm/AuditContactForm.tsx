@@ -46,7 +46,7 @@ const AuditContactForm = () => {
       {/* Form card */}
       <div className="bg-white rounded-2xl shadow-xl max-w-md w-full mx-auto px-8 py-10">
         <h3 className="text-xl md:text-2xl font-bold text-[#10002B] text-center mb-1 leading-snug">
-          Get Your 30-Minute
+          Get Your
           <br />
           Messaging Audit
         </h3>
