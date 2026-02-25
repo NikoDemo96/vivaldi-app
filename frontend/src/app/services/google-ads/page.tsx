@@ -29,7 +29,7 @@ const GoogleAndMetaAdsPage = () => {
             Google Ads management for specialized businesses by people who understand your industries and how your clients buy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-start w-full mb-8">
-            <Link href="#contact-form" className="w-full sm:w-auto">
+            <Link href="/audit" className="w-full sm:w-auto">
               <button className="w-full bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-6 md:px-8 py-3 rounded-md text-base transition-colors">
                 GET YOUR FREE CAMPAIGN AUDIT
               </button>

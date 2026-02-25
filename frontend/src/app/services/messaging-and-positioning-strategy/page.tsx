@@ -31,7 +31,7 @@ const MessagingAndPositioningPage = () => {
             <br />
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-start w-full mb-8">
-            <Link href="#contact-form" className="w-full sm:w-auto">
+            <Link href="/audit" className="w-full sm:w-auto">
               <button className="w-full bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-6 md:px-8 py-3 rounded-md text-base transition-colors">
                 GET A MESSAGING AUDIT
               </button>
@@ -396,7 +396,7 @@ const MessagingAndPositioningPage = () => {
             </div>
           </div>
           <div className="flex justify-center mt-10 md:mt-14">
-          <Link href="#contact-form" className="inline-block">
+          <Link href="/audit" className="inline-block">
             <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors w-full sm:w-auto">
               NOT READY FOR A FULL MESSAGING PROJECT? GET AN AUDIT FIRST
             </button>
