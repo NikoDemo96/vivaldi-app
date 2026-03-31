@@ -408,7 +408,7 @@ export default function AuditPage() {
               {
                 num: "3",
                 title: "You Receive & Pay $150",
-                body: "We send you the video and written summary. Once you've received it, we process the $50 payment.",
+                body: "We send you the video and written summary. Once you've received it, we process the $150 payment.",
               },
             ].map((step) => (
               <div
