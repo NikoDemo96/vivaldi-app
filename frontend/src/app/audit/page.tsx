@@ -20,7 +20,6 @@ export default function AuditPage() {
       {/* ── Hero Section ────────────────────────────────────────────── */}
       <section className="bg-gradient-to-br from-[#8663F4] via-[#401AB4] to-[#2C0B63] min-h-[480px] flex items-center py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12">
-
           {/* Left – Headline + CTA */}
           <div className="lg:w-1/2 text-white">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -36,8 +35,8 @@ export default function AuditPage() {
 
             <p className="text-white/85 text-base md:text-lg leading-relaxed mb-8 max-w-md">
               Get a short video showing exactly where you&apos;re losing
-              potential clients—whether it&apos;s your website, LinkedIn, or
-              how you&apos;re talking about your service.
+              potential clients—whether it&apos;s your website, LinkedIn, or how
+              you&apos;re talking about your service.
             </p>
 
             <Link href="#audit-contact-form">
@@ -100,8 +99,20 @@ export default function AuditPage() {
       </section>
 
       {/* Section divider */}
-      <div className="h-[8px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
+      <div className="h-[41px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
 
+      {/* Testimonial image */}
+      <section className="bg-white py-20 px-4 md:px-8 lg:px-16">
+        <div className="max-w-7xl mx-auto flex justify-center">
+          <img
+            src="/images/natalie-testimonial.png"
+            alt="Client testimonial from Natalie Pavey"
+            className="w-full max-w-4xl h-auto"
+          />
+        </div>
+      </section>
+
+      <div className="h-[8px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
       {/* ── Client Acquisition Disconnect ───────────────────────────── */}
       <section className="bg-white py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
@@ -133,8 +144,8 @@ export default function AuditPage() {
                   enough.
                 </li>
                 <li>
-                  Maybe your LinkedIn content doesn&apos;t talk about the
-                  things your clients really care about.
+                  Maybe your LinkedIn content doesn&apos;t talk about the things
+                  your clients really care about.
                 </li>
                 <li>
                   Maybe the way you describe your service sounds too much like
@@ -186,7 +197,10 @@ export default function AuditPage() {
                 <div className="relative flex items-center justify-center w-8 bg-[#E2725B] flex-shrink-0">
                   <span
                     className="text-white text-[8px] font-bold tracking-[0.15em] uppercase whitespace-nowrap select-none"
-                    style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+                    style={{
+                      writingMode: "vertical-rl",
+                      transform: "rotate(180deg)",
+                    }}
                   >
                     THE MESSAGING GAP
                   </span>
@@ -245,16 +259,24 @@ export default function AuditPage() {
             <div className="h-1.5 bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
             <div className="p-6">
               <div className="w-11 h-11 bg-[#6947D2] rounded-full flex items-center justify-center mb-4">
-                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" className="w-5 h-5">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2.5"
+                  className="w-5 h-5"
+                >
                   <circle cx="11" cy="11" r="7" />
                   <line x1="16.5" y1="16.5" x2="21" y2="21" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#6947D2] mb-3">Pinpoint Problems</h3>
+              <h3 className="text-xl font-bold text-[#6947D2] mb-3">
+                Pinpoint Problems
+              </h3>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
-                You&apos;ll know which parts of your copy are turning people away,
-                where you&apos;re creating confusion without realizing it, and what
-                changes will actually make a difference.
+                You&apos;ll know which parts of your copy are turning people
+                away, where you&apos;re creating confusion without realizing it,
+                and what changes will actually make a difference.
               </p>
               <p className="text-[#6947D2] font-bold text-sm md:text-base leading-snug">
                 No guessing, no generic advice.
@@ -269,12 +291,24 @@ export default function AuditPage() {
             <div className="h-1.5 bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
             <div className="p-6">
               <div className="w-11 h-11 bg-[#6947D2] rounded-full flex items-center justify-center mb-4">
-                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" className="w-5 h-5">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="2.5"
+                  className="w-5 h-5"
+                >
                   <rect x="2" y="7" width="20" height="14" rx="2" />
-                  <polygon points="10,10 16,14 10,18" fill="white" stroke="none" />
+                  <polygon
+                    points="10,10 16,14 10,18"
+                    fill="white"
+                    stroke="none"
+                  />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#6947D2] mb-1">What You Get</h3>
+              <h3 className="text-xl font-bold text-[#6947D2] mb-1">
+                What You Get
+              </h3>
               <p className="text-gray-700 font-semibold text-sm md:text-base mb-4">
                 A comprehensive Loom video walking through:
               </p>
@@ -284,9 +318,18 @@ export default function AuditPage() {
                   "How you compare to competitors",
                   "Analysis of one social media profile",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-gray-700 text-sm md:text-base">
+                  <li
+                    key={item}
+                    className="flex items-center gap-3 text-gray-700 text-sm md:text-base"
+                  >
                     <span className="w-5 h-5 rounded-full bg-[#6947D2] flex items-center justify-center flex-shrink-0">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" className="w-3 h-3">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="white"
+                        strokeWidth="3"
+                        className="w-3 h-3"
+                      >
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
                     </span>
@@ -309,15 +352,19 @@ export default function AuditPage() {
 
         {/* Special Credit Offer card */}
         <div className="max-w-2xl mx-auto bg-[#2D0A6B] rounded-2xl p-8 text-center text-white">
-          <h3 className="text-2xl md:text-3xl font-bold mb-3">Special Credit Offer</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-3">
+            Special Credit Offer
+          </h3>
           <p className="text-white/75 text-sm md:text-base leading-relaxed mb-6 max-w-md mx-auto">
-            Love your audit and want the full strategy? If you decide to work with us on a
-            messaging project, we&apos;ll apply a discount.
+            Love your audit and want the full strategy? If you decide to work
+            with us on a messaging project, we&apos;ll apply a discount.
           </p>
           <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl px-7 py-4 mb-5">
-            <span className="text-4xl font-extrabold">$200</span>
+            <span className="text-4xl font-extrabold">$150</span>
             <span className="text-yellow-400 font-bold text-sm leading-tight text-left">
-              Full Project<br />Credit
+              Full Project
+              <br />
+              Credit
             </span>
           </div>
           <p className="text-white/40 text-xs italic">
@@ -360,11 +407,14 @@ export default function AuditPage() {
               },
               {
                 num: "3",
-                title: "You Receive & Pay $50",
+                title: "You Receive & Pay $150",
                 body: "We send you the video and written summary. Once you've received it, we process the $50 payment.",
               },
             ].map((step) => (
-              <div key={step.num} className="relative flex flex-col items-center text-center md:w-1/3 md:px-6">
+              <div
+                key={step.num}
+                className="relative flex flex-col items-center text-center md:w-1/3 md:px-6"
+              >
                 {/* Diamond badge */}
                 <div
                   className="relative z-10 w-11 h-11 bg-[#6947D2] flex items-center justify-center mb-5 flex-shrink-0"
@@ -380,7 +430,9 @@ export default function AuditPage() {
                 <h3 className="text-base md:text-lg font-bold text-[#10002B] mb-3">
                   {step.title}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{step.body}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  {step.body}
+                </p>
               </div>
             ))}
           </div>
@@ -398,7 +450,7 @@ export default function AuditPage() {
       <div className="h-[8px] w-full bg-[#6947D2]" />
 
       {/* ── Contact Form ─────────────────────────────────────────────── */}
-      <div id='audit-contact-form' className="mt-16">
+      <div id="audit-contact-form" className="mt-16">
         <AuditContactForm />
       </div>
 
