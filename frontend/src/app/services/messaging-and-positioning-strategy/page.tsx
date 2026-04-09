@@ -4,6 +4,7 @@ import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Link from "next/link";
+import ProcessAccordion from "@/components/ProcessAccordion/ProcessAccordion";
 
 export const metadata = {
   title: "Vivaldi Marketing | Messaging & Positioning Strategy",
@@ -16,35 +17,36 @@ const MessagingAndPositioningPage = () => {
     <div className="min-h-screen bg-[#faf9fb]">
       <NavBar />
       {/* Articulate your value section */}
-      <section className="w-full pt-12 md:pt-16 pb-12 md:pb-16 px-4 md:px-8 lg:px-16 bg-[#faf9fb]">
-        <div className="max-w-5xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6C3FC5] mb-2 leading-tight text-left">
-            Articulate Your Value
-          </h1>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FF8A71] mb-6 md:mb-8 leading-tight text-left">
-            So Clients Say Yes
-          </h2>
-          <p className="text-[#6C3FC5] text-base sm:text-lg md:text-xl mb-8 md:mb-10 text-left">
-            Stop guessing how to make clients trust you and start using
-            <br />
-            research-backed messaging that actually sells
-            <br />
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 items-start w-full mb-8">
-            <Link href="/audit" className="w-full sm:w-auto">
-              <button className="w-full bg-[#1A133A] hover:bg-[#331E5B] text-white font-semibold px-6 md:px-8 py-3 rounded-md text-base transition-colors">
-                GET A MESSAGING AUDIT
-              </button>
-            </Link>
-            <Link
-              href="https://taplink.cc/vivaldimkt.com"
-              className="w-full sm:w-auto"
-            >
-              <button className="w-full border-2 border-[#FF8A71] text-[#FF8A71] font-semibold px-6 md:px-8 py-3 rounded-md text-base transition-colors hover:bg-[#FF8A71] hover:text-white bg-transparent">
-                BOOK A DISCOVERY CALL
-              </button>
-            </Link>
+      <section
+        className="w-full py-20 md:py-28 px-4 md:px-8 lg:px-16"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, #3D1E8C 0%, #1E0757 45%, #0D0020 100%)",
+        }}
+      >
+        <div className="max-w-2xl mx-auto flex flex-col items-center text-center">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 border border-white/25 rounded-full px-4 py-1.5 text-white/80 text-sm mb-8">
+            Messaging &amp; Positioning
+            <span className="text-[#FF8A71] text-base leading-none">✦</span>
           </div>
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-5 leading-tight">
+            Articulate Your Value
+            <br />
+            So Clients Say Yes
+          </h1>
+
+          <p className="text-white/65 text-base sm:text-lg mb-10 max-w-lg">
+            Stop guessing how to make clients trust you and start using
+            research-backed messaging that actually sells
+          </p>
+
+          <Link href="https://taplink.cc/vivaldimkt.com">
+            <button className="bg-[#4A2E9E] hover:bg-[#5C3FBD] text-white font-semibold px-8 py-3 rounded-md text-sm tracking-widest uppercase transition-colors">
+              BOOK A DISCOVERY CALL
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -54,7 +56,7 @@ const MessagingAndPositioningPage = () => {
           {/* Row 1 */}
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
             <div className="flex-1 order-1 md:order-1">
-              <h3 className="text-[#F07C5A] text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-2">
+              <h3 className="text-[#F07C5A] text-lg sm:text-xl md:text-3xl font-bold mb-3 md:mb-2">
                 Most businesses skip the most important step in marketing:
                 <br />
                 figuring out what to say.
@@ -75,7 +77,7 @@ const MessagingAndPositioningPage = () => {
             </div>
             <div className="flex-1 order-2 md:order-2 flex justify-center md:justify-end">
               <Image
-                src="/images/sticky-notes.svg"
+                src="/images/guy-laptop.png"
                 alt="Hand with sticky notes"
                 width={420}
                 height={260}
@@ -87,7 +89,7 @@ const MessagingAndPositioningPage = () => {
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
             <div className="flex-1 order-2 md:order-1 flex justify-center md:justify-start">
               <Image
-                src="/images/board-wall.svg"
+                src="/images/guys-board.png"
                 alt="Sticky notes wall"
                 width={420}
                 height={260}
@@ -95,7 +97,7 @@ const MessagingAndPositioningPage = () => {
               />
             </div>
             <div className="flex-1 order-1 md:order-2">
-              <h3 className="text-[#F07C5A] text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-2">
+              <h3 className="text-[#F07C5A] text-lg sm:text-xl md:text-3xl font-bold mb-3 md:mb-2">
                 The missing piece is the right message, not more tactics.
               </h3>
               <p className="text-[#331E5B] text-base sm:text-lg md:text-xl font-medium leading-relaxed mb-2">
@@ -116,7 +118,7 @@ const MessagingAndPositioningPage = () => {
         </div>
       </section>
       {/* Testimonial Section Diana*/}
-      <section className="bg-[#10002B] py-12 md:py-16">
+      {/* <section className="bg-[#10002B] py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
           <div className="text-left mb-6 md:mb-8">
             <p className="text-white text-base md:text-lg leading-relaxed">
@@ -147,118 +149,11 @@ const MessagingAndPositioningPage = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Our Process Section */}
-      <section className="w-full bg-[#5233B0] px-6 md:py-16 px-4 md:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 md:mb-12">
-            Our Process
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-            {/* Step 1 */}
-            <div className="relative bg-white rounded-xl shadow-lg p-6 md:p-8 lg:p-10 flex flex-col items-center text-center min-h-[280px] md:min-h-[320px]">
-              <span
-                className="absolute -left-6 -top-6 md:-left-8 md:-top-8 text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold text-[#F07C5A] select-none"
-                style={{ fontFamily: "Caveat, cursive" }}
-              >
-                1
-              </span>
-              <Image
-                src="/images/light-bulb.svg"
-                alt="Discovery Icon"
-                width={70}
-                height={70}
-                className="mb-3 md:mb-4 md:w-[90px] md:h-[90px]"
-              />
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">
-                Discovery & Strategic Interviews
-              </h3>
-              <p className="text-[#18102B] text-sm md:text-base lg:text-lg">
-                We talk with you twice. First, about your service: what you do,
-                how you're different, how you work. Second, about your clients:
-                who they are, what they care about, and why they choose one
-                company over another.
-              </p>
-            </div>
-            {/* Step 2 */}
-            <div className="relative bg-white rounded-xl shadow-lg p-6 md:p-8 lg:p-10 flex flex-col items-center text-center min-h-[280px] md:min-h-[320px]">
-              <span
-                className="absolute -left-6 -top-6 md:-left-8 md:-top-8 text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold text-[#F07C5A] select-none"
-                style={{ fontFamily: "Caveat, cursive" }}
-              >
-                2
-              </span>
-              <Image
-                src="/images/loupe-icon.svg"
-                alt="Research Icon"
-                width={70}
-                height={70}
-                className="mb-3 md:mb-4 md:w-[90px] md:h-[90px]"
-              />
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">
-                Market Research
-              </h3>
-              <p className="text-[#18102B] text-sm md:text-base lg:text-lg">
-                We talk to your past clients to hear what made them choose you.
-                We read what people in your industry say online about their
-                problems and frustrations. And we look at your competitors to
-                see what's working for them and what gaps you can fill.
-              </p>
-            </div>
-            {/* Step 3 */}
-            <div className="relative bg-white rounded-xl shadow-lg p-6 md:p-8 lg:p-10 flex flex-col items-center text-center min-h-[280px] md:min-h-[320px]">
-              <span
-                className="absolute -left-6 -top-6 md:-left-8 md:-top-8 text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold text-[#F07C5A] select-none"
-                style={{ fontFamily: "Caveat, cursive" }}
-              >
-                3
-              </span>
-              <Image
-                src="/images/paper-board.svg"
-                alt="Document Icon"
-                width={70}
-                height={70}
-                className="mb-3 md:mb-4 md:w-[90px] md:h-[90px]"
-              />
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">
-                Strategic Document Creation
-              </h3>
-              <p className="text-[#18102B] text-sm md:text-base lg:text-lg">
-                We organize everything into clear guides: what makes you
-                different, what benefits to highlight, and the actual phrases
-                your clients use. These become the reference for your website,
-                emails, content, and sales calls.
-              </p>
-            </div>
-            {/* Step 4 */}
-            <div className="relative bg-white rounded-xl shadow-lg p-6 md:p-8 lg:p-10 flex flex-col items-center text-center min-h-[280px] md:min-h-[320px]">
-              <span
-                className="absolute -left-6 -top-6 md:-left-8 md:-top-8 text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold text-[#F07C5A] select-none"
-                style={{ fontFamily: "Caveat, cursive" }}
-              >
-                4
-              </span>
-              <Image
-                src="/images/revisions-copy.svg"
-                alt="Copy Icon"
-                width={70}
-                height={70}
-                className="mb-3 md:mb-4 md:w-[90px] md:h-[90px]"
-              />
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">
-                Website Copy & Revisions
-              </h3>
-              <p className="text-[#18102B] text-sm md:text-base lg:text-lg">
-                We write your website copy using your new messaging, then work
-                with you to refine it until it sounds right. If you need help
-                building or redesigning your site, we can help with that too.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProcessAccordion />
       {/* Testimonial Section Justin*/}
-      <section className="bg-[#10002B] py-12 md:py-16">
+      {/* <section className="bg-[#10002B] py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="text-left mb-6 md:mb-8">
             <p className="text-white text-base md:text-lg leading-relaxed">
@@ -288,147 +183,156 @@ const MessagingAndPositioningPage = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* What You'll Receive Section */}
-      <section className="w-full bg-[#5233B0] py-12 md:py-16 px-4 md:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 md:mb-6">
+      <section className="w-full py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-[#EDE8FF]">
+        <div className="max-w-6xl mx-auto">
+          {/* Title */}
+          <h2 className="text-[#18102B] text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-14">
             What You&apos;ll Receive
           </h2>
-          <div className="text-white text-lg sm:text-xl md:text-2xl text-left mb-3 md:mb-2 font-normal">
-            Messaging strategy answers three critical questions:
+
+          {/* Three Imperatives card */}
+          <div className="bg-white rounded-2xl shadow-sm px-6 md:px-10 py-8 mb-10 md:mb-12">
+            {/* Pill */}
+            <div className="flex justify-center mb-6">
+              <span className="border border-[#F07C5A] text-[#F07C5A] text-sm font-semibold px-5 py-1.5 rounded-full">
+                The Three Imperatives
+              </span>
+            </div>
+            {/* Three columns */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                "Who specifically are your ideal clients?",
+                "What do they care about when choosing a provider?",
+                "How do you talk about your service so they choose you?",
+              ].map((q) => (
+                <div key={q} className="flex items-start gap-3">
+                  {/* Checkmark */}
+                  <span className="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-[#F07C5A] flex items-center justify-center">
+                    <svg
+                      className="w-3 h-3 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={3}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  <p className="text-[#18102B] text-sm md:text-base font-medium leading-snug">
+                    {q}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="text-white text-sm sm:text-base md:text-lg text-left mb-4 md:mb-6 font-semibold">
-            <ul className="list-none p-0 m-0">
-              <li>
-                •{" "}
-                <span className="font-bold">
-                  Who specifically are your ideal clients?
-                </span>
-              </li>
-              <li>
-                •{" "}
-                <span className="font-bold">
-                  What do they care about when choosing a provider?
-                </span>
-              </li>
-              <li>
-                •{" "}
-                <span className="font-bold">
-                  How do you talk about your service so they choose you?
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div className="text-white text-sm sm:text-base md:text-lg text-left mb-6 md:mb-10 font-normal">
-            We answer those through four deliverables:
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+          {/* Four deliverable cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
             {/* Card 1 */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 flex flex-col items-center text-center min-h-[280px] md:min-h-[320px]">
-              <Image
-                src="/images/light-bulb.svg"
-                alt="Blueprint Icon"
-                width={70}
-                height={70}
-                className="mb-3 md:mb-4 md:w-[90px] md:h-[90px]"
-              />
-              <h3 className="text-[#18102B] text-base md:text-lg lg:text-xl font-bold mb-2">
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <div className="w-10 h-10 rounded-lg bg-[#5233B0] flex items-center justify-center mb-4">
+                <Image
+                  src="/images/light-bulb.svg"
+                  alt="Blueprint Icon"
+                  width={22}
+                  height={22}
+                />
+              </div>
+              <h3 className="text-[#18102B] text-base font-bold mb-2">
                 Messaging &amp; Positioning Guide
               </h3>
-              <p className="text-[#18102B] text-sm md:text-base">
-                A clear document that explains how to talk about your business:
-                what makes you different, what benefits to highlight, and what
-                proof to show.
+              <p className="text-[#4B4B6A] text-sm leading-relaxed">
+                A clear document that explains how to talk about your business: what makes you different, what benefits to highlight, and the proof to show.
               </p>
             </div>
             {/* Card 2 */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 flex flex-col items-center text-center min-h-[280px] md:min-h-[320px]">
-              <Image
-                src="/images/paper-board.svg"
-                alt="Service Overview Icon"
-                width={70}
-                height={70}
-                className="mb-3 md:mb-4 md:w-[90px] md:h-[90px]"
-              />
-              <h3 className="text-[#18102B] text-base md:text-lg lg:text-xl font-bold mb-2">
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <div className="w-10 h-10 rounded-lg bg-[#5233B0] flex items-center justify-center mb-4">
+                <Image
+                  src="/images/paper-board.svg"
+                  alt="Service Overview Icon"
+                  width={22}
+                  height={22}
+                />
+              </div>
+              <h3 className="text-[#18102B] text-base font-bold mb-2">
                 Service Overview
               </h3>
-              <p className="text-[#18102B] text-sm md:text-base">
-                A short summary of who you help, what problems you solve, and
-                how your service delivers results so your sales team can explain
-                it the same way.
+              <p className="text-[#4B4B6A] text-sm leading-relaxed">
+                A short summary of who you help, what problems you solve, and how your service delivers results so your sales team can explain it the same way.
               </p>
             </div>
             {/* Card 3 */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 flex flex-col items-center text-center min-h-[280px] md:min-h-[320px]">
-              <Image
-                src="/images/loupe-icon.svg"
-                alt="Competitor Research Icon"
-                width={70}
-                height={70}
-                className="mb-3 md:mb-4 md:w-[90px] md:h-[90px]"
-              />
-              <h3 className="text-[#18102B] text-base md:text-lg lg:text-xl font-bold mb-2">
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <div className="w-10 h-10 rounded-lg bg-[#5233B0] flex items-center justify-center mb-4">
+                <Image
+                  src="/images/loupe-icon.svg"
+                  alt="Voice of Customer Icon"
+                  width={22}
+                  height={22}
+                />
+              </div>
+              <h3 className="text-[#18102B] text-base font-bold mb-2">
                 Voice of Customer Summary
               </h3>
-              <p className="text-[#18102B] text-sm md:text-base">
-                Real quotes from your ideal clients. Words you can reuse in your
-                copy, emails, or sales calls.
+              <p className="text-[#4B4B6A] text-sm leading-relaxed">
+                Real quotes from your ideal clients. Words you can reuse in your copy, emails, or sales calls.
               </p>
             </div>
             {/* Card 4 */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 flex flex-col items-center text-center min-h-[280px] md:min-h-[320px]">
-              <Image
-                src="/images/revisions-copy.svg"
-                alt="Website Copy Icon"
-                width={70}
-                height={70}
-                className="mb-3 md:mb-4 md:w-[90px] md:h-[90px]"
-              />
-              <h3 className="text-[#18102B] text-base md:text-lg lg:text-xl font-bold mb-2">
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <div className="w-10 h-10 rounded-lg bg-[#5233B0] flex items-center justify-center mb-4">
+                <Image
+                  src="/images/revisions-copy.svg"
+                  alt="Website Copy Icon"
+                  width={22}
+                  height={22}
+                />
+              </div>
+              <h3 className="text-[#18102B] text-base font-bold mb-2">
                 Website Copy
               </h3>
-              <p className="text-[#18102B] text-sm md:text-base">
-                We rewrite your homepage (and other pages if needed) so your
-                value comes across clearly from the first line.
+              <p className="text-[#4B4B6A] text-sm leading-relaxed">
+                We rewrite your homepage (and other pages if needed) so your value comes across clearly from the first line.
               </p>
             </div>
           </div>
-          <div className="flex justify-center mt-10 md:mt-14">
-          <Link href="/audit" className="inline-block">
-            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors w-full sm:w-auto">
-              NOT READY FOR A FULL MESSAGING PROJECT? GET AN AUDIT FIRST
-            </button>
-          </Link>
-          </div>
+
         </div>
       </section>
-      <section className="w-full py-12 md:py-16 lg:py-24 bg-[#faf9fb] text-center">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6C3FC5] mb-6 md:mb-8">
-            Once your messaging is clear, everything starts working together.
+
+      {/* Start winning on value */}
+      <section
+        className="w-full py-16 md:py-24 px-4 md:px-8 lg:px-16"
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 0%, #3D1E8C 0%, #1E0757 45%, #0D0020 100%)",
+        }}
+      >
+        {/* Hero copy — centered, above the form */}
+        <div className="max-w-2xl mx-auto text-center mb-12">
+          <p className="text-white/60 text-sm md:text-base mb-4">
+            Once your messaging is clear, your ads bring real inquiries
+            <br />
+            and website visitors actually call you.
+          </p>
+          <h2 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-8 leading-tight">
+            Start winning on Value
           </h2>
-          <p className="text-gray-700 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10">
-            Your ads bring real inquiries. Your posts attract clients, not just
-            likes. Your website visitors actually call you.
-            <br />
-            <br />
-            That's when your marketing starts doing what word of mouth has done
-            all along: make people trust you.
-          </p>
-          <p className="text-[#18102B] text-lg sm:text-xl md:text-2xl font-bold mb-8 md:mb-10">
-            Ready to stop competing on price and start winning on value?
-          </p>
-          <Link
-            href="https://taplink.cc/vivaldimkt.com"
-            className="inline-block"
-          >
-            <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors w-full sm:w-auto">
+          <Link href="https://taplink.cc/vivaldimkt.com">
+            <button className="bg-[#4A2E9E] hover:bg-[#5C3FBD] text-white font-semibold px-8 py-3 rounded-full text-sm tracking-widest uppercase transition-colors">
               BOOK A DISCOVERY CALL
             </button>
           </Link>
         </div>
+
+        {/* Contact form */}
         <div id="contact-form">
           <ContactForm />
         </div>
