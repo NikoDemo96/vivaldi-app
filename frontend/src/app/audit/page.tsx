@@ -450,9 +450,27 @@ export default function AuditPage() {
       <div className="h-[8px] w-full bg-[#6947D2]" />
 
       {/* ── Contact Form ─────────────────────────────────────────────── */}
-      <div id="audit-contact-form" className="mt-16">
-        <AuditContactForm />
-      </div>
+      <section className="w-full bg-gradient-to-br from-[#8663F4] via-[#401AB4] to-[#2C0B63] py-20 px-4 md:px-8">
+        {/* Heading */}
+        <div className="text-center mb-10 max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 underline decoration-[#E2725B] underline-offset-16">
+            Not Ready for a Full Messaging Project?
+          </h2>
+          <div className="mx-auto w-64 sm:w-80 h-[3px] rounded mb-6" />
+          <p className="text-white/85 text-base md:text-lg leading-relaxed">
+            <span className="underline decoration-[#E2725B] underline-offset-4 cursor-pointer">
+              Start here.
+            </span>{" "}
+            This audit gives you clear, actionable feedback without committing
+            to a full strategy project. You&apos;ll walk away knowing exactly
+            what&apos;s costing you clients and what to fix first —whether you
+            decide to work with us further or handle it yourself.
+          </p>
+        </div>
+        <div id="audit-contact-form" className="mt-16">
+          <AuditContactForm />
+        </div>
+      </section>
 
       <Footer />
     </main>

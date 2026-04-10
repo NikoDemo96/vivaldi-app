@@ -38,7 +38,7 @@ export default function ProcessAccordion() {
     >
       <div className="max-w-2xl mx-auto">
         {/* Label */}
-        <p className="text-center text-[#6B5CE7] text-sm font-medium mb-3 tracking-wide">
+        <p className="text-center text-[#4A3AFF] text-sm font-medium mb-3 tracking-wide">
           Our Methodology
         </p>
         {/* Title */}
@@ -64,8 +64,8 @@ export default function ProcessAccordion() {
                   <span
                     className={`flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center text-base font-bold transition-colors ${
                       isOpen
-                        ? "bg-[#5233B0] text-white"
-                        : "border-2 border-[#5233B0] text-[#5233B0] bg-transparent"
+                        ? "bg-[#4A3AFF] text-white"
+                        : "border-2 border-[#4A3AFF] text-[#4A3AFF] bg-transparent"
                     }`}
                   >
                     {step.number}
@@ -74,7 +74,7 @@ export default function ProcessAccordion() {
                   {/* Title */}
                   <span
                     className={`flex-1 text-base md:text-lg font-bold transition-colors ${
-                      isOpen ? "text-[#5233B0]" : "text-[#18102B]"
+                      isOpen ? "text-[#4A3AFF]" : "text-[#18102B]"
                     }`}
                   >
                     {step.title}
@@ -82,7 +82,7 @@ export default function ProcessAccordion() {
 
                   {/* Chevron */}
                   <svg
-                    className={`flex-shrink-0 w-5 h-5 text-[#5233B0] transition-transform duration-300 ${
+                    className={`flex-shrink-0 w-5 h-5 text-[#4A3AFF] transition-transform duration-300 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                     fill="none"
