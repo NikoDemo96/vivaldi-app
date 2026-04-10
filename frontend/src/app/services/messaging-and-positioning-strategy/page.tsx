@@ -49,7 +49,7 @@ const MessagingAndPositioningPage = () => {
           </Link>
         </div>
       </section>
-
+      <div className="h-[41px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
       {/* Exceptional work section */}
       <section className="w-full pt-4 pb-12 md:pb-20 px-4 md:px-8 lg:px-16 bg-[#faf9fb]">
         <div className="max-w-8xl flex flex-col gap-8 md:gap-16">
@@ -117,73 +117,90 @@ const MessagingAndPositioningPage = () => {
           </div>
         </div>
       </section>
+
+      <div className="h-[8px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
       {/* Testimonial Section Diana*/}
-      {/* <section className="bg-[#10002B] py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 text-center">
-          <div className="text-left mb-6 md:mb-8">
-            <p className="text-white text-base md:text-lg leading-relaxed">
-              "Viviana has outstanding work ethics and a deep understanding of
-              the translation industry. She coordinated the development of our
-              new site seamlessly, with clarity and precision. Her marketing
-              recommendations are helping us define a new strategy moving
-              forward. She listens carefully, offers thoughtful insights, and
-              genuinely invests in her clients&apos; success. It&apos;s been a
-              pleasure collaborating with her, and I look forward to continuing
-              our partnership. Highly recommended!"
-            </p>
+      <section className="bg-[#521980] py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-3xl mx-auto text-center">
+          {/* Quote mark */}
+          <div className="text-white text-5xl font-serif leading-none mb-6 select-none">
+            &ldquo;&rdquo;
           </div>
 
-          <div className="text-left">
-            <p className="text-white font-semibold text-base md:text-lg mb-1">
-              Diana Pompa Morris
-            </p>
-            <p className="text-white/80 mb-4 text-sm md:text-base">
-              Founder at Dictum Translation Solutions
-            </p>
+          {/* Quote text */}
+          <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed mb-10">
+            &quot;Viviana has outstanding work ethics and a deep understanding
+            of the translation industry. She coordinated the development of our
+            new site seamlessly, with clarity and precision. Her marketing
+            recommendations are helping us define a new strategy moving forward.
+            She listens carefully, offers thoughtful insights, and genuinely
+            invests in her clients&apos; success. It&apos;s been a pleasure
+            collaborating with her, and I look forward to continuing our
+            partnership. Highly recommended!&quot;
+          </p>
+
+          {/* Author */}
+          <div className="flex items-center justify-center gap-3">
             <Image
               src="/images/diana.svg"
               alt="Diana Pompa Morris"
-              width={70}
-              height={70}
-              className="rounded-full md:w-[90px] md:h-[90px]"
+              width={48}
+              height={48}
+              className="rounded-full flex-shrink-0 ring-2 ring-[#F07C5A]"
             />
+            <div className="text-left">
+              <p className="text-white font-semibold text-base">
+                Diana Pompa Morris
+              </p>
+              <p className="text-[#F07C5A] text-sm">
+                Founder at Dictum Translation Solutions
+              </p>
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
+      <div className="h-[8px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
       {/* Our Process Section */}
       <ProcessAccordion />
+      <div className="h-[8px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
       {/* Testimonial Section Justin*/}
-      {/* <section className="bg-[#10002B] py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="text-left mb-6 md:mb-8">
-            <p className="text-white text-base md:text-lg leading-relaxed">
-              &quot;I had the pleasure of working with Viviana as a Strategic
-              Messaging Specialist at Sarris Marketing. Her ability to analyze a
-              business&apos;s digital presence and identify what makes them
-              unique, then turn those findings into clear, actionable insights,
-              consistently impressed me. What sets Viviana apart is not just her
-              strategic skillset, but how she communicates her ideas — always
-              thoughtful, well-reasoned, and focused on delivering value.&quot;
-            </p>
-          </div>
+      <section className="bg-[#521980] py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-3xl mx-auto text-center">
+          {/* Quote mark */}
+          <div className="text-white text-5xl font-serif leading-none mb-6 select-none">&ldquo;&rdquo;</div>
 
-          <div className="text-left">
-            <p className="text-white font-semibold text-base md:text-lg mb-1">
-              Justin Sarris
-            </p>
-            <p className="text-white/80 mb-4 text-sm md:text-base">
-              Founder at Sarris Marketing
-            </p>
+          {/* Quote text */}
+          <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed mb-10">
+            &quot;I had the pleasure of working with Viviana as a Strategic
+            Messaging Specialist at Sarris Marketing. Her ability to analyze a
+            business&apos;s digital presence and identify what makes them
+            unique, then turn those findings into clear, actionable insights,
+            consistently impressed me. What sets Viviana apart is not just her
+            strategic skillset, but how she communicates her ideas — always
+            thoughtful, well-reasoned, and focused on delivering value.&quot;
+          </p>
+
+          {/* Author */}
+          <div className="flex items-center justify-center gap-3">
             <Image
               src="/images/justin.svg"
               alt="Justin Sarris"
-              width={70}
-              height={70}
-              className="rounded-full md:w-[90px] md:h-[90px]"
+              width={48}
+              height={48}
+              className="rounded-full flex-shrink-0 ring-2 ring-[#F07C5A]"
             />
+            <div className="text-left">
+              <p className="text-white font-semibold text-base">
+                Justin Sarris
+              </p>
+              <p className="text-[#F07C5A] text-sm">
+                Founder at Sarris Marketing
+              </p>
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
+      <div className="h-[8px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
       {/* What You'll Receive Section */}
       <section className="w-full py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-[#EDE8FF]">
         <div className="max-w-6xl mx-auto">
@@ -248,7 +265,9 @@ const MessagingAndPositioningPage = () => {
                 Messaging &amp; Positioning Guide
               </h3>
               <p className="text-[#4B4B6A] text-sm leading-relaxed">
-                A clear document that explains how to talk about your business: what makes you different, what benefits to highlight, and the proof to show.
+                A clear document that explains how to talk about your business:
+                what makes you different, what benefits to highlight, and the
+                proof to show.
               </p>
             </div>
             {/* Card 2 */}
@@ -265,7 +284,9 @@ const MessagingAndPositioningPage = () => {
                 Service Overview
               </h3>
               <p className="text-[#4B4B6A] text-sm leading-relaxed">
-                A short summary of who you help, what problems you solve, and how your service delivers results so your sales team can explain it the same way.
+                A short summary of who you help, what problems you solve, and
+                how your service delivers results so your sales team can explain
+                it the same way.
               </p>
             </div>
             {/* Card 3 */}
@@ -282,7 +303,8 @@ const MessagingAndPositioningPage = () => {
                 Voice of Customer Summary
               </h3>
               <p className="text-[#4B4B6A] text-sm leading-relaxed">
-                Real quotes from your ideal clients. Words you can reuse in your copy, emails, or sales calls.
+                Real quotes from your ideal clients. Words you can reuse in your
+                copy, emails, or sales calls.
               </p>
             </div>
             {/* Card 4 */}
@@ -299,14 +321,14 @@ const MessagingAndPositioningPage = () => {
                 Website Copy
               </h3>
               <p className="text-[#4B4B6A] text-sm leading-relaxed">
-                We rewrite your homepage (and other pages if needed) so your value comes across clearly from the first line.
+                We rewrite your homepage (and other pages if needed) so your
+                value comes across clearly from the first line.
               </p>
             </div>
           </div>
-
         </div>
       </section>
-
+      <div className="h-[8px] w-full bg-gradient-to-r from-[#6947D2] to-[#E2725B]" />
       {/* Start winning on value */}
       <section
         className="w-full py-16 md:py-24 px-4 md:px-8 lg:px-16"
@@ -331,7 +353,6 @@ const MessagingAndPositioningPage = () => {
             </button>
           </Link>
         </div>
-
         {/* Contact form */}
         <div id="contact-form">
           <ContactForm />
