@@ -390,34 +390,35 @@ const Hero = () => {
         </div>
       </section>
       {/* Testimonial Section Justin*/}
-      <section className="bg-[#10002B] py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="text-left mb-6 md:mb-8">
-            <p className="text-white text-base sm:text-lg leading-relaxed">
-              &quot;I had the pleasure of working with Viviana as a Strategic
+      <section className="bg-[#22082A] py-12 md:py-20">
+        <div className="max-w-5xl mx-auto px-4 md:px-6">
+          <div className="bg-white rounded-2xl px-8 py-10 md:px-14 md:py-14 text-center shadow-lg">
+            <p className="text-[#555555] text-base md:text-lg leading-relaxed italic mb-8">
+              &ldquo;I had the pleasure of working with Viviana as a Strategic
               Messaging Specialist at Sarris Marketing. Her ability to analyze a
               business&apos;s digital presence and identify what makes them
               unique, then turn those findings into clear, actionable insights,
               consistently impressed me. What sets Viviana apart is not just her
               strategic skillset, but how she communicates her ideas — always
-              thoughtful, well-reasoned, and focused on delivering value.&quot;
+              thoughtful, well-reasoned, and focused on delivering value.&rdquo;
             </p>
-          </div>
-
-          <div className="text-left">
-            <p className="text-white font-semibold text-base sm:text-lg mb-1">
-              Justin Sarris
-            </p>
-            <p className="text-white/80 text-sm sm:text-base mb-4">
-              Founder at Sarris Marketing
-            </p>
-            <Image
-              src="/images/justin.svg"
-              alt="Justin Sarris"
-              width={70}
-              height={70}
-              className="rounded-full sm:w-[90px] sm:h-[90px]"
-            />
+            <div className="flex flex-row items-center justify-center gap-4">
+              <Image
+                src="/images/justin.svg"
+                alt="Justin Sarris"
+                width={64}
+                height={64}
+                className="rounded-full w-16 h-16 object-cover flex-shrink-0"
+              />
+              <div className="text-left">
+                <p className="text-[#2B1055] font-bold text-base md:text-lg leading-tight">
+                  Justin Sarris
+                </p>
+                <p className="text-gray-500 text-sm md:text-base mt-0.5">
+                  Founder at Sarris Marketing
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
