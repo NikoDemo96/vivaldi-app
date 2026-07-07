@@ -29,10 +29,10 @@ const Hero = () => {
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 leading-tight">
-              Work with Marketers <br className="hidden md:block" />
-              <span className="md:hidden"> </span>Who Speak Your Language
+              SEO and Google Ads that <br className="hidden md:block" />
+              <span className="md:hidden"> </span>Actually Bring You Clients
             </h1>
-            <div className="w-[280px] sm:w-[340px] md:w-[765px] mx-auto">
+            {/* <div className="w-[280px] sm:w-[340px] md:w-[765px] mx-auto">
               <Image
                 src="/images/Horizontal-Straight-line.svg"
                 alt="Underline"
@@ -40,27 +40,22 @@ const Hero = () => {
                 height={8}
                 className="w-full h-auto"
               />
-            </div>
+            </div> */}
           </div>
 
-          <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed mt-4">
-            Marketing strategy for translation agencies
+          <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-5xl mx-auto leading-relaxed mt-4">
+            For small businesses tired of paying for traffic that never converts. We figure out how your clients buy before we run a single campaign.
           </p>
-          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed">
-            and manufacturing companies by people who&apos;ve worked in your
-            industries.
-          </p>
-
           <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-6 md:mt-8">
             <Link href="https://taplink.cc/vivaldimkt.com" className="w-full sm:w-auto">
-              <button className="w-full sm:w-auto bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors">
-                BOOK A FREE CONSULTATION CALL
+              <button className="w-full sm:w-auto bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-md transition-colors">
+                Book a Free Call
               </button>
             </Link>
 
             <Link href="/audit" className="w-full sm:w-auto">
-              <button className="w-full sm:w-auto bg-transparent border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors hover:border-[#E2725B] hover:text-[#E2725B] hover:bg-transparent">
-                GET A MARKETING AUDIT
+              <button className="w-full sm:w-auto bg-transparent border-2 border-white border-none text-white underline px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors hover:border-[#E2725B] hover:text-[#E2725B] hover:bg-transparent">
+                Check out our results-based Google Ads program →
               </button>
             </Link>
           </div>
@@ -71,7 +66,7 @@ const Hero = () => {
       <section className="relative">
         {/* No background image */}
         {/* Client Logos Section */}
-        <div className="py-8 md:py-12 bg-transparent relative z-10">
+        <div className="py-8 md:py-12 bg-[#F1F1F1] relative z-10">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             <div className="flex items-center justify-start md:justify-center space-x-8 md:space-x-12 lg:space-x-16 overflow-x-auto pb-4 md:pb-0 scrollbar-hide">
               <Link href="https://americahostel.com.ar/" className="flex-shrink-0">
@@ -101,6 +96,15 @@ const Hero = () => {
                   className="md:w-[235px] md:h-[80px]"
                 />
               </Link>
+              <Link href="https://www.ringteacher.com//" className="flex-shrink-0">
+                <Image
+                  src="/images/ring-teacher-logo.svg"
+                  alt="Sarris Marketing"
+                  width={160}
+                  height={42}
+                  className="md:w-[235px] md:h-[62px]"
+                />
+              </Link>
               <Link href="https://sarrismarketing.com/" className="flex-shrink-0">
                 <Image
                   src="/images/sarris-logo.svg"
@@ -118,7 +122,7 @@ const Hero = () => {
         <div className="py-12 md:py-16 bg-transparent relative z-10">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6947D2] text-center mb-12 md:mb-16 leading-tight px-2">
-              You're great at getting clients through word of mouth.
+              You're great at getting clients through word of mouth, and that says a lot about your expertise.
             </h2>
 
             <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-8 md:gap-12">
