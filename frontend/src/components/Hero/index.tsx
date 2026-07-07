@@ -496,7 +496,7 @@ const Hero = () => {
             {/* Viviana Card */}
             <div className="bg-white rounded-2xl overflow-hidden">
               <Image
-                src="/images/viviana-photo-new2.svg"
+                src="/images/viviana-photo-new.png"
                 alt="Viviana"
                 width={0}
                 height={0}
@@ -504,13 +504,13 @@ const Hero = () => {
                 className="w-full h-auto"
               />
               <div className="p-6 md:p-8">
-                <h3 className="text-lg font-bold text-[#10002B] mb-4">Viviana</h3>
-                <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+                <h3 className="text-3xl font-bold text-[#10002B] mb-4">Viviana</h3>
+                <p className="text-gray-700 text-sm md:text-2xl leading-relaxed mb-4">
                   Viviana spent six years as a freelance translator, and knows firsthand what it&apos;s like to
                   be great at what you do and still struggle to find clients, until she discovered that the
                   problem wasn&apos;t her work, but how she was communicating it.
                 </p>
-                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p className="text-gray-700 text-sm md:text-2xl leading-relaxed">
                   Changing her messaging brought her three new clients in four months, after spending a
                   year and a half to land just one. That&apos;s what got her into marketing.
                 </p>
@@ -528,12 +528,12 @@ const Hero = () => {
                 className="w-full h-auto"
               />
               <div className="p-6 md:p-8">
-                <h3 className="text-lg font-bold text-[#10002B] mb-4">Jorge</h3>
-                <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+                <h3 className="text-3xl font-bold text-[#10002B] mb-4">Jorge</h3>
+                <p className="text-gray-700 text-sm md:text-2xl leading-relaxed mb-4">
                   Jorge is a materials engineer who spent years in manufacturing, working with tight tolerances
                   and data-driven quality control.
                 </p>
-                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p className="text-gray-700 text-sm md:text-2xl leading-relaxed">
                   He watched less robust products dominate the market simply because they were
                   marketed better, and that&apos;s what got him into marketing. He brings the same analytical,
                   evidence-based mindset to every client project.
@@ -544,7 +544,7 @@ const Hero = () => {
 
           <div className="flex justify-center">
             <Link href="/about">
-              <button className="border border-[#E2725B] text-[#E2725B] hover:bg-[#E2725B] hover:text-white px-8 py-3 text-base font-medium rounded-full transition-colors">
+              <button className="border border-[#E2725B] text-[#E2725B] hover:bg-[#E2725B] hover:text-white px-8 py-3 text-xl font-medium rounded-full transition-colors">
                 Learn more about us →
               </button>
             </Link>
@@ -602,7 +602,7 @@ const Hero = () => {
               and if we don&apos;t think we can help, we&apos;ll tell you that too. No pressure to move forward.
             </p>
             <Link href="https://taplink.cc/vivaldimkt.com">
-              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-3 text-base font-semibold rounded-md transition-colors mb-6">
+              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-3 text-lg font-semibold rounded-md transition-colors mb-6">
                 Book a free call
               </button>
             </Link>
