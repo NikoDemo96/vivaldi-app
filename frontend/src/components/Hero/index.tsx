@@ -402,7 +402,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-row items-center justify-center gap-4">
               <Image
-                src="/images/natalie-testimonial.png"
+                src="/images/natalie-testimonial-2.png"
                 alt="Natalie Pavey"
                 width={64}
                 height={64}
