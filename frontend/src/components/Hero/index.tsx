@@ -486,80 +486,66 @@ const Hero = () => {
       </section>
 
       {/* Who We Are Section */}
-      <section className="relative py-12 md:py-16 lg:py-24 bg-[#5233B0]">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-8 md:mb-12 lg:mb-16">
-            Who We Are
+      <section className="bg-[#F2F2F2] py-14 md:py-20">
+        <div className="max-w-5xl mx-auto px-4 md:px-6">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#10002B] text-center mb-10 md:mb-14">
+            Vivaldi is two people: Viviana and Jorge.
           </h2>
-          <div className="flex flex-col lg:flex-row justify-between gap-8 md:gap-12 lg:gap-16">
-            {/*Viviana */}
-            <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            {/* Viviana Card */}
+            <div className="bg-white rounded-2xl overflow-hidden">
               <Image
-                src="/images/viviana-photo2.svg"
+                src="/images/viviana-photo-new2.svg"
                 alt="Viviana"
-                width={340}
-                height={400}
-                className="md:w-[400px] md:h-[475px] lg:w-[455px] lg:h-[541px]"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-auto"
               />
-              <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl text-center md:pt-4 lg:pt-8">
-                Viviana spent six years as a<br className="hidden md:block" />
-                <span className="md:hidden"> </span>freelance translator before
-                <br className="hidden md:block" />
-                <span className="md:hidden"> </span>switching to marketing.
-              </p>
-              <Link
-                href="https://www.linkedin.com/in/viviana-urbaneja-marketer/"
-                target="_blank"
-                className="block w-10 sm:w-12"
-              >
-                <Image
-                  src="/images/linkedin3.png"
-                  alt="Viviana Urbaneja"
-                  width={40}
-                  height={40}
-                  className="rounded-lg bg-white sm:w-[50px] sm:h-[50px]"
-                />
-              </Link>
+              <div className="p-6 md:p-8">
+                <h3 className="text-lg font-bold text-[#10002B] mb-4">Viviana</h3>
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+                  Viviana spent six years as a freelance translator, and knows firsthand what it&apos;s like to
+                  be great at what you do and still struggle to find clients, until she discovered that the
+                  problem wasn&apos;t her work, but how she was communicating it.
+                </p>
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                  Changing her messaging brought her three new clients in four months, after spending a
+                  year and a half to land just one. That&apos;s what got her into marketing.
+                </p>
+              </div>
             </div>
-            {/*Valdi */}
-            <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
+
+            {/* Jorge Card */}
+            <div className="bg-white rounded-2xl overflow-hidden">
               <Image
-                src="/images/jorge-photo3.png"
-                alt="Valdi"
-                width={300}
-                height={400}
-                className="md:w-[350px] md:h-[475px] lg:w-[400px] lg:h-[541px]"
+                src="/images/jorge-photo-new2.svg"
+                alt="Jorge"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-auto"
               />
-              <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl text-center md:pt-4 lg:pt-8">
-                Valdi is a materials engineer
-                <br className="hidden md:block" />
-                <span className="md:hidden"> </span>who discovered his passion
-                for
-                <br className="hidden md:block" />
-                <span className="md:hidden"> </span>marketing.
-              </p>
-              <Link
-                href="https://www.linkedin.com/in/valdimarketing/"
-                target="_blank"
-                className="block w-10 sm:w-12"
-              >
-                <Image
-                  src="/images/linkedin3.png"
-                  alt="Jorge Valderrama"
-                  width={40}
-                  height={40}
-                  className="rounded-lg bg-white sm:w-[50px] sm:h-[50px]"
-                />
-              </Link>
+              <div className="p-6 md:p-8">
+                <h3 className="text-lg font-bold text-[#10002B] mb-4">Jorge</h3>
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+                  Jorge is a materials engineer who spent years in manufacturing, working with tight tolerances
+                  and data-driven quality control.
+                </p>
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                  He watched less robust products dominate the market simply because they were
+                  marketed better, and that&apos;s what got him into marketing. He brings the same analytical,
+                  evidence-based mindset to every client project.
+                </p>
+              </div>
             </div>
           </div>
-          <div className="flex justify-center mt-8 md:mt-16 lg:mt-24">
-            <Link
-              href="https://taplink.cc/vivaldimkt.com"
-              className="inline-block w-full sm:w-auto px-4"
-            >
-              <button className="w-full sm:w-auto bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors">
-                DISCOVER MORE ABOUT US
+
+          <div className="flex justify-center">
+            <Link href="/about">
+              <button className="border border-[#E2725B] text-[#E2725B] hover:bg-[#E2725B] hover:text-white px-8 py-3 text-base font-medium rounded-full transition-colors">
+                Learn more about us →
               </button>
             </Link>
           </div>
@@ -568,7 +554,7 @@ const Hero = () => {
       {/* Testimony and Predictable Growth Section */}
       <section className="w-full">
         {/* Testimony */}
-        <div className="bg-[#10002B] py-12 md:py-16 px-4 md:px-6">
+        {/* <div className="bg-[#10002B] py-12 md:py-16 px-4 md:px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-white text-base sm:text-lg md:text-xl mb-6 md:mb-8">
               &quot;We have 50,000 photos from our two hostels but no time to
@@ -598,23 +584,35 @@ const Hero = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Predictable Growth CTA */}
-        <div className="bg-[#5233B0] py-12 md:py-16 lg:py-20 px-4 md:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
-            Ready to Attract More Clients?
-          </h2>
-          <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl max-w-7xl mx-auto mb-6 md:mb-8">
-            Let&apos;s figure out the right approach for your business.
-          </p>
-          <Link
-            href="https://taplink.cc/vivaldimkt.com"
-            className="inline-block w-full sm:w-auto"
-          >
-            <button className="w-full sm:w-auto bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors">
-              BOOK A DISCOVERY CALL
-            </button>
-          </Link>
+        <div
+          className="w-full py-16 md:py-24 px-4 md:px-6 text-center"
+          style={{
+            background:
+              "radial-gradient(ellipse at 50% 0%, #7143FF 0%, #1E0757 45%, #0D0020 100%)",
+          }}
+        >
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Getting more clients doesn&apos;t have to be this hard.
+            </h2>
+            <p className="text-white/80 text-base md:text-2xl leading-relaxed mb-8">
+              Book a free call with us. We&apos;ll listen to what&apos;s going on, tell you what we honestly think,
+              and if we don&apos;t think we can help, we&apos;ll tell you that too. No pressure to move forward.
+            </p>
+            <Link href="https://taplink.cc/vivaldimkt.com">
+              <button className="bg-[#E2725B] hover:bg-[#d45c43] text-white px-8 py-3 text-base font-semibold rounded-md transition-colors mb-6">
+                Book a free call
+              </button>
+            </Link>
+            <p className="text-white/60 italic text-sm md:text-2xl">
+              Looking for our Google Ads pilot program?{" "}
+              <Link href="/services/google-ads" className="underline text-white/80 hover:text-white">
+                Learn more here →
+              </Link>
+            </p>
+          </div>
         </div>
       </section>
       {/* Contact Form Section */}
