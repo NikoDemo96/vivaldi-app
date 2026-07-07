@@ -389,6 +389,68 @@ const Hero = () => {
           </div>
         </div>
       </section>
+      {/* Testimonial Section Natalie */}
+      <section className="bg-[#22082A] py-12 md:py-20">
+        <div className="max-w-5xl mx-auto px-4 md:px-6">
+          <div className="bg-white rounded-2xl px-8 py-10 md:px-14 md:py-14 text-center shadow-lg">
+            <p className="text-[#555555] text-base md:text-lg leading-relaxed italic mb-8">
+              &ldquo;Viviana provided me with extremely insightful feedback on my website to improve
+              my messaging and directly address my target markets. She pointed out both my
+              website&apos;s strengths and weaknesses and suggested easy solutions for each point,
+              even coming up with specific wording to make my messaging more effective. I highly
+              recommend her services!&rdquo;
+            </p>
+            <div className="flex flex-row items-center justify-center gap-4">
+              <Image
+                src="/images/natalie-testimonial.png"
+                alt="Natalie Pavey"
+                width={64}
+                height={64}
+                className="rounded-full w-16 h-16 object-cover flex-shrink-0"
+              />
+              <div className="text-left">
+                <p className="text-[#2B1055] font-bold text-base md:text-lg leading-tight">
+                  Natalie Pavey
+                </p>
+                <p className="text-gray-500 text-sm md:text-base mt-0.5">
+                  Owner of Word+Style Translations
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Work Section */}
+      <section className="bg-white py-14 md:py-24">
+        <div className="max-w-5xl mx-auto px-4 md:px-6">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#10002B] text-center mb-10 md:mb-14">
+            Here are some of the businesses we work with:
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-4 gap-x-8 mb-10 md:mb-12">
+            {[
+              ["Plumbers", "Law firms", "Tourism companies"],
+              ["Painters", "Language schools", "Recording studios"],
+              ["Manufacturers", "Translation agencies", "Accounting firms"],
+            ].map((col, colIdx) => (
+              <ul key={colIdx} className="space-y-4">
+                {col.map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-[#10002B] text-base md:text-2xl">
+                    <span className="text-[#E2725B] text-2xl leading-none">•</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+
+          <p className="text-center text-gray-400 italic text-sm md:text-2xl">
+            And other small businesses that need more clients.
+          </p>
+        </div>
+      </section>
+
       {/* Testimonial Section Justin*/}
       <section className="bg-[#22082A] py-12 md:py-20">
         <div className="max-w-5xl mx-auto px-4 md:px-6">
@@ -419,117 +481,6 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Work Section */}
-      <section className="bg-[#faf9fb] py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#6947D2] mb-4 md:mb-6">
-              How We Work
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
-            {/* Discovery Card */}
-            <div className="bg-white rounded-lg p-6 md:p-10 text-center relative flex flex-col justify-between min-h-[320px] md:h-120">
-              <div className="absolute -top-4 left-4 md:left-8">
-                <span className="text-5xl md:text-6xl font-bold text-orange-500">
-                  1
-                </span>
-              </div>
-              <div className="mt-4 mb-4 md:mb-6 flex justify-center">
-                <div className="flex items-center justify-center">
-                  <Image
-                    src="/images/loupe-icon.svg"
-                    alt="Discovery Icon"
-                    width={90}
-                    height={90}
-                    className="md:w-[120px] md:h-[120px]"
-                  />
-                </div>
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold text-[#6947D2] mb-3 md:mb-4">
-                DISCOVERY
-              </h3>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                We&apos;ll talk through what's happening in your business right
-                now: what's working, what isn't, and what your goals are. Then
-                we'll tell you exactly what we think would help and what it
-                would cost.
-              </p>
-            </div>
-
-            {/* Strategy Card */}
-            <div className="bg-white rounded-lg p-6 md:p-8 text-center relative flex flex-col justify-between min-h-[320px]">
-              <div className="absolute -top-4 left-4 md:left-8">
-                <span className="text-5xl md:text-6xl font-bold text-orange-500">
-                  2
-                </span>
-              </div>
-              <div className="mt-4 mb-4 md:mb-6 flex justify-center">
-                <div className="flex items-center justify-center">
-                  <Image
-                    src="/images/strategy-icon.svg"
-                    alt="Strategy Icon"
-                    width={110}
-                    height={110}
-                    className="md:w-[145px] md:h-[145px]"
-                  />
-                </div>
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold text-[#6947D2] mb-3 md:mb-4">
-                STRATEGY
-              </h3>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                We research how buyers in your industry make decisions: talking
-                to your clients, reviewing online conversations and analyzing
-                your competition. Then we tell you what to say and which
-                channels to prioritize.
-              </p>
-            </div>
-
-            {/* Execution Card */}
-            <div className="bg-white rounded-lg p-6 md:p-8 text-center relative flex flex-col justify-between min-h-[320px]">
-              <div className="absolute -top-4 left-4 md:left-8">
-                <span className="text-5xl md:text-6xl font-bold text-orange-500">
-                  3
-                </span>
-              </div>
-              <div className="mt-4 mb-4 md:mb-6 flex justify-center">
-                <div className="flex items-center justify-center">
-                  <Image
-                    src="/images/execution-icon.svg"
-                    alt="Execution Icon"
-                    width={90}
-                    height={90}
-                    className="md:w-[120px] md:h-[120px]"
-                  />
-                </div>
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold text-[#6947D2] mb-3 md:mb-4">
-                EXECUTION
-              </h3>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Time to get down to work. We write your content, run your ads,
-                or build your SEO presence. For ongoing work, we'll have a
-                monthly consultation call to review what's working and what
-                needs adjusting.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <Link
-              href="https://taplink.cc/vivaldimkt.com"
-              className="inline-block w-full sm:w-auto"
-            >
-              <button className="w-full sm:w-auto bg-[#E2725B] hover:bg-[#d45c43] text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors">
-                BOOK A DISCOVERY CALL
-              </button>
-            </Link>
           </div>
         </div>
       </section>
