@@ -58,7 +58,7 @@ const Hero = () => {
               </button>
             </Link>
 
-            <Link href="/audit" className="w-full sm:w-auto">
+            <Link href="/google-ads-landing" className="w-full sm:w-auto">
               <button className="w-full sm:w-auto bg-transparent border-2 border-white border-none text-white underline px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors hover:border-[#E2725B] hover:text-[#E2725B] hover:bg-transparent">
                 Check out our results-based Google Ads program →
               </button>
