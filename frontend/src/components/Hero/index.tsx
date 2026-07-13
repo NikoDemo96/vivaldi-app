@@ -44,9 +44,7 @@ const Hero = () => {
           </div>
 
           <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-5xl mx-auto leading-relaxed mt-4">
-            For small businesses tired of paying for traffic that never
-            converts. We figure out how your clients buy before we run a single
-            campaign.
+           For small businesses tired of paying for traffic that never converts. We research how your clients buy, then use that to build a persuasive website so your strategy works
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-6 md:mt-8">
             <Link
@@ -217,7 +215,7 @@ const Hero = () => {
           <div className="bg-[#EDE9F8] rounded-lg px-5 py-4 md:px-6 md:py-5 border-l-4 border-[#4A1D8A]">
             <p className="text-[#10002B] text-base md:text-2xl leading-relaxed">
               <strong>Not sure which of these is costing you clients?</strong>{" "}
-              Get a messaging audit — a 30-min video showing you exactly where
+              <a href="/audit" className="text-blue-600 underline hover:text-blue-800">Get a messaging audit</a> — a 30-min video showing you exactly where
               your website is losing people and how to fix it.
             </p>
           </div>
@@ -292,7 +290,7 @@ const Hero = () => {
                   model: you only pay when we bring you clients.
                   <br />
                   <Link
-                    href="/services/google-ads"
+                    href="/google-ads-landing"
                     className="underline font-medium mt-2 inline-block text-lg"
                   >
                     [More info on the pilot program →]
@@ -494,9 +492,9 @@ const Hero = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {/* Viviana Card */}
-            <div className="bg-white rounded-2xl overflow-hidden">
+            <div className="bg-white rounded-[3vw] overflow-hidden">
               <Image
-                src="/images/viviana-photo-new.png"
+                src="/images/viviana-photo-new3.svg"
                 alt="Viviana"
                 width={0}
                 height={0}
@@ -504,7 +502,9 @@ const Hero = () => {
                 className="w-full h-auto"
               />
               <div className="p-6 md:p-8">
-                <h3 className="text-3xl font-bold text-[#10002B] mb-4">Viviana</h3>
+                <h3 className="text-3xl font-bold text-[#10002B] mb-4">
+                  <a href="https://www.linkedin.com/in/viviana-urbaneja-marketer/" className="hover:text-blue-800">Viviana</a>
+                </h3>
                 <p className="text-gray-700 text-sm md:text-2xl leading-relaxed mb-4">
                   Viviana spent six years as a freelance translator, and knows firsthand what it&apos;s like to
                   be great at what you do and still struggle to find clients, until she discovered that the
@@ -518,9 +518,9 @@ const Hero = () => {
             </div>
 
             {/* Jorge Card */}
-            <div className="bg-white rounded-2xl overflow-hidden">
+            <div className="bg-white rounded-[3vw] overflow-hidden">
               <Image
-                src="/images/jorge-photo-new2.svg"
+                src="/images/jorge-photo-new3.svg"
                 alt="Jorge"
                 width={0}
                 height={0}
@@ -528,7 +528,9 @@ const Hero = () => {
                 className="w-full h-auto"
               />
               <div className="p-6 md:p-8">
-                <h3 className="text-3xl font-bold text-[#10002B] mb-4">Jorge</h3>
+                <h3 className="text-3xl font-bold text-[#10002B] mb-4">
+                  <a href="https://www.linkedin.com/in/valdimarketing//" className="hover:text-blue-800">Jorge</a>
+                </h3>
                 <p className="text-gray-700 text-sm md:text-2xl leading-relaxed mb-4">
                   Jorge is a materials engineer who spent years in manufacturing, working with tight tolerances
                   and data-driven quality control.
@@ -608,7 +610,7 @@ const Hero = () => {
             </Link>
             <p className="text-white/60 italic text-sm md:text-2xl">
               Looking for our Google Ads pilot program?{" "}
-              <Link href="/services/google-ads" className="underline text-white/80 hover:text-white">
+              <Link href="/google-ads-landing" className="underline text-white/80 hover:text-white">
                 Learn more here →
               </Link>
             </p>

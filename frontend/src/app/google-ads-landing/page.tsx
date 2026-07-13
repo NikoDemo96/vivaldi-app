@@ -42,7 +42,7 @@ const GoogleAndMetaAdsPage = () => {
               Only for the first 2 companies that decide to trust us.
             </p>
             <div className="flex flex-col gap-3 items-start">
-              <Link href="/audit">
+              <Link href="https://tally.so/r/zxbMGE">
                 <button className="bg-[#E8705A] hover:bg-[#d45f49] text-white font-semibold px-6 py-3 rounded-2xl text-sm sm:text-lg transition-colors">
                   Start with a free 5-minute audit of your campaign
                 </button>
@@ -279,7 +279,7 @@ const GoogleAndMetaAdsPage = () => {
           </div>
           {/* CTA button */}
           <div className="flex justify-center">
-            <Link href="/audit">
+            <Link href="https://tally.so/r/zxbMGE">
               <button className="bg-[#E8705A] hover:bg-[#d45f49] text-white font-semibold px-10 py-4 rounded-full text-sm sm:text-base transition-colors">
                 Book your 5-minute audit
               </button>
@@ -345,7 +345,7 @@ const GoogleAndMetaAdsPage = () => {
             </p>
           </div>
           <div className="flex justify-center mt-12">
-            <Link href="/audit">
+            <Link href="https://tally.so/r/zxbMGE">
               <button className="bg-[#E8705A] hover:bg-[#d45f49] text-white font-semibold px-10 py-4 rounded-full text-sm sm:text-lg transition-colors">
                 Book your 5-minute audit
               </button>
@@ -411,7 +411,7 @@ const GoogleAndMetaAdsPage = () => {
             <p className="text-[#331E5B] text-base sm:text-2xl leading-relaxed">
               But if your business isn&apos;t on this list, reach out anyway — we&apos;ll evaluate together if we&apos;re a good fit.
             </p>
-            <Link href="/audit" className="mt-2">
+            <Link href="https://tally.so/r/zxbMGE" className="mt-2">
               <button className="w-full bg-[#35113F] hover:bg-[#1e0b3e] text-white font-semibold px-8 py-4 rounded-full text-sm sm:text-xl transition-colors">
                 Book your 5-minute audit
               </button>
@@ -444,7 +444,7 @@ const GoogleAndMetaAdsPage = () => {
             If you want to prove to yourself that you can get clients with digital marketing (not just word of mouth) without spending thousands of dollars on consulting, the moment is now.
           </p>
           {/* CTA */}
-          <Link href="/audit" className="mt-2">
+          <Link href="https://tally.so/r/zxbMGE" className="mt-2">
             <button className="bg-[#E8705A] hover:bg-[#d45f49] text-white font-semibold px-10 py-4 rounded-full text-sm sm:text-xl transition-colors">
               Claim one of the 2 spots
             </button>
@@ -516,7 +516,7 @@ const GoogleAndMetaAdsPage = () => {
           <p className="text-[#6A5D70] text-base sm:text-lg leading-relaxed">
             Like we said: there&apos;s no commitment. We just want to show you what&apos;s failing in your current campaign and how we&apos;d fix it.
           </p>
-          <Link href="/audit" className="mt-2">
+          <Link href="https://tally.so/r/zxbMGE" className="mt-2">
             <button className="bg-[#E8705A] hover:bg-[#d45f49] text-white font-semibold px-10 py-4 rounded-full text-sm sm:text-lg transition-colors">
               Book your 5-minute audit
             </button>
