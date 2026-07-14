@@ -94,13 +94,13 @@ const Navbar = () => {
                 >
                   Messaging & Positioning
                 </Link>
-                <Link
+                {/* <Link
                   href="/services/linkedIn-ghostwriting"
                   className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-sm font-medium transition-colors"
                   onClick={() => setServicesOpen(false)}
                 >
                   LinkedIn Ghostwriting
-                </Link>
+                </Link> */}
                 <Link
                   href="/services/seo"
                   className="block px-5 py-3 text-[#6C3FC5] hover:bg-[#f3f0fa] text-sm font-medium transition-colors"
@@ -124,7 +124,7 @@ const Navbar = () => {
           </Link>
 
           <Link href="/audit" className={navLinkClass("/audit")}>
-            Get Your Audit!
+            Website Audit
           </Link>
         </nav>
 
@@ -174,7 +174,7 @@ const Navbar = () => {
                   >
                     Messaging & Positioning
                   </button>
-                  <button
+                  {/* <button
                     className="block py-2 px-2 text-white/80 hover:text-[#E2725B] text-sm transition-colors text-left w-full rounded-md hover:bg-white/5"
                     onClick={() => {
                       router.push("/services/linkedIn-ghostwriting");
@@ -183,7 +183,7 @@ const Navbar = () => {
                     }}
                   >
                     LinkedIn Ghostwriting
-                  </button>
+                  </button> */}
                   <button
                     className="block py-2 px-2 text-white/80 hover:text-[#E2725B] text-sm transition-colors text-left w-full rounded-md hover:bg-white/5"
                     onClick={() => {

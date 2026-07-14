@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const metadata = {
   title:
-    "Vivaldi Marketing | Google Ads for Translation and Manufacturing Businesses",
+    "Vivaldi Marketing | Google Ads Pilot Program (only for 2 companies)",
   description:
     "Google Ads strategies designed to grow translation and manufacturing businesses.",
 };
@@ -287,11 +287,11 @@ const GoogleAndMetaAdsPage = () => {
           </div>
         </div>
       </section>
-      {/* Testimonial Section Justin*/}
+      {/* Testimonial Section Natalie*/}
       <section className="bg-[#25072D] py-14 md:py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-white font-bold text-base sm:text-2xl mb-8">
-            What a better campaign actually feels like
+            This is what people say about our audits
           </p>
           <p className="text-white text-base sm:text-lg md:text-2xl leading-relaxed mb-10">
             &ldquo;Viviana provided me with extremely insightful feedback on my website to improve

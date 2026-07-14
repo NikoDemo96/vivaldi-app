@@ -56,7 +56,7 @@ const Hero = () => {
               </button>
             </Link>
 
-            <Link href="/google-ads-landing" className="w-full sm:w-auto">
+            <Link href="/google-ads-pilot-program-for-2-companies" className="w-full sm:w-auto">
               <button className="w-full sm:w-auto bg-transparent border-2 border-white border-none text-white underline px-6 md:px-8 py-3 md:py-4 text-base md:text-xl font-semibold rounded-xl transition-colors hover:border-[#E2725B] hover:text-[#E2725B] hover:bg-transparent">
                 Check out our results-based Google Ads program →
               </button>
@@ -169,13 +169,6 @@ const Hero = () => {
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#10002B] text-center mb-10 md:mb-14">
             Here&apos;s the brutal truth about marketing.
           </h2>
-
-          <p className="text-[#10002B] text-base md:text-2xl leading-relaxed mb-6">
-            Most agencies guess what your clients want, then try a bunch of
-            tactics and hope something works. We do the opposite: we talk to
-            your actual clients first, figure out how they make decisions, and
-            then build the strategy to make those clients come to you.
-          </p>
 
           <p className="text-[#10002B] text-base md:text-2xl leading-relaxed mb-4">
             You can spend thousands on ads or SEO… and still not close deals.
@@ -290,7 +283,7 @@ const Hero = () => {
                   model: you only pay when we bring you clients.
                   <br />
                   <Link
-                    href="/google-ads-landing"
+                    href="/google-ads-pilot-program-for-2-companies"
                     className="underline font-medium mt-2 inline-block text-lg"
                   >
                     [More info on the pilot program →]
@@ -610,7 +603,7 @@ const Hero = () => {
             </Link>
             <p className="text-white/60 italic text-sm md:text-2xl">
               Looking for our Google Ads pilot program?{" "}
-              <Link href="/google-ads-landing" className="underline text-white/80 hover:text-white">
+              <Link href="/google-ads-pilot-program-for-2-companies" className="underline text-white/80 hover:text-white">
                 Learn more here →
               </Link>
             </p>

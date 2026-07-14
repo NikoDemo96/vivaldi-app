@@ -19,9 +19,9 @@ const Footer = () => {
           <p className="text-white font-semibold text-sm mt-3">
             www.vivaldimkt.com
           </p>
-          <p className="text-white font-semibold text-sm">
+          {/* <p className="text-white font-semibold text-sm">
             info@vivaldimkt.com
-          </p>
+          </p> */}
         </div>
 
         {/* Column 2: Navigation */}
@@ -63,9 +63,9 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/services/linkedIn-ghostwriting" className="text-white/75 text-sm hover:text-white transition-colors">
+              {/* <Link href="/services/linkedIn-ghostwriting" className="text-white/75 text-sm hover:text-white transition-colors">
                 Ghostwriting
-              </Link>
+              </Link> */}
             </li>
             <li>
               <Link href="/services/google-ads" className="text-white/75 text-sm hover:text-white transition-colors">
@@ -97,7 +97,7 @@ const Footer = () => {
             </li> */}
             <li>
               <Link href="/audit" className="text-white/75 text-sm hover:text-white transition-colors">
-                Free Audit
+                Website audit
               </Link>
             </li>
             {/* <li>
