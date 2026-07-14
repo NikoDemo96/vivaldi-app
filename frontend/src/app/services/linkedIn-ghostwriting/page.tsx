@@ -4,6 +4,7 @@ import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export const metadata = {
   title: "Vivaldi Marketing | Social Media Ghostwriting | LinkedIn | Instagram",
@@ -12,6 +13,10 @@ export const metadata = {
 };
 
 const GhostwritingPage = () => {
+  // Page temporarily disabled for public access. The code is kept intact
+  // so it can be re-enabled later by removing this early return.
+  notFound();
+
   return (
     <div className="min-h-screen bg-[#faf9fb]">
       <Navbar />
